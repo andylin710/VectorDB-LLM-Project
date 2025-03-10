@@ -1,1 +1,1 @@
-# DS4300_P2
+# VectorDB-LLM-Project
