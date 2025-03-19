@@ -10,10 +10,11 @@ import time                 # Timing
 import tracemalloc          # Memory usage tracking
 from sentence_transformers import SentenceTransformer  # Embedding model
 from collections import Counter     # For simple frequency counting
+import time
 
 import chromadb
 
-# Download necessary NLTK resources
+# Download NLTK resources
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('punkt_tab')
@@ -21,7 +22,7 @@ nltk.download('punkt_tab')
 # Constants and configuration
 VECTOR_DIM = 768
 COLLECTION_NAME = "slides" 
-QUERY = 'What is a Binary Tree?'
+QUERY = 'What is a AVL Tree?'
 LLM_MODEL = 'llama3.2:latest'
 EMBEDDING_MODEL = 'sentence-transformers/all-mpnet-base-v2'
 
@@ -44,7 +45,6 @@ embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 
 # Function to generate an embedding for a given text
 def get_embedding(text: str) -> list:
-    # Generate the embedding and convert it to a list of floats
     response = embedding_model.encode(text)
     return response.tolist()
 
@@ -171,14 +171,26 @@ Answer:"""
     )
     return response["message"]["content"]
 
-# --- Main execution ---
-print("Processing PDFs...")
-process_pdfs("Slides/")  # Adjust the directory to point to your PDF files
-print("\n---Done processing PDFs---\n")
 
-print("Querying collection with query:", QUERY)
-results = query_chroma(QUERY)
+def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
+    global collection
 
-print("RAG Response:")
-rag_response = generate_rag_response(QUERY, search_embeddings(QUERY))
-print(rag_response)
+    try:
+        collection.delete()
+    except Exception as e:
+        print("Error deleting collection:", e)
+
+    collection = client.create_collection(name=COLLECTION_NAME)
+
+    print('Processing PDFs...')
+    process_pdfs("Slides/")
+    print("\n---Done processing PDFs---\n")
+
+    for query in queries:
+        print('Query:', query)
+        start_time = time.time()
+        print(generate_rag_response(query, search_embeddings(query)))
+
+        elapsed = time.time() - start_time
+        print(f'Time elapsed: {round(elapsed, 4)} seconds')
+        print('---------------------------')

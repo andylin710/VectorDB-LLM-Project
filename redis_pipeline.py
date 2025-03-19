@@ -318,7 +318,7 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
     print("\n---Done processing PDFs---\n")
 
     # define csv file
-    csv_filename = "test_results.csv"
+    csv_filename = "redis_test_results.csv"
 
     with open(csv_filename, mode="a", newline="") as file:
         writer = csv.writer(file)
@@ -339,8 +339,11 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
             print(f'Time elapsed: {round(elapsed, 4)} seconds')
             print('---------------------------')
 
+            cpu_type = get_cpu_type()
+            ram_size = get_ram_size()
+
             # Write data row to CSV
-            writer.writerow([get_cpu_type(), get_ram_size(), embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4)])
+            writer.writerow([cpu_type, ram_size, embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4)])
 
     print(f"Results saved to {csv_filename}")
 
