@@ -13,6 +13,8 @@ from tqdm import tqdm       # Progress bar bc I'm impatient
 import os                   # Navigate folders
 import time                 # Timing
 import tracemalloc          # Memory Usage
+import cpuinfo              # CPU Info
+import psutil               # Memory Info
 
 from sentence_transformers import SentenceTransformer       # Embedding Model
 from collections import Counter                             # Simple counting dictionary
@@ -295,7 +297,14 @@ def generate_rag_response(query, context_results, model):
 
     return response["message"]["content"]
 
+# Function to detect CPU type
+def get_cpu_type():
+    cpu_brand = cpuinfo.get_cpu_info()['brand_raw']
+    return cpu_brand 
 
+# Function to detect RAM size
+def get_ram_size():
+    return round(psutil.virtual_memory().total / (1024 ** 3))
 
 # IMPORT THIS
 def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
@@ -316,7 +325,7 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
         
         # Write header only if the file has no data
         if file.tell() == 0:
-            writer.writerow(["index_elapsed", "index_memory", "query", "query_time_elapsed"])
+            writer.writerow(["compute_type", "memory_size", "embedding_model", "llm_model", "index_elapsed", "index_memory", "query", "query_time_elapsed"])
 
         for query in queries:
             print('Query:', query)
@@ -331,7 +340,7 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
             print('---------------------------')
 
             # Write data row to CSV
-            writer.writerow([index_elapsed, index_memory, query, round(elapsed, 4)])
+            writer.writerow([get_cpu_type(), get_ram_size(), embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4)])
 
     print(f"Results saved to {csv_filename}")
 
