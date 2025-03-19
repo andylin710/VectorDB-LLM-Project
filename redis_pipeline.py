@@ -2,6 +2,7 @@
 import re                   # Text preprocessing stuff
 import string               # More text preprocessing
 import nltk                 # Tokenization
+import csv                  # CSV writing
 
 import ollama               # Ollama
 import redis                # Redis
@@ -188,7 +189,7 @@ def split_text_into_chunks(text, chunk_size=300, overlap=50):
         chunks.append(chunk)
     return chunks
 
-# Process all PDF files in a given directory
+# Process all PDF files in a given directory, returns elapsed time and peak memory
 def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
 
     # Start time / memory check
@@ -216,6 +217,9 @@ def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
 
     print(f'Time elapsed: {round(elapsed, 4)} seconds')
     print(f"Peak memory usage: {peak / 1024**2:.2f} MiB")
+
+    # returns time and peak memory
+    return round(elapsed, 4), round((peak / 1024**2), 2)
 
 
 def search_embeddings(query, model, top_k=3):
@@ -301,17 +305,35 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
     create_hnsw_index()
 
     print('Processing PDFs...')
-    process_pdfs("Slides/", embedding_model, chunk_size, overlap)
+    index_elapsed, index_memory = process_pdfs("Slides/", embedding_model, chunk_size, overlap)
     print("\n---Done processing PDFs---\n")
 
-    for query in queries:
-        print('Query:', query)
-        start_time = time.time()
-        print(generate_rag_response(query, search_embeddings(query, embedding_model), llm_model))
+    # define csv file
+    csv_filename = "test_results.csv"
 
-        elapsed = time.time() - start_time
-        print(f'Time elapsed: {round(elapsed, 4)} seconds')
-        print('---------------------------')
+    with open(csv_filename, mode="a", newline="") as file:
+        writer = csv.writer(file)
+        
+        # Write header only if the file has no data
+        if file.tell() == 0:
+            writer.writerow(["index_elapsed", "index_memory", "query", "query_time_elapsed"])
+
+        for query in queries:
+            print('Query:', query)
+            start_time = time.time()
+            
+            # Generate response
+            response = generate_rag_response(query, search_embeddings(query, embedding_model), llm_model)
+            print(response)
+
+            elapsed = time.time() - start_time
+            print(f'Time elapsed: {round(elapsed, 4)} seconds')
+            print('---------------------------')
+
+            # Write data row to CSV
+            writer.writerow([index_elapsed, index_memory, query, round(elapsed, 4)])
+
+    print(f"Results saved to {csv_filename}")
 
 
 
