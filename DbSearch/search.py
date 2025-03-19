@@ -75,7 +75,7 @@ def search_embeddings(query, top_k=3):
         return []
 
 
-def generate_rag_response(query, context_results):
+def generate_rag_response(model, query, context_results):
 
     # Prepare context string
     context_str = "\n".join(
@@ -102,7 +102,7 @@ Answer:"""
 
     # Generate response using Ollama
     response = ollama.chat(
-        model="llama3.2:latest", messages=[{"role": "user", "content": prompt}]
+        model=model, messages=[{"role": "user", "content": prompt}]
     )
 
     return response["message"]["content"]
@@ -113,17 +113,27 @@ def interactive_search():
     print("🔍 RAG Search Interface")
     print("Type 'exit' to quit")
 
+    model = None
+
     while True:
+
         query = input("\nEnter your search query: ")
 
         if query.lower() == "exit":
             break
 
+        # input LLM type
+        while model not in ["llama3.2:latest", "gemma3:latest"]:
+            model = input("\nEnter an LLM Model to use (ONLY use llama3.2:latest or gemma3:latest): ")
+
+            if model not in ["llama3.2:latest", "gemma3:latest"]:
+                print("Your model may be spelt incorrectly or is not able to be used for this task. Please choose from one of the two models listed above.")
+
         # Search for relevant embeddings
         context_results = search_embeddings(query)
 
         # Generate RAG response
-        response = generate_rag_response(query, context_results)
+        response = generate_rag_response(model, query, context_results)
 
         print("\n--- Response ---")
         print(response)
