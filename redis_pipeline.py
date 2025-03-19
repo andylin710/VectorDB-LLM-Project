@@ -14,7 +14,7 @@ import time                 # Timing
 import tracemalloc          # Memory Usage
 
 from sentence_transformers import SentenceTransformer       # Embedding Model
-from collections import Counter     # Simple counting dictionary
+from collections import Counter                             # Simple counting dictionary
 from redis.commands.search.query import Query
 from redis.commands.search.field import VectorField, TextField
 
@@ -27,14 +27,12 @@ VECTOR_DIM = 768
 INDEX_NAME = "embedding_index"
 DOC_PREFIX = "slides"
 DISTANCE_METRIC = "COSINE"
-QUERY = 'What is a Binary Tree?'
+QUERY = 'What is the CAP Theorem?'
 LLM_MODEL = 'llama3.2:latest'
 EMBEDDING_MODEL = 'sentence-transformers/all-mpnet-base-v2'
 
 # Initialize Redis connection
 redis_client = redis.Redis(host="localhost", port=6379, db=0, decode_responses=True)
-
-# print(os.listdir())
 
 # used to clear the redis vector store
 def clear_redis_store():
@@ -61,8 +59,8 @@ def create_hnsw_index():
 
 
 # Generate an embedding
-def get_embedding(text: str) -> list:
-    model = SentenceTransformer(EMBEDDING_MODEL)
+def get_embedding(text: str, embedding_model) -> list:
+    model = SentenceTransformer(embedding_model)
     response = model.encode(text)
     return response
 
@@ -135,7 +133,7 @@ def split_text_into_chunks(text, chunk_size=300, overlap=50):
     return chunks
 
 # Process all PDF files in a given directory
-def process_pdfs(data_dir):
+def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
 
     # Start time / memory check
     tracemalloc.start()
@@ -146,9 +144,9 @@ def process_pdfs(data_dir):
             pdf_path = os.path.join(data_dir, file_name)
             text_by_page = extract_text_from_pdf(pdf_path)
             for page_num, text in text_by_page:
-                chunks = split_text_into_chunks(text)
+                chunks = split_text_into_chunks(text, chunk_size, overlap)
                 for chunk_index, chunk in enumerate(chunks):
-                    embedding = get_embedding(chunk)
+                    embedding = get_embedding(chunk, model)
                     store_embedding(
                         file=file_name,
                         page=str(page_num),
@@ -164,32 +162,9 @@ def process_pdfs(data_dir):
     print(f"Peak memory usage: {peak / 1024**2:.2f} MiB")
 
 
-def query_redis(query_text: str):
-    q = (
-        Query("*=>[KNN 5 @embedding $vec AS vector_distance]")
-        .sort_by("vector_distance")
-        .return_fields("id", "vector_distance")
-        .dialect(2)
-    )
-    embedding = get_embedding(query_text)
-    res = redis_client.ft(INDEX_NAME).search(
-        q, query_params={"vec": np.array(embedding, dtype=np.float32).tobytes()}
-    )
-    for doc in res.docs:
-        print(f"{doc.id} \n ----> {doc.vector_distance}\n")
+def search_embeddings(query, model, top_k=3):
 
-
-clear_redis_store()
-create_hnsw_index()
-
-print('Processing PDFs...')
-process_pdfs("Slides/")
-print("\n---Done processing PDFs---\n")
-query_redis(QUERY)
-
-def search_embeddings(query, top_k=3):
-
-    query_embedding = get_embedding(query)
+    query_embedding = get_embedding(query, model)
 
     # Convert embedding to bytes for Redis search
     query_vector = np.array(query_embedding, dtype=np.float32).tobytes()
@@ -230,7 +205,7 @@ def search_embeddings(query, top_k=3):
         print(f"Search error: {e}")
         return []
     
-def generate_rag_response(query, context_results):
+def generate_rag_response(query, context_results, model):
 
     # Prepare context string
     context_str = "\n".join(
@@ -255,10 +230,32 @@ def generate_rag_response(query, context_results):
 
     # Generate response using Ollama
     response = ollama.chat(
-        model="llama3.2:latest", messages=[{"role": "user", "content": prompt}]
+        model=model, messages=[{"role": "user", "content": prompt}]
     )
 
     return response["message"]["content"]
 
-print(generate_rag_response(QUERY, search_embeddings(QUERY)))
+
+
+# IMPORT THIS
+def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
+    redis_client = redis.Redis(host="localhost", port=6379, db=0, decode_responses=True)
+
+    clear_redis_store()
+    create_hnsw_index()
+
+    print('Processing PDFs...')
+    process_pdfs("Slides/", embedding_model, chunk_size, overlap)
+    print("\n---Done processing PDFs---\n")
+
+    for query in queries:
+        print('Query:', query)
+        start_time = time.time()
+        print(generate_rag_response(query, search_embeddings(query, embedding_model), llm_model))
+
+        elapsed = time.time() - start_time
+        print(f'Time elapsed: {round(elapsed, 4)} seconds')
+        print('---------------------------')
+
+
 
