@@ -5,7 +5,7 @@ import nltk                 # Tokenization
 
 import ollama               # Ollama
 import redis                # Redis
-import numpy as np          # Duh
+import numpy as np          # Numpy
 import fitz                 # PDF Reader
 
 from tqdm import tqdm       # Progress bar bc I'm impatient
@@ -15,14 +15,15 @@ import tracemalloc          # Memory Usage
 
 from sentence_transformers import SentenceTransformer       # Embedding Model
 from collections import Counter                             # Simple counting dictionary
-from redis.commands.search.query import Query
+from redis.commands.search.query import Query               # Querying 
 from redis.commands.search.field import VectorField, TextField
 
-
+# Libraries for nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('punkt_tab')
 
+# Important constants
 VECTOR_DIM = 768
 INDEX_NAME = "embedding_index"
 DOC_PREFIX = "slides"
@@ -34,20 +35,38 @@ EMBEDDING_MODEL = 'sentence-transformers/all-mpnet-base-v2'
 # Initialize Redis connection
 redis_client = redis.Redis(host="localhost", port=6379, db=0, decode_responses=True)
 
-# used to clear the redis vector store
 def clear_redis_store():
+    """
+    Clears redis database store to prevent overlap
+
+    Parameters: 
+        None
+
+    Returns:
+        None
+    """
     print("Clearing existing Redis store...")
     redis_client.flushdb()
     print("Redis store cleared.")
 
 
-# Create an HNSW index in Redis
 def create_hnsw_index():
+    """
+    Clears an HNSW index in the Redis database
+
+    Parameters: 
+        None
+
+    Returns:
+        None
+    """
+    # Removes index if it already exists
     try:
         redis_client.execute_command(f"FT.DROPINDEX {INDEX_NAME} DD")
     except redis.exceptions.ResponseError:
         pass
 
+    # Creates index
     redis_client.execute_command(
         f"""
         FT.CREATE {INDEX_NAME} ON HASH PREFIX 1 {DOC_PREFIX}
@@ -58,15 +77,37 @@ def create_hnsw_index():
     print("Index created successfully.")
 
 
-# Generate an embedding
 def get_embedding(text: str, embedding_model) -> list:
+    """
+    Generate an embedding via a specified model. 
+
+    Parameters:
+        text (str): Text to embed
+        embedding_model (str): Name of the embedding model to use
+
+    Returns:
+        response (np.Array): Numerical array representation of the embeddings
+    
+    """
     model = SentenceTransformer(embedding_model)
     response = model.encode(text)
     return response
 
 
-# Store the embedding in Redis
 def store_embedding(file: str, page: str, chunk: str, embedding: list):
+    """
+    Stores the embeddings in the Redis index
+
+    Parameters:
+        file (str): Name of the file for indexing
+        page (str): Page number of the file
+        chunk (str): Chunk number of the file
+        embedding (list): Embedding representation of a single chunk
+
+    Returns:
+        None
+    """
+
     key = f"{DOC_PREFIX}:{file}_page_{page}_chunk_{chunk}"
     redis_client.hset(
         key,
@@ -76,15 +117,22 @@ def store_embedding(file: str, page: str, chunk: str, embedding: list):
             "chunk": chunk,
             "embedding": np.array(
                 embedding, dtype=np.float32
-            ).tobytes(),  # Store as byte array
+            ).tobytes(),  
         },
     )
-    # print(f"Stored embedding for: {chunk}")
 
 
-# extract the text from a PDF by page
 def extract_text_from_pdf(pdf_path):
-    """Extract text from a PDF file."""
+    """
+    Extract text by page from the pdf
+
+    Parameters:
+        pdf_path (str): Path to the pdf file
+
+    Returns:
+        text_by_page (list): List of the text on each page
+    """
+
     doc = fitz.open(pdf_path)
     text_by_page = []
     for page_num, page in enumerate(doc):
@@ -92,8 +140,16 @@ def extract_text_from_pdf(pdf_path):
     return text_by_page
 
 
-# Preprocessing, edit as needed
 def preprocess_text(text):
+    """
+    Preprocesses and tokenizes text. Steps can be commented out if need be. 
+
+    Parameters:
+        text (str): Text to be tokenized
+
+    Returns
+        tokens (list): List of tokenized words
+    """
 
     # Replace new lines
     text = text.replace('\n', ' ').strip()
