@@ -113,9 +113,9 @@ def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
     print(f"Peak memory usage: {peak / 1024**2:.2f} MiB")
 
 # Query Qdrant for similar documents
-def query_qdrant(query_text: str, n_results=5):
+def query_qdrant(query_text: str, model, n_results=5):
     """Retrieve top-k similar results from Qdrant."""
-    query_embedding = get_embedding(query_text)
+    query_embedding = get_embedding(query_text, model)
 
     results = qdrant_client.search(
         collection_name=COLLECTION_NAME,
@@ -134,9 +134,9 @@ def query_qdrant(query_text: str, n_results=5):
     return results
 
 # Search function that formats results nicely
-def search_embeddings(query, top_k=3):
+def search_embeddings(query, model, top_k=3):
     """Search embeddings in Qdrant and return formatted results."""
-    embedding = get_embedding(query)
+    embedding = get_embedding(query, model)
     
     results = qdrant_client.search(
         collection_name=COLLECTION_NAME,
@@ -157,7 +157,7 @@ def search_embeddings(query, top_k=3):
     return top_results
 
 # Generate a response using RAG
-def generate_rag_response(query, context_results):
+def generate_rag_response(query, context_results, model):
     """Generate a response using Ollama and retrieved context from Qdrant."""
     context_str = "\n".join(
         [
@@ -179,7 +179,7 @@ Query: {query}
 Answer:"""
 
     response = ollama.chat(
-        model=LLM_MODEL, messages=[{"role": "user", "content": prompt}]
+        model=model, messages=[{"role": "user", "content": prompt}]
     )
 
     return response["message"]["content"]
@@ -247,8 +247,7 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
         start_time = time.time()
 
         # Perform query in Qdrant
-        context_results = query_qdrant(query, n_results=5)
-        response = generate_rag_response(query, context_results, llm_model)
+        response = generate_rag_response(query, search_embeddings(query, embedding_model), llm_model)
 
         elapsed = time.time() - start_time
         print(response)

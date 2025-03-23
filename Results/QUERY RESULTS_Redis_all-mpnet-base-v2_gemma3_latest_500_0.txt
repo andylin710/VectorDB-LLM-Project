@@ -1,0 +1,29 @@
+The context discusses data structures and retrieval, mentioning NoSQL databases like document databases (Mongo), graph databases (Neo4j), and key-value stores. It doesn’t directly explain the difference between contiguous memory allocation and linked structures. Therefore, I don’t know.
+------------------------
+I don't know.
+------------------------
+I don't know
+------------------------
+I don't know.
+------------------------
+I don't know.
+------------------------
+I don't know.
+------------------------
+I don't know.
+------------------------
+I don't know.
+------------------------
+I don't know
+------------------------
+Based on the provided context, the document mentions that key/value stores are one of the data models covered, and that you should understand the use cases for and data models of various NoSQL database systems, including storing and retrieving data. However, it does not provide a specific description of how a key/value store can be used as a feature store.
+------------------------
+I don't know.
+------------------------
+I don't know
+------------------------
+I don't know.
+------------------------
+I don't know
+------------------------
+I don't know

@@ -211,6 +211,6 @@ def run_qdrant_pipeline(query_text):
     print(rag_response)
 
 # --- Run Pipeline ---
-if __name__ == "__main__":
-    user_query = input("\nEnter your query: ")
-    run_qdrant_pipeline(user_query)
+# if __name__ == "__main__":
+#     user_query = input("\nEnter your query: ")
+#     run_qdrant_pipeline(user_query)

@@ -1,0 +1,101 @@
+Here’s the difference between a list using contiguous memory allocation and one using linked structures:
+
+*   **Contiguous Memory Allocation:** In this approach, the list’s elements are stored in a single, continuous block of memory. Think of it like a row of houses where each house (element) is right next to the others.
+    *   **Advantages:** Fast access to elements because the memory location can be calculated directly from the element’s index. Efficient for accessing elements sequentially.
+    *   **Disadvantages:** Can be inefficient in terms of memory usage if the list isn’t full, as the allocated block might be larger than needed. Inserting or deleting elements in the middle requires shifting subsequent elements to maintain contiguity, which can be slow.
+
+*   **Linked Structures:** Here, the list’s elements are scattered throughout memory. Each element (called a node) contains the data and a pointer (or link) to the next node in the sequence.
+    *   **Advantages:** More flexible for insertions and deletions, as you only need to update the pointers, not shift elements. Memory usage is more efficient because nodes are allocated only when needed.
+    *   **Disadvantages:** Accessing a specific element requires traversing the list from the beginning, which can be slower than contiguous lists, especially for large lists.
+
+In essence, contiguous lists prioritize speed for accessing elements in order, while linked lists prioritize flexibility for insertions and deletions at the cost of access speed.
+------------------------
+Linked lists are faster than contiguously-allocated lists when accessing elements by index. In a contiguous list, accessing an element requires traversing from the beginning until the desired index is reached. This sequential access can be slow, especially for large lists and elements near the end. Linked lists, on the other hand, allow direct access to any element by following the pointers from the head to the desired node, making them faster for random access.
+------------------------
+The insertion of 23 creates a right imbalance. Here's the breakdown:
+
+1.  **Insert 23:** 23 is inserted as a new node.
+2.  **Tree Structure:**
+    *   30
+       / \
+      25  35
+     /    \
+    20     23
+
+3.  **Imbalance:** The node 25 now has a single child (23) and a right child (35). This violates the AVL tree property of balanced heights.
+
+Therefore, the imbalance case created is a **right-right** imbalance.
+------------------------
+B+ Trees are generally a better choice than AVL trees for indexing large datasets due to their design which is optimized for efficient range queries and large volumes of data. AVL trees are self-balancing, which makes them good for maintaining balance and fast single-key lookups, but they don't handle large datasets and range queries as efficiently as B+ Trees. B+ Trees use a multi-level structure that allows for efficient sequential access, which is crucial for large datasets.
+------------------------
+Disk-based indexing is a technique used in database systems to speed up data retrieval. Instead of scanning the entire table to find rows matching a search criterion, a disk-based index is created. This index is essentially a separate data structure (like a B-tree) that maps index values to the corresponding row locations on the disk.
+
+Here’s why it’s important:
+
+*   **Faster Queries:** When a query uses a WHERE clause with an indexed column, the database can quickly locate the relevant rows using the index, rather than scanning the entire table.
+*   **Reduced I/O:** By avoiding full table scans, disk-based indexing significantly reduces the number of disk I/O operations, which are typically the slowest part of a database query.
+*   **Improved Performance:** Overall, disk-based indexing dramatically improves the performance of database queries, especially for large tables.
+
+Essentially, it’s a crucial optimization strategy for database systems to handle data efficiently.
+------------------------
+In a relational database system, a transaction is a logical unit of work that consists of one or more SQL operations. It’s treated as a single, indivisible unit. Transactions ensure data integrity by guaranteeing that either all operations within the transaction complete successfully (a *commit*) or none of them do (a *rollback*). This prevents partial updates and maintains the consistency of the database.
+------------------------
+ACID compliant transactions consist of four key components:
+
+1.  **Atomicity:** Ensures that a transaction is treated as a single, indivisible unit of work. Either all changes within the transaction are completed successfully, or none are.
+2.  **Consistency:** Guarantees that a transaction brings the database from one valid state to another. It enforces rules and constraints defined within the database.
+3.  **Isolation:** Ensures that concurrent transactions do not interfere with each other. Each transaction operates as if it’s the only one running.
+4.  **Durability:** Guarantees that once a transaction is committed, the changes are permanent and will survive even system failures (e.g., power outages).
+
+
+------------------------
+The CAP theorem states that a distributed system can only guarantee two out of the following three properties: Consistency, Availability, and Partition Tolerance. It doesn't make sense to apply it to a single-node MongoDB instance because a single node inherently has no partitions to tolerate. Therefore, the constraints of the theorem don't apply.
+------------------------
+Horizontal scaling involves adding more servers to a system to handle increased load. This distributes the workload across multiple machines. Vertical scaling, on the other hand, involves increasing the resources (CPU, RAM) of a single server. Essentially, you’re making one server more powerful. 
+
+Here’s a table summarizing the key differences:
+
+| Feature          | Horizontal Scaling | Vertical Scaling |
+|------------------|--------------------|------------------|
+| **Approach**      | Adding more servers | Increasing server power |
+| **Resource Change**| Adds more machines | Upgrades a single machine |
+| **Cost**          | Can be more cost-effective for large workloads | Can become expensive quickly |
+| **Complexity**    | Generally more complex to manage | Simpler to manage |
+| **Failure Impact**| Failure of one server has less impact | Failure of the single server has a major impact |
+------------------------
+A key/value store can be used as a feature store by storing individual features as key-value pairs. Each key represents a unique feature, and the value can be the feature's data (e.g., a numerical value, string, or boolean). This provides a simple and fast way to retrieve features on-demand for model training and inference.
+------------------------
+I don't know.
+------------------------
+In Redis, both `INC` and `INCR` commands increment a given numeric value, but they operate on different data types.
+
+*   **`INC`**: This command increments a string value by 1. If the string is not numeric, it's converted to a number before incrementing. If the conversion fails, `INC` returns the original string.
+
+*   **`INCR`**: This command increments a numeric value (like an integer or a floating-point number) by 1. It’s specifically designed for numeric values.
+
+In essence, `INCR` is the correct command to use when you’re working with numeric data in Redis, while `INC` is more general and can be used with strings as well.
+------------------------
+BSON offers several benefits over JSON when used with MongoDB:
+
+*   **Binary Format:** BSON is a binary JSON-like data format. This makes it more compact and efficient to transmit and store compared to JSON’s text-based format.
+*   **Data Type Support:** BSON supports a wider range of data types natively, including dates, binary data, and 64-bit integers, which are not directly supported in JSON. MongoDB utilizes these native types for improved data storage and querying.
+*   **Efficiency:** Due to its binary format and native data types, BSON is generally faster to parse and process than JSON, leading to improved query performance in MongoDB.
+*   **Schema Flexibility:** While JSON is often used with a strict schema, BSON in MongoDB is more flexible, allowing for dynamic schema changes.
+
+Essentially, BSON is optimized for MongoDB’s needs, providing better performance and data handling capabilities compared to JSON.
+------------------------
+```javascript
+db.movies.find({
+  genre: "suspense",
+  release_year: {
+    $gte: 2010,
+    $lte: 2015
+  }
+})
+```
+------------------------
+The `$nin` operator in a MongoDB query means "not in." It filters documents based on a field that does not contain any of the values specified in the array. 
+
+For example, if you have a field called `colors` and you want to find all documents where the color is not "red" or "blue", you would use:
+
+`{ "colors": { $nin: ["red", "blue"] } }`

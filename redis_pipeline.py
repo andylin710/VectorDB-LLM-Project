@@ -92,7 +92,7 @@ def get_embedding(text: str, embedding_model) -> list:
         response (np.Array): Numerical array representation of the embeddings
     
     """
-    model = SentenceTransformer(embedding_model)
+    model = SentenceTransformer(embedding_model, trust_remote_code=True)
     response = model.encode(text)
     return response
 
@@ -309,6 +309,7 @@ def get_ram_size():
 # IMPORT THIS
 def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
     redis_client = redis.Redis(host="localhost", port=6379, db=0, decode_responses=True)
+    answers = []
 
     clear_redis_store()
     create_hnsw_index()
@@ -318,14 +319,14 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
     print("\n---Done processing PDFs---\n")
 
     # define csv file
-    csv_filename = "redis_test_results.csv"
+    csv_filename = "roland_redis_test_results.csv"
 
     with open(csv_filename, mode="a", newline="") as file:
         writer = csv.writer(file)
         
         # Write header only if the file has no data
         if file.tell() == 0:
-            writer.writerow(["compute_type", "memory_size", "embedding_model", "llm_model", "index_elapsed", "index_memory", "query", "query_time_elapsed"])
+            writer.writerow(["compute_type", "memory_size", "embedding_model", "llm_model", "index_elapsed", "index_memory", "query", "query_time_elapsed", 'chunk_size', 'overlap'])
 
         for query in queries:
             print('Query:', query)
@@ -334,6 +335,7 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
             # Generate response
             response = generate_rag_response(query, search_embeddings(query, embedding_model), llm_model)
             print(response)
+            answers.append(response)
 
             elapsed = time.time() - start_time
             print(f'Time elapsed: {round(elapsed, 4)} seconds')
@@ -343,9 +345,13 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
             ram_size = get_ram_size()
 
             # Write data row to CSV
-            writer.writerow([cpu_type, ram_size, embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4)])
+            writer.writerow([cpu_type, ram_size, embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4), chunk_size, overlap])
 
     print(f"Results saved to {csv_filename}")
+
+    answers = '\n------------------------\n'.join(answers)
+    with open(f"QUERY RESULTS_Redis_{embedding_model.split('/')[1]}_{llm_model.replace('.', '_').replace(':', '_')}_{chunk_size}_{overlap}.txt", 'w') as file:
+        file.write(answers)
 
 
 
