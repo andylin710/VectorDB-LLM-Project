@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 compute_type,memory_size,embedding_model,llm_model,index_elapsed,index_memory,query,query_time_elapsed
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,75.5496,18.82,What is an AVL Tree?,71.9845
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,75.5496,18.82,Define the CAP Theorem.,70.2361
@@ -45,3 +46,6 @@ compute_type,memory_size,embedding_model,llm_model,index_elapsed,index_memory,qu
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,825.0971,37.28,What are the benefits of BSON over JSON in MongoDB?,36.1458
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,825.0971,37.28,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,27.9603
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,825.0971,37.28,What does the $nin operator mean in a Mongo query?,40.4308
+=======
+compute_type,memory_size,embedding_model,llm_model,index_elapsed,index_memory,query,query_time_elapsed
+>>>>>>> cb8f907a9420f702a522d3512b5c8679db80c451
