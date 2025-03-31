@@ -42,10 +42,10 @@ def clear_redis_store():
     """
     Clears redis database store to prevent overlap
 
-    Parameters: 
-        None
-
-    Returns:
+    Parameters:        
+        None          
+                
+    Returns:         
         None
     """
     print("Clearing existing Redis store...")
@@ -57,10 +57,10 @@ def create_hnsw_index():
     """
     Clears an HNSW index in the Redis database
 
-    Parameters: 
-        None
-
-    Returns:
+    Parameters:          
+        None          
+                
+    Returns:           
         None
     """
     # Removes index if it already exists
@@ -82,8 +82,8 @@ def create_hnsw_index():
 
 def get_embedding(text: str, embedding_model) -> list:
     """
-    Generate an embedding via a specified model. 
-
+    Generate an embedding via a specified model.   
+                                                    
     Parameters:
         text (str): Text to embed
         embedding_model (str): Name of the embedding model to use
@@ -99,9 +99,9 @@ def get_embedding(text: str, embedding_model) -> list:
 
 def store_embedding(file: str, page: str, chunk: str, embedding: list):
     """
-    Stores the embeddings in the Redis index
-
-    Parameters:
+    Stores the embeddings in the Redis index      
+                                                    
+    Parameters:                                    
         file (str): Name of the file for indexing
         page (str): Page number of the file
         chunk (str): Chunk number of the file
@@ -127,10 +127,10 @@ def store_embedding(file: str, page: str, chunk: str, embedding: list):
 
 def extract_text_from_pdf(pdf_path):
     """
-    Extract text by page from the pdf
-
-    Parameters:
-        pdf_path (str): Path to the pdf file
+    Extract text by page from the pdf               
+                                                
+    Parameters:                                        
+        pdf_path (str): Path to the pdf file           
 
     Returns:
         text_by_page (list): List of the text on each page
@@ -147,7 +147,7 @@ def preprocess_text(text):
     """
     Preprocesses and tokenizes text. Steps can be commented out if need be. 
 
-    Parameters:
+    Parameters:                                 
         text (str): Text to be tokenized
 
     Returns
@@ -179,11 +179,24 @@ def preprocess_text(text):
     # Removes punctuation marks
     # tokens = [token for token in tokens if token not in string.punctuation]
 
+
+    # KV is very simple, quick o(1), horizontally scalable, example being redis
+    # Easily store model features, intermediate results
     return tokens
 
 # split the text into chunks with overlap
 def split_text_into_chunks(text, chunk_size=300, overlap=50):
-    """Split text into chunks of approximately chunk_size words with overlap."""
+    """
+    Split text into chunks of approximately chunk_size words with overlap.
+    
+    Parameters:
+        text (str): Text to be split into chunks
+        chunk_size (int): Number of tokens in each chunk
+        overlap (int): Number of tokens overlapping in each chunk
+
+    Returns:
+        chunks (list): List of strings, where each string represents a chunk
+    """
     words = preprocess_text(text)
     chunks = []
     for i in range(0, len(words), chunk_size - overlap):
@@ -193,17 +206,39 @@ def split_text_into_chunks(text, chunk_size=300, overlap=50):
 
 # Process all PDF files in a given directory, returns elapsed time and peak memory
 def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
+    """
+    Processes all of the files in a given director by preprocessing them, chunking
+    the tokens, retrieving the embedding, and adding the (chunk location, embedding)
+    key-value pair into the database. Also keeps track of time / memory used. 
+
+    Parameters:
+        data_dir (str): Path to the folder holding all of the data
+        model (SentenceTransformer): Embedding model used to get embeddings for chunks
+        chunk_size (int): Number of tokens in a chunk
+        overlap (int): Number of tokens overlapping in each chunk
+
+    Returns:
+        (float): Number of seconds passed during function call
+        (float): Peak megabytes used
+    """
 
     # Start time / memory check
     tracemalloc.start()
     start_time = time.time()
 
+    # Loops through every file in the data folder
     for file_name in tqdm(os.listdir(data_dir)):
         if file_name.endswith(".pdf"):
+
+            # Gets text from the relevant pdf
             pdf_path = os.path.join(data_dir, file_name)
             text_by_page = extract_text_from_pdf(pdf_path)
+
+            # Splits each page into chunks
             for page_num, text in text_by_page:
                 chunks = split_text_into_chunks(text, chunk_size, overlap)
+
+                # Stores chunk emebdding into database
                 for chunk_index, chunk in enumerate(chunks):
                     embedding = get_embedding(chunk, model)
                     store_embedding(
@@ -213,18 +248,28 @@ def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
                         embedding=embedding,
                     )
 
+    # Calculates time and memory used
     elapsed = time.time() - start_time
     current, peak = tracemalloc.get_traced_memory()
     tracemalloc.stop()
 
     print(f'Time elapsed: {round(elapsed, 4)} seconds')
     print(f"Peak memory usage: {peak / 1024**2:.2f} MiB")
-
-    # returns time and peak memory
     return round(elapsed, 4), round((peak / 1024**2), 2)
 
 
 def search_embeddings(query, model, top_k=3):
+    """
+    Finds chunk embeddings that are the most similar to the query embedding
+
+    Parameters:
+        query (str): The query asked to the LLM
+        model (SentenceTransformer): Embedding model used for chunks
+        top_k (int): Number of top chunks to return
+
+    Returns:
+        top_results (dict): Dictionary of results containing location + similarity
+    """
 
     query_embedding = get_embedding(query, model)
 
@@ -255,12 +300,6 @@ def search_embeddings(query, model, top_k=3):
             for result in results.docs
         ][:top_k]
 
-        # Print results for debugging
-        # for result in top_results:
-        #     print(
-        #         f"---> File: {result['file']}, Page: {result['page']}, Chunk: {result['chunk']}"
-        #     )
-
         return top_results
 
     except Exception as e:
@@ -268,6 +307,17 @@ def search_embeddings(query, model, top_k=3):
         return []
     
 def generate_rag_response(query, context_results, model):
+    """
+    Get an answer for a query to the fully populated model. 
+    
+    Parameters:
+        query (str): The query asked to the LLM
+        context_results (dict): Context results from the search_embeddings() function
+        model (str): Name of the specific LLM
+
+    Returns:
+        (str): Output of the model
+    """
 
     # Prepare context string
     context_str = "\n".join(
@@ -299,23 +349,59 @@ def generate_rag_response(query, context_results, model):
 
 # Function to detect CPU type
 def get_cpu_type():
+    """
+    Helper function to get CPU type of testing computer
+
+    Parameters:
+        None
+
+    Returns:
+        cpu_brand (str): CPU type
+    """
+
     cpu_brand = cpuinfo.get_cpu_info()['brand_raw']
     return cpu_brand 
 
 # Function to detect RAM size
 def get_ram_size():
+    """
+    Helper function to estimate the RAM available on testing computer
+
+    Parameters:
+        None
+
+    Returns:
+        (int): Estimation of available RAM
+    """
+
     return round(psutil.virtual_memory().total / (1024 ** 3))
 
 # IMPORT THIS
 def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
+    """
+    Main full-stack function that connects all of the functions together for easy testing. 
+    This is the main function that is called to test a specific configuration in our notebooks. 
+    Writes answers 
+
+    Parameters:
+        queries (list): List of strings, where each string is a query
+        embedding_model (str): Model used to embed chunks
+        llm_model (str): Model used to generate answers to queries
+        chunk_size (int): Size of the chunks by tokens
+        overlap (int): Number of tokens overlapping between tokens
+
+    Returns:
+        None
+    """
+
+    # Start up redis
     redis_client = redis.Redis(host="localhost", port=6379, db=0, decode_responses=True)
     answers = []
-
     clear_redis_store()
     create_hnsw_index()
 
     print('Processing PDFs...')
-    index_elapsed, index_memory = process_pdfs("Slides/", embedding_model, chunk_size, overlap)
+    index_elapsed, index_memory = process_pdfs("All_Slides/", embedding_model, chunk_size, overlap)
     print("\n---Done processing PDFs---\n")
 
     # define csv file
@@ -346,6 +432,7 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
 
             # Write data row to CSV
             writer.writerow([cpu_type, ram_size, embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4), chunk_size, overlap])
+            print([cpu_type, ram_size, embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4), chunk_size, overlap])
 
     print(f"Results saved to {csv_filename}")
 

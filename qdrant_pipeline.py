@@ -9,6 +9,9 @@ from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
+import csv                  # CSV writing
+import cpuinfo              # CPU Info
+import psutil               # Memory Info
 
 # Download necessary NLTK resources
 nltk.download('stopwords')
@@ -111,6 +114,10 @@ def process_pdfs(data_dir, model, chunk_size=300, overlap=50):
 
     print(f'Time elapsed: {round(elapsed, 4)} seconds')
     print(f"Peak memory usage: {peak / 1024**2:.2f} MiB")
+
+    # returns time and peak memory
+    return round(elapsed, 4), round((peak / 1024**2), 2)
+
 
 # Query Qdrant for similar documents
 def query_qdrant(query_text: str, model, n_results=5):
@@ -227,11 +234,19 @@ def create_qdrant_index():
 
     print("Qdrant collection created successfully.")
 
+# Function to detect CPU type
+def get_cpu_type():
+    cpu_brand = cpuinfo.get_cpu_info()['brand_raw']
+    return cpu_brand 
+
+# Function to detect RAM size
+def get_ram_size():
+    return round(psutil.virtual_memory().total / (1024 ** 3))
 
 def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
     qdrant_client = QdrantClient(url="http://localhost:6333")
 
-    """Runs a full test of the Qdrant pipeline with queries, embedding model, and LLM."""
+    answers = []
     
     clear_qdrant_store()
     create_qdrant_index()
@@ -239,17 +254,39 @@ def run_test(queries, embedding_model, llm_model, chunk_size=300, overlap=50):
     print("Running Qdrant Pipeline Test...")
     
     print('Processing PDFs...')
-    process_pdfs("Slides/", embedding_model, chunk_size, overlap)
+    index_elapsed, index_memory = process_pdfs("All_Slides/", embedding_model, chunk_size, overlap)
     print("\n---Done processing PDFs---\n")
 
-    for query in queries:
-        print(f'Query: {query}')
-        start_time = time.time()
+    # define csv file
+    csv_filename = "roland_qdrant_test_results.csv"
 
-        # Perform query in Qdrant
-        response = generate_rag_response(query, search_embeddings(query, embedding_model), llm_model)
+    with open(csv_filename, mode="a", newline="") as file:
+        writer = csv.writer(file)
+        
+        # Write header only if the file has no data
+        if file.tell() == 0:
+            writer.writerow(["compute_type", "memory_size", "embedding_model", "llm_model", "index_elapsed", "index_memory", "query", "query_time_elapsed", 'chunk_size', 'overlap'])
 
-        elapsed = time.time() - start_time
-        print(response)
-        print(f'Time elapsed: {round(elapsed, 4)} seconds')
-        print('---------------------------')
+        for query in queries:
+            print(f'Query: {query}')
+            start_time = time.time()
+
+            # Perform query in Qdrant
+            response = generate_rag_response(query, search_embeddings(query, embedding_model), llm_model)
+
+            elapsed = time.time() - start_time
+            print(response)
+            print(f'Time elapsed: {round(elapsed, 4)} seconds')
+            print('---------------------------')
+
+            cpu_type = get_cpu_type()
+            ram_size = get_ram_size()
+
+            # Write data row to CSV
+            writer.writerow([cpu_type, ram_size, embedding_model, llm_model, index_elapsed, index_memory, query, round(elapsed, 4), chunk_size, overlap])
+
+    print(f"Results saved to {csv_filename}")
+
+    answers = '\n------------------------\n'.join(answers)
+    with open(f"QUERY RESULTS_Redis_{embedding_model.split('/')[1]}_{llm_model.replace('.', '_').replace(':', '_')}_{chunk_size}_{overlap}.txt", 'w') as file:
+        file.write(answers)

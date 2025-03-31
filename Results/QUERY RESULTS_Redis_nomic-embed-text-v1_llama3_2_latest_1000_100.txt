@@ -1,0 +1,104 @@
+Based on the provided context, the main differences between a list where memory is contiguously allocated and a list where linked structures are used (Linked List) are:
+
+In a contiguous allocation:
+
+* Memory is allocated as a single chunk for all n records.
+* Each record takes up x bytes of memory, and there's no additional space needed for memory addresses.
+
+In a Linked List:
+
+* Each record needs x bytes of memory plus additional space for 1 or 2 memory addresses (for the node itself and its reference to the next element).
+* Individual records are linked together in a chain using memory addresses.
+* The last node points to nil/null, indicating the end of the list.
+
+This means that Linked Lists require more memory overhead compared to contiguous allocation lists.
+------------------------
+Linked lists are faster than contiguously-allocated lists when performing random insertions, not random access. This is because in a contiguous list, inserting an element at a specific location requires shifting all elements after it, resulting in linear time complexity (O(n)). In contrast, linked lists only require updating the pointer of the adjacent nodes, making insertions faster with a time complexity of O(1).
+------------------------
+To add 23 to the AVL tree, we need to perform a lookup, and since 23 is not in the tree, we will add a new node at the appropriate leaf position. After adding 23, the tree becomes:
+
+		30
+       /  \
+      25   35
+     /   /
+    20 23
+
+The imbalance case created with inserting 23 is that the leftmost node (20) now has only two children (25 and 23), while the rightmost nodes are not balanced. This creates an imbalance because the height of the tree is not maintained.
+
+To balance this, we would need to perform an LL rotation on the root node (30).
+------------------------
+B-trees are generally considered better than AVL trees for indexing large datasets because they have a higher branching factor, which ensures that few disk reads are needed to navigate to the place where data is stored. This leads to improved locality and reduced access times for large datasets. Additionally, B-trees can be optimized for in-memory storage by choosing an appropriate order (m) such that pointers to children and elements fit within a cache line, maximizing cache hits and improving performance.
+------------------------
+Disk-based indexing is a technique used by relational database management systems (RDBMS) to improve query performance. It involves creating a data structure, called an index, that contains a copy of the column(s) used in the WHERE clause of a SQL query.
+
+The importance of disk-based indexing lies in its ability to reduce the number of physical disk I/O operations required to retrieve data from storage devices. By pre-arranging the data on disk according to the search key, indexes can speed up searching for specific values by allowing the database system to locate the relevant data blocks more quickly.
+
+For example, when a query is issued that searches for a specific value in a column, the index can be used to skip over many pages of unnecessary data, thereby reducing the number of I/O operations needed. This can lead to significant performance improvements in queries that frequently search for specific values.
+
+In summary, disk-based indexing is important because it enables database systems to efficiently locate and retrieve data from storage devices by leveraging the pre-arranged structure of the index.
+------------------------
+In the context of a relational database system, a transaction is a sequence of one or more CRUD (Create, Read, Update, Delete) operations performed as a single, logical unit of work. The entire sequence either succeeds and is committed, or fails and is rolled back or aborted. This ensures data integrity, error recovery, concurrency control, reliable data storage, and simplified error handling.
+------------------------
+The four components of ACID (Atomicity, Consistency, Isolation, and Durability) compliant transactions are:
+
+1. Atomicity: A transaction is treated as a single, indivisible unit that must be completed fully or not at all.
+2. Consistency: The transaction brings the database from one consistent state to another while maintaining integrity constraints.
+3. Isolation: Two transactions cannot affect each other, ensuring that each transaction sees a consistent view of the data.
+4. Durability: Committed transactions are permanent and preserved even in the event of a system failure.
+------------------------
+The CAP principle doesn't apply in its traditional sense to a single-node MongoDB instance because it requires at least two nodes (or partitions) to operate. The principle states that you can have either consistency, availability, or partition tolerance, but not all three simultaneously.
+
+A single-node instance only offers one partition, which means it has the capacity to achieve consistency (as there is no network failure to tolerate), availability (since it's always operational), and partition tolerance (by design). Therefore, a single-node MongoDB instance can potentially satisfy all three of these conditions.
+------------------------
+Based on the provided context, here's a description of the differences between horizontal and vertical scaling:
+
+Horizontal scaling refers to the process of adding more nodes (computers) to a distributed system to increase its capacity and handle increased demands. This approach is simpler and less invasive, as it doesn't require modifying the existing architecture.
+
+Vertical scaling, on the other hand, involves increasing the power or performance of individual components (e.g., servers, databases) within an existing system. This approach can be easier in terms of implementation, but it has practical and financial limits. Vertical scaling may not always lead to significant performance improvements, especially as systems grow larger.
+
+In summary, horizontal scaling focuses on adding more nodes to a distributed system to increase capacity, while vertical scaling emphasizes increasing the power or performance of individual components within an existing system.
+------------------------
+Based on the provided context, a key-value store can be used as a feature store due to its simplicity and scalability features.
+
+In this setup, the key would represent a specific feature or attribute (e.g., "feature A", "feature B", etc.), and the value would hold the corresponding feature data or metadata. This way, retrieving a feature by its unique identifier is a simple O(1) operation.
+
+As a feature store, it can leverage its simplicity to support simple CRUD operations (create, read, update, delete) for features, making it easy to manage and retrieve feature data. Additionally, its scalability feature can handle the addition of new nodes, allowing for horizontal scaling as needed to accommodate growing amounts of feature data or traffic.
+
+However, it's essential to note that a key-value store may not be the best choice if complex queries or joins are required for feature data analysis or manipulation, as mentioned in the context.
+------------------------
+I don't know. The provided context doesn't mention the original release date of Redis. It only provides information about its nature, features, and usage in various contexts, but not any specific details about its history or timeline.
+------------------------
+Based on the provided context, I don't have information about the INC command in Redis. However, according to page 4 of "06 - Redis + Python.pdf", the INCR command increments a value associated with a key by 1.
+
+It's also mentioned that r.incr( clickCount : /abc ) would increase the value associated with the key "clickCount: /abc" by 1.
+------------------------
+Based on the provided context, it appears that BSON (Binary Serialized Object Notation) is actually a binary-encoded serialization of a JSON-like document structure, and not necessarily an alternative to JSON.
+
+According to the context, BSON supports extended types not part of basic JSON (e.g. Date, BinaryData), which suggests that it offers additional benefits over plain JSON, such as:
+
+* Support for more complex data types
+* Reduced storage overhead due to binary encoding
+
+However, there is no explicit mention of "benefits of BSON over JSON" in the provided context. It seems that BSON and JSON are often used interchangeably or complement each other in MongoDB.
+
+If I had to infer a benefit of using BSON over plain JSON in MongoDB, it would be the ability to support additional data types and reduce storage overhead due to binary encoding.
+------------------------
+Here is the MongoDB query that returns the titles of all movies released between 2010 and 2015 from the suspense genre:
+
+```bash
+db.movies.find({year: { $gte: 2010, $lte: 2015 }, genres: "Suspense"})
+```
+
+This query uses the `$gte` operator to select documents where `year` is greater than or equal to 2010 and less than or equal to 2015. It then filters the results to only include documents where `genres` equals "Suspense".
+------------------------
+In a MongoDB query, the `$nin` operator is used to select documents where a field does not exist in the specified array.
+
+For example:
+
+```javascript
+db.movies.find({ rated: { $nin: ["PG", "PG-13"] } })
+```
+
+This would return all movies where the `rated` field is neither "PG" nor "PG-13".
+
+Note that `$nin` is used in conjunction with an array of values, and it will match documents where the specified field does not contain any of those values.

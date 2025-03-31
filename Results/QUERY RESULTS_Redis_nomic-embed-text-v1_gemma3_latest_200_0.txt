@@ -1,0 +1,34 @@
+In a list where memory is contiguously allocated, all records are stored in a single chunk of memory together, requiring n * x bytes of memory where n is the number of records and x is the size of each record. In contrast, a linked list uses linked structures where each record needs x bytes plus additional space for 1 or 2 memory addresses, linking individual records together using memory addresses.
+------------------------
+Based on the provided context, linked lists are faster than contiguously-allocated lists for random insertions.
+------------------------
+The insertion of 23 creates an imbalance. Specifically, the tree becomes unbalanced because the node containing 25 now has a height difference of 2 in its subtrees. The left subtree has height 1 (20), and the right subtree has height -1 (empty).
+------------------------
+I don't know.
+------------------------
+Disk-based indexing is a way to increase efficiency in database systems. It’s the topic we focused on in the “Relational Database Performance” chunk. Indexing allows for fast searching by specific values, unlike a linear scan which would require searching the entire column.
+------------------------
+A transaction is a sequence of one or more of the CRUD operations performed as a single, logical unit of work. Either the entire sequence succeeds (COMMIT), or the entire sequence fails (ROLLBACK or ABORT). It helps ensure data integrity, error recovery, concurrency control, and simplified error handling.
+------------------------
+The four components of ACID compliant transactions are: Atomicity, Consistency, Isolation, and Durability.
+------------------------
+The CAP theorem states you can have 2, but not 3, of Consistency, Availability, and Partition Tolerance. A single-node MongoDB instance doesn't face partition tolerance because there are no network partitions. Therefore, the CAP theorem doesn't apply in this scenario.
+------------------------
+Vertical scaling refers to increasing the power of a single system (scaling up), while horizontal scaling involves adding more nodes to a system (scaling out). Horizontal scaling is generally simpler, particularly with modern systems, as it doesn’t require significant modifications to the architecture.
+------------------------
+I don't know.
+------------------------
+I don't know.
+------------------------
+Based on the provided context, the `INCR` command is used to increment the value of a key in Redis. The context mentions `r.incr ( <SYM> clickCount : /abc <SYM> )` which indicates an increment operation.
+------------------------
+BSON is a binary-encoded serialization of a JSON-like document structure. It supports extended types not part of basic JSON (e.g. Date, BinaryData), is lightweight, and designed to be easily traversed.
+------------------------
+```javascript
+db.movies.find({
+  year: { $gte: 2010, $lte: 2015 },
+  genres: "Suspense"
+})
+```
+------------------------
+I don't know

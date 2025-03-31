@@ -1,0 +1,1814 @@
+c:\Users\kibbl\anaconda3\envs\captcha\Lib\site-packages\torch\utils\_pytree.py:185: FutureWarning: optree is installed but the version is too old to support PyTorch Dynamo in C++ pytree. C++ pytree support is disabled. Please consider upgrading optree using `python3 -m pip install --upgrade 'optree>=0.13.0'`.
+  warnings.warn(
+c:\Users\kibbl\anaconda3\envs\captcha\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+WARNING:tensorflow:From C:\Users\kibbl\AppData\Roaming\Python\Python312\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\kibbl\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\kibbl\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     C:\Users\kibbl\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [04:40<00:00, 17.53s/it]
+Time elapsed: 280.5186 seconds
+Peak memory usage: 34.97 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on the context provided, I don't have specific information about lists with contiguous memory allocation or linked structures in "02 - Foundations.pdf". However, I can provide general information on the differences between these two approaches.
+
+In general, a list where memory is contiguously allocated means that all elements are stored in adjacent memory locations. This approach is often used for arrays and other data structures where elements are accessed sequentially.
+
+On the other hand, a list where linked structures are used means that each element points to the next element in the sequence. This approach is often used for dynamic arrays or linked lists.
+
+The main differences between these two approaches are:
+
+* Memory usage: Contiguous allocation typically requires less memory because all elements are stored in adjacent locations. Linked structure allocation, on the other hand, can require more memory due to the overhead of pointers.
+* Access time: In contiguous allocation, accessing an element requires a fixed amount of time regardless of its position in the list. In linked structure allocation, accessing an element typically requires traversing the pointers from the previous element, which can take longer.
+
+Without specific information about the "02 - Foundations.pdf", I couldn't provide more detailed answers. If you have any further context or clarification, I'd be happy to try and assist you.
+Time elapsed: 39.3778 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+I don't know. The provided context does not mention anything about linked lists or contiguous allocation, so I cannot provide an answer based on the information given.
+Time elapsed: 6.7361 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+To determine the imbalance case created by inserting 23, we need to analyze the structure of the AVL tree and how it changes when we add a new node.
+
+The given AVL tree is:
+
+        30
+       /  \
+      25   35
+     /
+    20
+
+We want to insert 23 into this tree. The smallest value in the left subtree of 30 is 20, so we should look at that subtree first.
+
+If we try to insert 23 into the left subtree of 20, it would become:
+
+        30
+       /  \
+      25   35
+     /   \ 
+    23   20
+
+In this case, the height of both subtrees (20 and 23) is now greater than before. However, since the total number of nodes in the tree has increased without maintaining balance, we should look at how it affects the overall balance factor.
+
+The current balance factor is:
+
+        balance(30) = -1
+        balance(25) = -1 
+        balance(35) = 0 (no left child)
+        balance(20) = -1
+
+In terms of balance factor calculation, this is a case where an imbalance occurs and the tree becomes unbalanced.
+
+So, with the insertion of 23 into the tree, we create an imbalance case where both children of node 30 have height greater than or equal to their parent, i.e. node 20 has a left child with greater height.
+Time elapsed: 40.8129 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+I don't know.
+
+The provided context only mentions AVL trees, not B+ trees. While both data structures are used for indexing and organizing data in databases, the context does not provide enough information to make a direct comparison between the two. The similarities with other sources do not provide enough insight into this specific question.
+Time elapsed: 11.6822 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+I don't know. The provided context does not seem to be relevant to the query about disk-based indexing.
+Time elapsed: 7.1223 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+In the context of a relational database system, a transaction is a sequence of operations performed on a database that are executed as a single, all-or-nothing unit. This means that either all changes made by the transaction are committed to the database, or none of them are, maintaining data consistency and preventing partial updates.
+Time elapsed: 11.877 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+ACID stands for Atomicity, Consistency, Isolation, and Durability. The four components are:
+
+1. Atomicity: Ensures that a transaction is treated as a single unit of work.
+2. Consistency: Ensures that the database remains in a consistent state after each operation.
+3. Isolation: Ensures that concurrent transactions do not interfere with each other.
+4. Durability: Ensures that once a transaction has been committed, its effects are permanent and survive even in the event of a failure.
+
+These components work together to guarantee the reliability and integrity of database transactions.
+Time elapsed: 16.4759 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on the context, I can try to provide an answer.
+
+The CAP principle (Consistency, Availability, and Partition Tolerance) is a fundamental concept in distributed systems. However, when applied to a single-node MongoDB instance, it doesn't make sense because a single node cannot be both available and partition-tolerant at the same time.
+
+In a single-node database like MongoDB, consistency refers to the guarantee that all data is consistent within the node itself. This means that if the node fails or becomes unavailable, the data will not become inconsistent (although it won't be accessible).
+
+Availability refers to the ability of the database to be accessed by clients in a timely manner. In a single-node instance, availability is guaranteed as long as the node remains operational.
+
+Partition tolerance refers to the ability of the system to continue operating even when network partitions occur (i.e., when parts of the network become disconnected). Since there's only one node, it can't partition with itself; therefore, partition tolerance isn't a concern in this scenario.
+
+Given these definitions, the CAP principle doesn't apply to a single-node MongoDB instance because a single node can't be both available and partition-tolerant simultaneously. The focus shifts from achieving a balance among these properties to ensuring that the database remains consistent within the node itself.
+
+I hope this explanation helps!
+Time elapsed: 32.2335 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on the provided context, I don't have specific information about "horizontal" and "vertical" scaling. However, I can provide a general answer.
+
+Horizontal scaling refers to adding more machines or instances to an application to increase its capacity. This is often done by adding more nodes to a cluster or cloud environment, allowing the application to handle increased traffic or demand.
+
+Vertical scaling, on the other hand, involves upgrading the resources of existing machines or instances without adding new ones. This can be achieved by increasing the CPU power, memory, or storage of an individual node, which allows it to handle more requests or workloads.
+
+If you're looking for a comparison between these two concepts and something like horizontal or vertical scaling in databases (as seems to be the case given the provided PDFs), I'd need more information about that context.
+Time elapsed: 21.15 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the context, I can infer that a key-value store is being discussed in the context of NoSQL databases.
+
+A key-value store can be used as a feature store by leveraging its simplicity and performance. In this approach, the key-value store is used to cache features or metadata about a product, service, or user, making it easily accessible for various use cases.
+
+Here's a brief outline of how a key-value store can be used as a feature store:
+
+1. **Feature metadata**: Store feature-related data such as feature names, descriptions, and IDs in the key-value store.
+2. **Cache features**: Cache frequently accessed or updated features in the key-value store to improve query performance.
+3. **Version control**: Use versioning to track changes to features, allowing for rollbacks if necessary.
+4. **Scalability**: Leverage the key-value store's horizontal scaling capabilities to handle increased traffic and feature updates.
+
+By utilizing a key-value store as a feature store, you can simplify data management, improve query performance, and scale your feature storage needs more efficiently.
+Time elapsed: 30.0485 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The context provides information about PDFs related to Redis and Python, but it does not mention the release date of Redis.
+Time elapsed: 7.4561 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+The INC command increments a value by 1, while the INCR command also increments a value, but it returns the new value. So, the difference is that INCR returns the result of the increment operation, whereas INC only increments the value without returning anything.
+Time elapsed: 10.0113 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+Based on the context, I don't have specific information about the benefits of BSON over JSON in MongoDB. However, I can tell you that BSON (Binary Serialized Object Notation) is a binary format used by MongoDB for storing data, whereas JSON (JavaScript Object Notation) is a text-based format.
+
+It seems like there might be some confusion or missing context in the provided documents about comparing BSON and JSON benefits directly.
+
+If you could provide more relevant information or clarify what you're looking for, I'd be happy to help further.
+Time elapsed: 15.7795 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the context, I don't have specific information about the "movies" data set. However, I can provide a general example of a MongoDB query that would achieve the desired result.
+
+Assuming the `movies` collection has fields such as `title`, `genre`, and `year`, here's an example query:
+
+```javascript
+db.movies.find({
+  genre: "Suspense",
+  year: { $gte: 2010, $lte: 2015 }
+}, {
+  title: 1 // only return the titles of movies that match the condition
+})
+```
+
+This query would filter documents in the `movies` collection where the `genre` is "Suspense" and the `year` is between 2010 and 2015 (inclusive), and then return only the `title` field for each matching document.
+Time elapsed: 23.1639 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+The $nin operator is used to select documents that do not match any of the specified values. In other words, it returns all documents where none of the specified values exist as fields.
+
+For example:
+```
+db.collection.find({name: { $nin: ["John", "Mary"] }})
+```
+This query would return all documents in the collection where the value of the "name" field is not either "John" or "Mary".
+
+Note that the $nin operator can be used with arrays as well, for example:
+```
+db.collection.find({tags: { $nin: ["tag1", "tag2"] }})
+```
+This query would return all documents in the collection where none of the tags are either "tag1" or "tag2".
+Time elapsed: 20.2621 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [05:06<00:00, 19.17s/it]
+Time elapsed: 306.6565 seconds
+Peak memory usage: 33.15 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on general knowledge, I can provide an answer.
+
+The main difference between a list where memory is contiguously allocated (also known as contiguous allocation) and a list where linked structures are used is:
+
+**Memory Layout**: In contiguous allocation, all elements of the list are stored in adjacent memory locations. This means that each element points to the next one, with no gaps or holes in the allocation.
+
+In contrast, in linked structures, each element is stored separately in its own memory location, and each element points to the next one using a "link" or a reference. This creates a chain of elements, where each node (or element) contains a pointer to the next node.
+
+**Access Patterns**: Contiguous allocation can lead to better performance for certain access patterns, such as sequential access or random access, since memory locations are physically adjacent.
+
+Linked structures, on the other hand, can be more suitable for insertion and deletion operations, which can occur at any position in the list. This is because updating a single node (or element) only requires updating its link to the next node, without affecting the contiguous allocation of surrounding elements.
+
+**Implementation Trade-offs**: Contiguous allocation typically results in less overhead for memory allocation and deallocation, as it allows for more efficient packing and use of available memory.
+
+Linked structures, while offering flexibility and efficiency for insertion/deletion operations, often require additional overhead for managing links between nodes, which can lead to slower performance for simple access patterns.
+
+In summary, contiguous allocation provides better performance for sequential or random access patterns, while linked structures offer improved performance for insertion/deletion operations, but with increased overhead due to link management.
+Time elapsed: 47.4935 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Based on the context provided, I don't have information about when linked lists are faster than contiguously-allocated lists. The documents mentioned seem to be related to the Foundations of Programming Systems course by Edward F. Codd, but they don't contain any information about data structures or their performance characteristics.
+
+Therefore, my answer is: I don't know.
+Time elapsed: 11.5887 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+I don't know. 
+
+There isn't enough information provided about the initial AVL tree and the insertion of 23 to determine which imbalance case is created. The provided context from ICS 46 Spring 2022 notes only mentions the structure of an AVL tree, but not its current state or how it was constructed.
+Time elapsed: 15.0105 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+I don't know.
+
+Although the context mentions similarities in page numbers and PDF titles between B-trees, AVL trees, and B+ trees, there's no explicit comparison or explanation provided about why B+ Trees are considered better for indexing large datasets compared to AVL Trees.
+Time elapsed: 12.2134 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+Based on the provided context, I don't have specific information about "disk-based indexing" or its importance in database systems. The documents mentioned are related to PDF files, but they do not provide relevant information on this topic.
+
+However, I can tell you that disk-based indexing is a common method used in relational databases for efficient data retrieval and querying. In disk-based indexing, the index is stored on the same storage device as the data, typically on hard drives or solid-state drives (SSDs).
+
+Disk-based indexing is important because it allows for faster query performance by enabling quick access to the relevant data blocks. This can significantly improve the overall performance and efficiency of database systems.
+
+If you'd like more information or a detailed explanation, I'd be happy to try and provide one based on general knowledge.
+Time elapsed: 22.2013 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+In the context of a relational database system, I believe a transaction refers to a sequence of operations performed on a database as a single, all-or-nothing unit of work. If any part of the transaction fails or cannot be completed, the entire transaction is rolled back and the database is restored to its previous state, ensuring data consistency and integrity.
+
+This concept seems relevant based on the context provided, specifically from "03 - Moving Beyond the Relational Model.pdf" (page 3), which discusses moving beyond the relational model.
+Time elapsed: 16.592 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+Based on the provided context, I don't know how the content from those PDFs relates to the query about ACID compliant transactions. However, I can provide a general answer.
+
+ACID compliant transactions have four main components:
+
+1. Atomicity: Ensures that all or none of the operations within a transaction are committed.
+2. Consistency: Guarantees that the data remains in a consistent state throughout the transaction.
+3. Isolation: Prevents concurrent transactions from interfering with each other.
+4. Durability: Ensures that once a transaction is committed, its effects are permanent and survive even in the event of a failure or crash.
+Time elapsed: 18.5875 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+I don't know. The context provided doesn't mention the CAP principle, MongoDB, or any discussion about its application to a single-node instance. Therefore, I couldn't find any relevant information to answer your query accurately.
+Time elapsed: 10.0523 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on the provided context, I don't have specific information about horizontal and vertical scaling from the documents "Moving Beyond the Relational Model" or "Roland_Notes". However, I can provide a general answer.
+
+Horizontal scaling refers to adding more machines (compute power) to handle increased workload by distributing tasks across multiple servers. This approach is often used to increase performance and responsiveness in applications that benefit from parallel processing, such as load balancers, caching services, or databases with sharding.
+
+Vertical scaling, on the other hand, involves increasing the power of a single machine (e.g., upgrading from a small instance to a larger one) to handle increased workload. This approach is often used when an application's requirements are not easily scalable horizontally, such as in applications that rely heavily on single points of failure or have complex dependencies.
+
+If you're looking for more specific information about horizontal and vertical scaling from the provided context, I recommend checking the documents "Moving Beyond the Relational Model" and "Roland_Notes" again.
+Time elapsed: 26.9505 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the context, I'd say that a key-value store can be used as a feature store because it allows for efficient storage and retrieval of large amounts of data (features) with simple key-based access.
+
+In this scenario, features would be stored in the form of key-value pairs, where each key represents a unique identifier or timestamp, and the corresponding value is the actual feature data. This enables fast lookups, updates, and deletions of features as needed, which is particularly useful for applications that require real-time feature data.
+
+This approach can also facilitate caching, versioning, and rollbacks of features, making it suitable for use cases where feature data needs to be up-to-date and easily accessible.
+
+However, I'd like to clarify that the provided context doesn't explicitly mention how key-value stores are used as feature stores. If you have more information or context about this specific topic, I'll be happy to provide a more detailed answer!
+Time elapsed: 26.1708 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know
+Time elapsed: 5.2571 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+Based on the context provided, I can answer that the difference between the INC and INCR commands in Redis is as follows:
+
+INC (Increment) - This command increments a key by one unit.
+
+INCR (Increment with a value) - This command increments the value of a key by a specified amount.
+Time elapsed: 12.3939 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+I don't know.
+
+While I can provide general information about MongoDB, I couldn't find any information about BSON being compared to JSON in terms of benefits. The provided context appears to be relevant to a discussion on document databases and MongoDB, but it doesn't mention JSON or BSON directly.
+Time elapsed: 11.5411 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the context, I'll write a MongoDB query for the "movies" dataset.
+
+```javascript
+db.movies.find({
+    releaseDate: { $gte: 2010, $lte: 2015 },
+    genre: "Suspense"
+}, { title: 1 })
+```
+
+This query will return all documents in the `movies` collection where:
+
+* The `releaseDate` is within the range of 2010 to 2015 (inclusive)
+* The `genre` is exactly "Suspense"
+
+The `$gte` operator checks if a value is greater than or equal to, and the `$lte` operator checks if a value is less than or equal to. The `{ title: 1 }` at the end of the find method selects only the `title` field in the result set.
+
+Please note that this assumes the MongoDB query syntax and the structure of the "movies" dataset mentioned in the context. If there are any differences, the query may not work as expected.
+Time elapsed: 27.8423 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+Based on the provided context, I don't have specific information about the "$nin" operator from "Document DBs and Mongo.pdf". However, I can suggest that it's possible that the "$nin" operator is mentioned in one of the PDF pages with similarities.
+
+If you provide more context or clarify which page contains the $nin operator definition, I'd be happy to try and assist you further.
+Time elapsed: 13.1956 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [06:47<00:00, 25.50s/it]
+Time elapsed: 407.9996 seconds
+Peak memory usage: 34.51 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+A question about data structures!
+
+According to the context, it seems like you're referring to arrays or lists in programming.
+
+In general, when memory is contiguousally allocated for a list, it means that all elements of the list are stored in adjacent memory locations. This can be both an advantage and a disadvantage.
+
+The difference between this approach and using linked structures (also known as linked lists) is:
+
+**Contiguous Allocation:**
+
+* Advantages:
+	+ Faster access times, since elements are stored in close proximity.
+	+ Typically more cache-friendly, leading to better performance.
+* Disadvantages:
+	+ If the list needs to be resized, it requires shifting all elements, which can be slow and memory-intensive.
+	+ Can lead to fragmentation if elements need to be added or removed, reducing the available free space.
+
+**Linked Structures (Linked Lists):**
+
+* Advantages:
+	+ More flexible, as new elements can be inserted or deleted at any position without affecting the surrounding elements.
+	+ Less memory is wasted when resizing, since only the affected nodes need to be updated.
+* Disadvantages:
+	+ Slower access times, since each element needs to traverse the list to find its next neighbor.
+	+ May not be as cache-friendly, leading to slower performance.
+
+In summary, contiguous allocation is typically used for arrays or lists where fast access and low memory usage are crucial, while linked structures (linked lists) are often used when flexibility and efficient insertion/deletion of elements are more important.
+Time elapsed: 41.3652 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Based on the context, I can infer that the text is discussing data structures and their efficiency.
+
+Linked lists are typically faster than contiguously-allocated lists in situations where the data needs to be frequently inserted or deleted at arbitrary positions. This is because linked lists only need to update the adjacent node pointers when inserting or deleting an element, whereas contiguously-allocated lists require shifting all elements after the insertion/deletion point.
+
+In general, linked lists are faster than contiguously-allocated lists when:
+
+* The data is frequently inserted or deleted at arbitrary positions.
+* The data is stored in a large amount of memory.
+* Insertion and deletion operations need to be performed frequently.
+
+However, contiguously-allocated lists can be faster than linked lists when:
+
+* The data is accessed sequentially (i.e., each element is accessed in a contiguous order).
+* The data fits in the available memory.
+
+In summary, linked lists are generally faster than contiguously-allocated lists when there are frequent insertions and deletions at arbitrary positions, but may be slower for sequential access or when the data fits in memory.
+Time elapsed: 28.226 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+To determine the imbalance case, I'll insert the value 23 into the AVL tree.
+
+1. First, we need to find the correct position for the new node with value 23.
+2. Since the values in the left subtree are increasing, and 23 is less than all of them (20, 25, 30), it should go in the right subtree with value 35.
+3. The new tree looks like this:
+     30
+    /  \
+   25   35
+  /
+ 20 
+       \
+        23
+
+Now that we have inserted 23 into the AVL tree, I see that the balance factor of node 20 has changed from -1 to -2, which is a left-heavy imbalance.
+Time elapsed: 23.9231 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the context provided, it appears that the comparison between B+ Trees and AVL Trees is not entirely relevant to the query about why a B+ Tree is better for indexing a large dataset.
+
+However, I can provide some general information. In general, B+ Trees are often preferred over AVL Trees (or other self-balancing trees) when indexing large datasets due to their design. Here's why:
+
+1. **Leaf nodes**: In a B+ Tree, leaf nodes store the actual data and point to child nodes only at the root level. This means that the average search time in a B+ Tree is O(log n), where n is the number of leaves (data elements). AVL Trees also provide O(log n) search times but can suffer from poorer performance when dealing with inserts or deletes.
+
+2. **Storage efficiency**: B+ Trees are designed to store data more efficiently than AVL Trees, especially in large datasets. By storing only leaf node keys and allowing for multiple child pointers at each non-leaf node, B+ Trees reduce the number of internal nodes required compared to other tree types.
+
+3. **Insertion/Deletion operations**: The insertion/deletion operations in a B+ Tree are more efficient because it can insert or delete data without affecting adjacent leaf nodes' order. AVL Trees also handle these operations efficiently but at the cost of potentially needing to rebalance the tree, which can be costly for large datasets.
+
+In summary, while both B+ Trees and AVL Trees offer good performance characteristics, B+ Trees are generally better suited for indexing large datasets due to their efficient storage design and fast search times. However, without specific context or further details about the dataset in question (e.g., data type, distribution), this answer is somewhat general.
+Time elapsed: 42.9384 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+Based on my knowledge, I can provide an answer to your query.
+
+Disk-based indexing is a data structure used in database systems to speed up the retrieval of data by providing a way to quickly locate specific records or values within a large dataset stored on disk. It works by creating an additional layer of organization and storage for frequently accessed data, allowing databases to quickly scan and retrieve required information.
+
+In disk-based indexing, a separate index is created for each table or column in the database, which contains the actual values or keys that can be used to locate specific records. This index is typically stored on disk, hence the name "disk-based."
+
+Disk-based indexing is important for several reasons:
+
+1. Improved query performance: By allowing databases to quickly scan and retrieve required data, disk-based indexing can significantly improve query performance.
+2. Reduced I/O operations: By pre-fetching frequently accessed data into memory, disk-based indexing can reduce the number of disk I/O operations required to complete a query.
+3. Increased scalability: As database sizes grow, disk-based indexing becomes increasingly important for maintaining performance and scalability.
+
+In summary, disk-based indexing is a critical component of modern database systems, enabling fast and efficient retrieval of data while supporting large-scale storage and querying needs.
+
+Please note that my answer is based on general knowledge about disk-based indexing. If you'd like more specific information or clarification, feel free to ask!
+Time elapsed: 33.8961 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+A transaction in the context of a relational database system is a sequence of operations that are executed as a single, all-or-nothing unit of work. If any part of the transaction fails or cannot be completed, the entire transaction is rolled back and the database is returned to its previous state, ensuring consistency and integrity.
+Time elapsed: 11.0199 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+Based on my knowledge, I can answer that there are actually three components, not four.
+
+ACID stands for Atomicity, Consistency, and Isolation. The fourth component is Durability.
+
+Here's a brief description of each:
+
+1. **Atomicity**: Ensures that all operations within a transaction are either fully committed or rolled back entirely.
+2. **Consistency**: Guarantees that the database remains in a consistent state, even after multiple transactions have been applied.
+3. **Isolation**: Prevents conflicts between concurrent transactions by ensuring each transaction sees a consistent view of the data.
+4. **Durability**: Ensures that once a transaction is committed, its effects are permanent and survive even in the event of system failure or restart.
+
+Let me know if I can help with anything else!
+Time elapsed: 21.0763 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on the provided context, I found that the CAP principle is discussed in relation to MongoDB instances.
+
+According to the documents:
+
+- From 03 - Moving Beyond the Relational Model.pdf (page 18), it's mentioned that MongoDB can violate the consistency axiom of the CAP principle due to its eventual consistency model. This means that MongoDB may not always provide strong consistency, which is necessary for certain applications.
+
+- However, I couldn't find any information in the provided context about why the CAP principle doesn't make sense when applied to a single-node MongoDB instance specifically.
+
+However, I can suggest some possible answers:
+
+1. Because of eventual consistency: As mentioned earlier, MongoDB's eventual consistency model means that data may not be strongly consistent across all nodes. This can lead to inconsistencies in a single-node instance.
+2. Due to replication limitations: In a single-node instance, there is no replica or backup node to provide redundancy and high availability. The CAP principle typically requires strong consistency, which may not be achievable with a single node.
+
+However, please note that the provided context doesn't explicitly address why the CAP principle doesn't make sense for a single-node MongoDB instance.
+Time elapsed: 29.1638 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on the context provided, I don't have specific information about the documents "Moving Beyond the Relational Model.pdf" and "Roland_Notes.pdf". However, I can provide a general answer to your query.
+
+Horizontal scaling (also known as horizontal partitioning or sharding) and vertical scaling (also known as vertical partitioning or scaling out) are two common approaches used in database design and distributed systems.
+
+**Horizontal Scaling:**
+
+In horizontal scaling, additional machines are added to the cluster to handle increased load. This is achieved by dividing data into smaller chunks, called shards or partitions, and distributing them across multiple servers. Each shard can process a portion of the data independently, allowing for more efficient handling of large amounts of data.
+
+**Vertical Scaling:**
+
+In vertical scaling, additional power (computational resources) is added to existing machines in the cluster. This allows each machine to handle more work by increasing its processing capacity, memory, or storage. However, this approach can be less scalable than horizontal scaling because it relies on increasing the capacity of individual machines rather than spreading the load across multiple machines.
+
+While I don't have specific information about the context documents, I hope this general explanation helps you understand the differences between horizontal and vertical scaling.
+Time elapsed: 29.6308 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the context provided, I don't have specific information about using a key-value store as a feature store. However, I can provide a general answer.
+
+A key-value store can be used to implement a simple feature store by storing features as key-value pairs. Features could be represented as strings or serialized data structures, while values could include the actual feature definitions, versions, or configurations.
+
+In this scenario, each feature would have a unique identifier (key) and its associated value, allowing for efficient retrieval and management of features. This approach can provide a basic form of feature management, but it may not offer the advanced features and functionalities typically found in modern feature stores.
+
+If you'd like to discuss further or clarify any specific aspects, I'm here to help!
+Time elapsed: 21.9801 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The provided context mentions the similarities of the query to certain PDFs, but it doesn't contain information about when Redis was originally released.
+Time elapsed: 7.9171 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+According to the context provided from the PDFs, I can see that there's a mention of the "INCR" command on page 3 of both "redis-cheatsheet.pdf" (with similarities) and "06 - Redis + Python.pdf".
+
+The difference between INC and INCR commands in Redis is:
+
+- The INC command increments the value by a specified amount.
+- The INCR command increments the value by 1.
+
+In other words, if you want to increment the value of a key by a certain number, use INC. If you want to increment the value by one unit (i.e., it should be an integer), use INCR.
+Time elapsed: 18.049 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+Based on the context, I can provide information about BSON (Binary Serialized Object Notation). While the provided PDFs don't explicitly compare BSON to JSON in MongoDB, I can infer that the comparison is likely to be discussed.
+
+BSON (Binary Serialized Object Notation) is the native data format used by MongoDB. It's designed to be a binary format that's more efficient than JSON for storing and transmitting large amounts of data. Here are some benefits of BSON over JSON:
+
+1. **Efficient storage**: BSON uses less memory than equivalent JSON data, making it ideal for large datasets.
+2. **Faster query performance**: MongoDB can optimize queries using the BSON data type, leading to faster query performance.
+3. **Type safety**: BSON has built-in support for types like dates, booleans, and arrays, which helps prevent errors during data insertion and querying.
+4. **Better compression**: BSON's binary format allows for better compression than JSON, reducing storage requirements.
+
+However, it's worth noting that when working with MongoDB, you often interact with JSON through the Query Language (e.g., `find()`, `update()`, etc.) rather than directly using BSON. In this case, JSON is used as a query language and data format, while BSON is stored internally by the database.
+
+If you have any further questions or would like more information on MongoDB's data formats, feel free to ask!
+Time elapsed: 34.6517 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the provided context, I can infer that I have access to information about MongoDB (DBs and Mongo.pdf) but not specifically about the movies dataset. However, assuming that there is a "movies" collection in my database with relevant fields like title, release_date, genre, etc.
+
+Since I don't have direct access to the data set mentioned in the query ("movies data set"), I can provide an answer based on general MongoDB querying principles. Please adjust according to your actual data set:
+
+```javascript
+db.movies.find({
+    "release_date": {
+        "$gte": new Date("2010-01-01T00:00:00.000Z"),
+        "$lt": new Date("2016-01-01T00:00:00.000Z")
+    },
+    genre: "suspense"
+}, {
+    title: 1
+})
+```
+
+This query will return all documents in the `movies` collection where:
+
+*   The release date is greater than or equal to January 1, 2010, and less than January 1, 2016.
+*   The genre is "suspense".
+*   Only includes the title field in the result set.
+
+Please note that the actual query might need to be adjusted based on your specific data schema.
+Time elapsed: 33.8682 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+Based on the provided context, I don't have information about the specific page or section that defines the $nin operator in MongoDB. However, I can tell you that the $nin operator is used to find documents where at least one field does not match the value.
+
+It appears that the relevant document with a high similarity score (0.48) is from page 20 of the "Document DBs and Mongo.pdf". If you'd like more information about the $nin operator, I suggest checking that specific page or searching for MongoDB documentation for further clarification.
+Time elapsed: 16.0367 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [04:17<00:00, 16.11s/it]
+Time elapsed: 257.7852 seconds
+Peak memory usage: 33.24 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on the context provided, I don't have specific information about lists with contiguous memory allocation versus linked structures. The context appears to be related to file similarity analysis, which doesn't seem relevant to this query.
+
+However, I can provide a general answer based on my knowledge of computer science. 
+
+In programming, there are two common methods for implementing lists (or arrays): contiguous memory allocation and linked structures.
+
+**Contiguous Memory Allocation:**
+When memory is allocated contiguously, each element in the list is stored in adjacent memory locations. This means that all elements share the same starting address, and access to any element requires direct addressing of its position within the array. Contiguous memory allocation typically provides faster access times compared to linked structures because it reduces the overhead associated with traversing nodes.
+
+**Linked Structures:**
+In contrast, when linked structures are used, each element in the list is stored separately, and they share pointers or references to each other. This means that accessing any element requires traversing through these pointers to find its position within the list. Linked structures can be beneficial for dynamic data structures, as new elements can easily be added at any point without affecting existing elements.
+
+The choice between contiguous memory allocation and linked structures often depends on the specific requirements of a particular application or system. While contiguous allocation may provide faster access times, it also means that modifications to large lists could lead to fragmentation issues if not managed properly. Linked structures, on the other hand, are better suited for scenarios where elements need to be dynamically added or removed, but might incur slightly slower access times due to pointer traversals.
+
+In summary, while I couldn't find specific information in the provided context about these data structure methods, I hope this general overview helps clarify the main differences between contiguous memory allocation and linked structures in implementing lists.
+Time elapsed: 44.8949 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Based on the context, I can infer that the topic is related to data structures and memory allocation.
+
+According to the information provided from "02 - Foundations.pdf", it seems that the similarity between different pages of a document may not be directly relevant to the query about linked lists and contiguous-allocated lists.
+
+However, I can provide an answer based on general knowledge. Linked lists are generally faster than contiguously-allocated lists when:
+
+* The data is frequently inserted or deleted at arbitrary positions.
+* The size of the data set is large and changes dynamically.
+
+In these cases, linked lists allow for efficient insertion and deletion operations with an average time complexity of O(1), while contiguous-allocated lists have a worst-case time complexity of O(n) for such operations.
+Time elapsed: 20.3147 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+Based on the context, I'll try to answer your query.
+
+To determine the imbalance case created by inserting 23 into the AVL Tree, let's analyze the situation:
+
+1. The tree is initially:
+```
+      30
+     /  \
+    25   35
+   /     \
+  20      (new node with value 23)
+```
+
+When we insert 23, it should be placed in a way that maintains balance.
+
+The balancing factor for the current node 30 would depend on its left and right subtrees. 
+
+However, without the exact formula for calculating the balancing factor used in this context or more information about the tree balancing rules (e.g., left-heavy, right-heavy), I can only provide an explanation based on general AVL Tree principles.
+
+In a typical AVL Tree, when a node is inserted that would cause an imbalance (for example, if it would result in a left-heavy or right-heavy subtree by one position), the insertion point might be chosen to balance the tree. 
+
+If we insert 23 as shown above and then calculate the balancing factor for each node, I don't know exactly what imbalance case is created with inserting 23 without further information about how balancing factors are calculated or evaluated in this specific context.
+
+However, based on common AVL Tree balancing rules:
+
+- If a node becomes left-heavy (more children on its left), the insertion point might be chosen to shift some balance towards it.
+- Conversely, if a node becomes right-heavy (more children on its right), the insertion point would aim to reduce the imbalance by shifting balance towards it.
+
+Since we can't accurately determine how AVL balancing factors work here without further clarification or context, I'll have to say that based on the given information:
+
+"I don't know."
+Time elapsed: 49.0917 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the provided context, it seems that B+ Trees are generally considered more suitable for indexing large datasets compared to AVL Trees.
+
+The reason for this lies in how both data structures handle disk I/O and storage of data. In B+ Trees, data is stored on disk in a way that allows for efficient sorting and retrieval without having to read the entire dataset. Each node contains a sorted list of keys (with all keys less than those in the left child) followed by the leaf nodes. When searching or inserting a new key into an ordered tree, we start at the root and move down through the tree following the keys' values. We only have to scan one level before finding our target value if it exists.
+
+On the other hand, AVL Trees maintain balance between the height of the left and right subtrees. This is done by rotating the tree when a node becomes unbalanced (i.e., its height difference with its children exceeds 1). The main advantage of AVL Trees lies in minimizing time complexity for search, insert, and delete operations under O(log n), which guarantees optimal performance.
+
+However, B+ Trees generally offer better performance over large datasets due to their ability to store and handle large amounts of data more efficiently. Each node is split when its height exceeds a certain threshold (usually 3), resulting in the creation of new nodes that contain smaller subsets of keys. This results in fewer disk I/O operations required for searching, inserting, or deleting key-value pairs.
+
+In contrast, AVL Trees do not split when becoming unbalanced and require more rotations to maintain balance. These extra rotations may increase the number of disk accesses needed during operations like search or insert.
+Time elapsed: 42.6443 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+I don't know. The provided context doesn't mention disk-based indexing or its importance in database systems. The documents mentioned seem to be related to database theory, but their content doesn't cover this specific topic. If you provide more context or clarify what you're looking for, I'll do my best to help.
+Time elapsed: 11.8177 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+In the context of a relational database system, a transaction refers to a sequence of operations that are performed as a single, all-or-nothing unit of work. This means that either all changes made during the transaction are applied to the database and then committed, or none of them are applied and the database is left in its original state - rolled back.
+Time elapsed: 12.8127 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+Based on my knowledge, I can succinctly describe the four components of ACID compliant transactions:
+
+ACID stands for Atomicity, Consistency, Isolation, and Durability.
+
+1. Atomicity: Ensures that a transaction is treated as a single, indivisible unit.
+2. Consistency: Guarantees that the database remains in a consistent state after a transaction.
+3. Isolation: Prevents other transactions from interfering with each other during the execution of a transaction.
+4. Durability: Ensures that once a transaction is committed, its effects are permanent and survive even in the event of a failure.
+
+These components work together to ensure that database transactions are reliable and trustworthy.
+Time elapsed: 22.0343 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on the context provided, I don't have specific information about why the CAP principle doesn't apply to a single-node MongoDB instance. However, I can provide some general insights.
+
+The CAP theorem states that it is impossible for a distributed data store to simultaneously guarantee all three of the following:
+
+1. **Consistency**: Every read operation will see the most recent write or an error.
+2. **Availability**: Every request receives a response, without the guarantee that it contains the most recent version of the information.
+3. **Partition tolerance**: The system continues to operate and make progress even when there are network partitions (i.e., nodes in the partition cannot communicate with each other).
+
+While MongoDB is designed to be highly available and fault-tolerant, a single-node instance may not provide the same level of consistency as a distributed setup. In fact, MongoDB's author, Elliott Williams, has stated that a single node can't guarantee consistency.
+
+However, if we consider a multi-node MongoDB cluster, it is possible for such clusters to satisfy CAP.
+Time elapsed: 29.4866 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on the provided context, I'm unable to determine any specific information about horizontal and vertical scaling. The context appears to be related to data structures and models.
+
+However, I can provide a general answer:
+
+Horizontal scaling (also known as horizontal partitioning or scaling out) involves adding more machines to a system to increase its capacity, usually by distributing the load across multiple servers or instances. This approach is typically used when the workload increases, but the underlying database schema remains the same.
+
+Vertical scaling (also known as vertical partitioning or scaling up), on the other hand, involves upgrading individual machines to increase their capacity, usually by adding more resources such as CPU power, memory, or storage. This approach is typically used when the workload increases, and the existing machine cannot handle it without being upgraded.
+
+If you're looking for specific information on horizontal and vertical scaling from the provided context, I would need more relevant information or a different source to provide an accurate answer.
+Time elapsed: 25.4756 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the provided context, I can provide an answer to your query.
+
+A key-value store can be used as a feature store by storing and managing features in a centralized repository. Here's a brief overview:
+
+1. **Feature storage**: The key-value store is used to store features as key-value pairs, where each feature is stored with its corresponding value.
+2. **Versioning**: Key-value stores often support versioning, which allows you to track changes to the feature values over time. This ensures that you can retrieve the latest version of a feature at any point in time.
+3. **Data retrieval**: When retrieving features from the key-value store, you can specify a version range or timestamp to get the desired version of the feature.
+4. **Cache layer**: The key-value store can also serve as a cache layer for frequently accessed features, reducing the load on downstream systems and improving performance.
+
+By using a key-value store as a feature store, you can leverage its strengths in data storage, retrieval, and versioning to manage your feature data efficiently.
+Time elapsed: 28.8821 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The context provided doesn't mention the release date of Redis. However, I can tell you that Redis is a popular in-memory data store and caching system, but it's not mentioned in the provided PDFs or their corresponding similarities. If you provide more information or context about Redis' release date, I'd be happy to try and help further!
+Time elapsed: 12.476 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+I don't know.
+
+The provided context mentions similarities in PDFs, but it doesn't provide information about the specific commands or their differences in Redis. To answer your question accurately, I would need more relevant context or information about the Redis documentation or tutorials you're referring to.
+Time elapsed: 10.0364 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+I don't know.
+
+The provided context appears to be related to document databases and MongoDB, but it doesn't mention BSON or its comparison to JSON. The context mentions PDFs from different sources with varying similarities, which doesn't seem relevant to answering the query about BSON benefits over JSON in MongoDB.
+Time elapsed: 11.1645 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the context provided, it seems like you're interested in MongoDB queries.
+
+Assuming you have a collection named "movies" with documents containing information about each movie, including its title, release year, and genre. Here's an example MongoDB query to retrieve the titles of all suspense movies released between 2010 and 2015:
+
+```javascript
+db.movies.find({
+    genre: "suspense",
+    releaseYear: { $gte: 2010, $lte: 2015 }
+}, { title: 1 })
+```
+
+This query uses the `$gte` and `$lte` operators to match documents where `releaseYear` is within the specified range (inclusive) and filters by `genre == "suspense"`. The `{ title: 1 }` projection ensures that only the `title` field is returned in the results.
+
+Please note that this query assumes you have a collection named "movies" with relevant fields. If your actual data structure differs, you may need to adjust the query accordingly.
+Time elapsed: 28.1743 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+Based on the provided context, I can provide information about MongoDB.
+
+The `$nin` operator is used to select documents where at least one field does not match any of the values in the array.
+
+For example:
+```javascript
+db.collection.find({ name: { $nin: ["John", "Alice"] } })
+```
+This query would return all documents in the collection where the `name` field does not equal either `"John"` or `"Alice"`.
+Time elapsed: 14.3404 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [05:06<00:00, 19.18s/it]
+Time elapsed: 306.9129 seconds
+Peak memory usage: 33.31 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on the provided context, I don't have specific information about lists with contiguous memory allocation or linked structures. The context seems to be related to document analysis or text comparison, but it doesn't appear to cover computer science concepts such as data structures.
+
+I'd need more context or information about the specific topic of list implementation (contiguous vs linked) to provide an accurate answer. If you could provide additional context or clarify which type of lists are being referred to, I'll do my best to help.
+Time elapsed: 20.457 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Based on the context, I can provide an answer related to data structures.
+
+Linked lists and contiguously-allocated lists have different performance characteristics depending on the situation.
+
+In general, linked lists tend to be faster when:
+
+* You frequently insert or delete elements at arbitrary positions in the list.
+* The size of the list is relatively small compared to the available memory.
+
+On the other hand, contiguously-allocated lists (such as arrays) tend to be faster when:
+
+* You need to access elements by their index, and the index fits within the bounds of the allocated memory block.
+* The size of the list is large, and accessing elements requires a lot of cache misses.
+
+So, linked lists are generally faster than contiguously-allocated lists when you need to perform frequent insertions or deletions at arbitrary positions in the list.
+Time elapsed: 22.3425 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+To answer your query, I need to analyze the AVL tree and see how inserting 23 affects its balance.
+
+Initially, the AVL tree looks like this:
+```
+      30
+     /  \
+    25   35
+   / 
+  20
+```
+
+After adding 23 to the tree, it might look something like this (assuming we insert 23 as a left child of 20):
+```
+      30
+     /  \
+    25   35
+   / \   / 
+ 20 23 20
+```
+
+However, without knowing how the values are ordered in the tree before inserting 23, I can't determine if this is the exact imbalance case. 
+
+If we insert 23 as a right child of 20 instead:
+```
+      30
+     /  \
+    25   35
+   / 
+ 20  23
+```
+
+This could create an imbalance in the tree, but without knowing how the values are ordered in the tree before inserting 23, it's impossible to say for sure what case would be created.
+
+Can you provide more information about how the values are ordered in the tree before inserting 23?
+Time elapsed: 35.441 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the provided context, I don't know. The context mentions B-trees and AVL trees, but it does not provide information about B+ trees. Additionally, there seems to be some inconsistency in the similarity values reported for the different sources (0.56, 0.52, and 0.46), which may indicate that the relevance of the provided context is limited.
+Time elapsed: 14.0684 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+Based on my training data, I don't have information about a specific "disk-based indexing" in the context of the provided PDFs. However, I can provide general information about indexing in databases.
+
+Indexing is an important concept in database systems that enables faster data retrieval and query performance. In traditional disk-based storage, indexes are used to organize data on disk to facilitate efficient searching and retrieval of data.
+
+In a disk-based indexing system, the index is stored alongside the data on disk. The index contains information about the location of each data record on disk, allowing for quick identification of the records that match a given query condition. This enables faster access to the required data, reducing the number of disk I/O operations and improving overall query performance.
+
+In summary, while I couldn't find specific information about "disk-based indexing" in the provided context, I can provide general information on how indexes are used in traditional disk-based storage systems to improve database performance.
+Time elapsed: 25.3892 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+A transaction in the context of a relational database system refers to a sequence of operations that are executed as a single, all-or-nothing unit. If any part of the transaction fails or cannot be committed, then the entire transaction is rolled back and the database is left in its original state. The goal of a transaction is to ensure data consistency and integrity by allowing multiple operations to be performed on the database without leaving it in an inconsistent state.
+Time elapsed: 14.6696 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+ACID stands for Atomicity, Consistency, Isolation, and Durability.
+
+Here's a succinct description of each component:
+
+1. Atomicity: Ensures that all or none of the operations in a transaction are applied to the database.
+2. Consistency: Maintains the integrity of the data by enforcing rules and constraints.
+3. Isolation: Prevents concurrent transactions from interfering with each other, ensuring that each transaction operates independently.
+4. Durability: Guarantees that once a transaction is committed, its effects are permanent and not rolled back due to failures or crashes.
+
+These components work together to provide reliable and consistent database transactions.
+Time elapsed: 18.6901 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on the context provided, I don't have specific information about why the CAP principle doesn't apply to a single-node MongoDB instance. However, I can tell you that the CAP theorem (not principle) states that it is impossible for a distributed data store to simultaneously guarantee all three of the following:
+
+1. Consistency: Every read operation will see the most recent write or an error.
+2. Availability: Every request receives a response, without guarantee that it contains the most recent version of the information.
+3. Partition tolerance: The system continues to function and make progress even when there are network partitions (i.e., when some nodes in the cluster cannot communicate).
+
+MongoDB can be either sharded or non-sharded (single-node). When MongoDB is non-sharded, i.e., running on a single node, it does not guarantee partition tolerance. This means that if the node goes down or becomes unavailable, data consistency and availability are compromised.
+
+However, for MongoDB running in a distributed setup (sharded), the CAP principle starts to make sense as this setup includes multiple nodes with some level of redundancy to ensure both availability and consistency.
+Time elapsed: 29.8942 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on my knowledge, I can provide an answer about the differences between horizontal and vertical scaling.
+
+Horizontal scaling, also known as scalability through addition, involves adding more machines or servers to handle increased load or demand. This approach increases the capacity of the system by adding more resources (e.g., CPU power, memory) but does not change the underlying architecture of the system.
+
+On the other hand, vertical scaling, also known as scalability through upgrade, involves increasing the capacity of a single machine or server to handle increased load or demand. This approach upgrades the existing resources (e.g., adding more RAM, upgrading CPU) without adding new machines or servers.
+
+The key differences between horizontal and vertical scaling are:
+
+* Horizontal scaling adds new nodes or machines to the system, while vertical scaling increases the capacity of a single node.
+* Horizontal scaling is typically used for applications with predictable workloads and can be done dynamically at scale. Vertical scaling is often used for applications with fluctuating workloads and may require more planning and coordination.
+* Horizontal scaling can lead to increased complexity and communication overhead between nodes, while vertical scaling focuses on improving the performance of individual nodes.
+
+I hope this helps! Let me know if you have any further questions.
+Time elapsed: 31.1375 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the provided context, I don't have enough information to accurately answer your query about using a key-value store as a feature store. The context appears to be related to NoSQL databases and key-value stores, but it doesn't specifically discuss features or feature stores.
+
+Could you please provide more context or clarify what you mean by "feature store" in this context? I'll do my best to help once I have a better understanding of your query.
+Time elapsed: 16.1216 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The provided context mentions PDFs and similarities, but it doesn't contain information about the release date of Redis.
+Time elapsed: 7.3833 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+I don't know. The provided context doesn't mention the "INC" or "INCR" commands in Redis. It only mentions the similarities between two PDFs, but it does not provide information on Redis commands.
+Time elapsed: 9.054 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+Based on the provided context, I don't have specific information about the benefits of BSON over JSON in MongoDB. The documents mentioned seem to be related to document databases and MongoDB, but they do not specifically discuss the differences between BSON and JSON.
+
+Therefore, my answer is: "I don't know."
+Time elapsed: 11.1702 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the context, I don't have direct access to the "movies" dataset or any specific database schema. However, assuming it's similar to a typical MongoDB collection, here is a sample query that might achieve the desired result:
+
+```javascript
+db.movies.find({
+  releaseYear: { $gte: 2010, $lte: 2015 },
+  genre: 'suspense'
+}, {
+  title: 1
+});
+```
+
+In this example, we're using MongoDB's aggregation and querying features. The query finds documents where `releaseYear` is within the specified range (2010-2015) and `genre` is equal to "suspense". We then use `$project` to select only the `title` field in the resulting documents.
+
+Please note that this is a hypothetical example, and you should adapt it according to your actual database schema and data.
+Time elapsed: 25.4702 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+According to the context, I found a mention of MongoDB in one of the documents. 
+
+The $nin operator is used in MongoDB queries to select documents that do not have a specified value in a particular field.
+
+For example, if you want to find all documents where the "city" field does not equal "New York", you can use the $nin operator like this: { city: { $nin: ["New York"] } }.
+Time elapsed: 14.1279 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [05:10<00:00, 19.40s/it]
+Time elapsed: 310.3363 seconds
+Peak memory usage: 34.10 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on the context provided, I don't have specific information about lists in computer science. However, I can provide a general answer.
+
+In programming, there are two common ways to implement dynamic arrays or lists: contiguous memory allocation and linked data structure.
+
+**Contiguous Memory Allocation:**
+When memory is allocated contiguously for a list, all elements of the list share the same contiguous block of memory. This means that each element in the list has a fixed offset from the beginning of the array, making it easy to access and manipulate adjacent elements. Contiguous allocation can lead to more efficient caching, as the CPU can load multiple elements into cache simultaneously.
+
+**Linked Data Structure:**
+On the other hand, linked data structures use individual nodes that contain data and pointers to other nodes. Each element in a list is stored separately, with each node pointing to the next element in the sequence. This approach allows for more flexibility and scalability but often comes at the cost of slower access times due to the need to traverse the links between nodes.
+
+The main differences between these two approaches are:
+
+1. **Memory usage:** Contiguous allocation typically requires less memory than linked data structures, as each element shares a contiguous block of memory.
+2. **Access time:** Linked data structures can be slower to access elements, as the CPU must follow the links between nodes to reach the desired element.
+3. **Scalability:** Linked data structures are often more suitable for large datasets or applications that require frequent insertion and deletion of elements.
+
+In summary, contiguous memory allocation provides efficient caching and faster access times but may not be ideal for large datasets or scenarios with frequent modifications. Linked data structures offer flexibility and scalability but come at the cost of slower access times.
+Time elapsed: 47.4392 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+According to the context provided, it appears that there is no direct answer to the query about when linked lists are faster than contiguously-allocated lists.
+
+However, I can try to infer a possible reason based on the provided information. It seems that the similarities between the pages of "02 - Foundations.pdf" and the query hint at an academic or educational context, possibly related to data structures.
+
+If I had to make an educated guess, I would say that linked lists might be faster than contiguously-allocated lists when dealing with dynamic memory allocation or frequent insertions/deletions in the middle of the list. However, this is purely speculative and not directly supported by the provided context.
+
+Therefore, my answer would be: I don't know.
+Time elapsed: 20.3247 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+To determine the imbalance case created by inserting 23, we need to first find the location where 23 should be inserted in the AVL tree.
+
+The values in the tree are 30, 25, 35, 20. To insert 23, we compare it with these values:
+
+- 23 is less than 25, so we can insert it to the left of 25.
+- Inserting 23 to the left of 25 would result in an imbalance because 25 has two children (left and right), while its child on the left side only contains one node.
+
+However, let's analyze all possible insertion points:
+
+1. Left child of 30: Not applicable since there is no space for a new value.
+2. Right child of 30: No space available here either.
+3. Right child of 25: Now we have an imbalance, because 25 has two children (25 and 35) while its right child only contains one node (23).
+4. Left child of 25: This would create a balanced tree.
+
+So, the imbalance case created by inserting 23 is when it becomes the left child of 25.
+Time elapsed: 33.8522 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the provided context, it seems that both B+ trees and AVL trees are data structures used for indexing large datasets. However, from the context, I couldn't find any direct information comparing their performance or suitability in this specific scenario.
+
+The closest relevant information is from the page 5 of the AVL Trees PDF with a similarity of 0.51, which mentions that B+ trees and AVL trees have different designs and trade-offs. Page 3 of the same document talks about AVL trees being self-balancing, but I couldn't find any direct comparison or recommendation between B+ trees and AVL trees.
+
+I would say 'I don't know' as the context doesn't provide enough information to give a definitive answer on why B+ Trees might be better than AVL trees when indexing large datasets.
+Time elapsed: 23.5339 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+Based on the provided context, I don't have enough information to accurately answer your question about disk-based indexing.
+
+However, I can tell you that disk-based indexing refers to a type of indexing where data is stored on a physical disk (hard drive or solid-state drive). This approach is commonly used in relational database management systems.
+
+Disk-based indexing is important because it allows for efficient retrieval and manipulation of large datasets. By pre-allocating space on the disk for frequently accessed data, the system can quickly locate specific records without having to scan the entire dataset. This improves query performance, reduces storage requirements, and enhances overall database efficiency.
+
+If you'd like more information or clarification, feel free to ask!
+Time elapsed: 20.4982 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+Based on the provided context, I don't have any specific information about transactions in a relational database system from the mentioned PDFs. However, I can tell you that according to general knowledge about relational databases, a transaction typically refers to a sequence of operations performed as a single, all-or-nothing unit of work.
+
+If you'd like more specific information or clarification on this topic, please let me know!
+Time elapsed: 13.803 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+Based on the provided context, I can infer that it seems to be related to databases and data models.
+
+ACID compliant transactions have four components:
+
+1. Atomicity
+2. Consistency
+3. Isolation
+4. Durability
+
+These components ensure that database transactions are processed reliably and securely.
+Time elapsed: 11.4738 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on my knowledge, I don't know the specific answer to this question because I couldn't find any information about it in the context provided. The CAP principle (Consistency, Availability, and Partition tolerance) is discussed in various documents, but I don't have enough information to provide a detailed explanation of why it doesn't make sense when applied to a single-node MongoDB instance.
+
+However, I can suggest that the CAP principle may not be applicable to a single-node MongoDB instance because it implies the existence of multiple nodes and partitions, which is not present in a standalone node. In this scenario, the availability and consistency properties are guaranteed by design, and partition tolerance is not relevant. If you have more context or information about this topic, I'd be happy to try and help further.
+Time elapsed: 22.06 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on my knowledge, I can provide an answer.
+
+Horizontal scaling refers to the process of adding more machines or servers to a system to increase its overall capacity and handle increased load. This approach is often used in distributed systems where data is stored across multiple nodes, and each node can handle a portion of the total data or workload.
+
+On the other hand, vertical scaling involves increasing the power and capabilities of individual machines or servers within an existing system. This approach focuses on optimizing a single server to improve its performance, rather than adding more servers to the overall system.
+
+The key differences between horizontal and vertical scaling are:
+
+* Horizontal scaling: Adds new nodes to distribute the load, whereas vertical scaling optimizes a single node.
+* Horizontal scaling: Typically used for horizontal systems with multiple nodes, while vertical scaling is often used for applications that require more power but can run on a single server.
+* Cost: Horizontal scaling can be more cost-effective in the long run, as it allows you to scale up and down without having to purchase new servers. Vertical scaling, however, requires a significant increase in hardware costs.
+
+Overall, horizontal scaling is often used for systems that require high availability, scalability, and fault tolerance, while vertical scaling is better suited for applications with variable or fluctuating workloads.
+
+Please note that these are general guidelines and the best approach depends on specific use cases and requirements.
+Time elapsed: 34.459 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the context, I'll provide an answer.
+
+A key-value store can be used as a feature store by leveraging its ability to store and retrieve data based on a unique key (in this case, a feature identifier). Here's a brief overview:
+
+* Store features as key-value pairs, where each feature is the key and its corresponding value (e.g., version number, timestamp, or user behavior data) is stored.
+* Use the feature identifier (key) to retrieve the relevant data (value) when needed.
+* This allows for efficient storage, retrieval, and management of feature data, enabling organizations to track changes, monitor performance, and make data-driven decisions.
+
+This approach can be particularly useful in scenarios where features need to be easily accessible, updated, or tracked across multiple applications or systems.
+Time elapsed: 23.2125 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know.
+Time elapsed: 5.247 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+Based on the provided context, I don't have enough information to accurately answer your query about the difference between the INC and INCR commands in Redis.
+
+However, I can suggest that you might want to check out the Redis documentation or a reliable source for Redis tutorials, as they would likely provide the most accurate and up-to-date information on these commands.
+Time elapsed: 11.8398 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+I don't know. The provided context doesn't mention the benefits of BSON over JSON in MongoDB. It appears to discuss document databases and MongoDB, but not specifically the comparison between BSON and JSON.
+Time elapsed: 9.2237 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the provided context, I don't have enough information to write a Mongo query for the specified query. The context appears to be related to document databases and MongoDB, but it doesn't provide any details about the movies data set.
+
+Could you please provide more context or clarify how the movies data set is structured in MongoDB? For example, what is the collection name, and what fields does it contain (e.g., title, release_year, genre)?
+
+If I had to make an educated guess, I would assume that the movies data set has a field called "release_year" and another field called "genre", but without more information, I wouldn't be able to write an accurate query.
+Time elapsed: 20.8241 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+Based on the context provided, I don't have enough information to answer your query accurately. However, I can tell you that the "$nin" operator is used in MongoDB queries to select documents that do not contain a specific value or element within an array.
+
+If you could provide more context or clarify which document or page specifically defines the $nin operator, I would be happy to try and assist you further.
+Time elapsed: 13.425 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [04:53<00:00, 18.34s/it]
+Time elapsed: 293.3679 seconds
+Peak memory usage: 34.04 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on the context, I don't have specific information about lists in programming languages. However, I can provide a general answer to your question.
+
+The main difference between a list with contiguous memory allocation and a list with linked structures is how memory is allocated and accessed.
+
+**Contiguous Memory Allocation:**
+
+In this approach, all elements of the list are stored contiguously in memory, meaning that each element follows immediately after the previous one. This can lead to:
+
+* Faster access times, as the computer can simply move pointers or indices to find any element.
+* Less memory overhead, since there is no extra memory allocated for "links" between elements.
+
+**Linked Structures:**
+
+In this approach, each element of the list is stored separately in memory, and a "link" (or pointer) is used to point to the next element in the sequence. This can lead to:
+
+* Slower access times, as the computer needs to follow the link from one element to the next.
+* More memory overhead, since extra memory is allocated for each link.
+
+So, the choice between contiguous memory allocation and linked structures depends on the specific requirements of your application. Contiguous memory allocation may be faster but uses more memory, while linked structures may use less memory but are slower.
+
+Please note that this answer is not specific to a programming language or implementation, as it's based solely on general knowledge about data structures.
+Time elapsed: 34.6949 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Based on the provided context, I don't have specific information on when linked lists are faster than contiguously-allocated lists. The context appears to be discussing similarities between PDF pages, which doesn't seem relevant to the query about data structures and performance.
+
+However, in general, linked lists can be faster than contiguously-allocated lists in certain situations:
+
+1. **Dynamic memory allocation**: Linked lists are more efficient when dealing with dynamic memory allocation, as they don't require contiguous blocks of memory.
+2. **Insertions and deletions**: Linked lists perform better for insertions and deletions at arbitrary positions, as it only requires updating the affected nodes' pointers, whereas contiguously-allocated lists would need to shift all elements after the insertion or deletion point.
+3. **Frequent cache misses**: In scenarios where there are frequent cache misses due to random access patterns, linked lists can outperform contiguously-allocated lists because they don't require sequential memory access.
+
+Please note that these general observations apply to certain situations and may not be universally applicable.
+Time elapsed: 26.7518 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+Based on the context provided, I'll try to answer your query.
+
+To determine the imbalance case when adding 23 to the AVL tree, we need to analyze how the insertion of 23 affects the height and balance factor of the nodes in the tree.
+
+Initially, the tree is:
+```
+     30
+    /  \
+   25   35
+  /
+20
+```
+
+After inserting 23, the new tree becomes:
+```
+     30
+    /  \
+   25   35
+  /     \
+20      23
+```
+
+Now, let's calculate the height and balance factor of each node in the tree.
+
+1. Node 30: Height = 3, Balance Factor = (R - L) / 2 = (right_child_height - left_child_height) / 2 = (3 - 2) / 2 = +0.5
+2. Node 25: Height = 2, Balance Factor = (L - R) / 2 = (left_child_height - right_child_height) / 2 = (2 - 1) / 2 = +0.5
+3. Node 35: Height = 2, Balance Factor = (L - R) / 2 = (left_child_height - right_child_height) / 2 = (2 - 1) / 2 = +0.5
+4. Node 20: Height = 2, Balance Factor = (L - R) / 2 = (left_child_height - right_child_height) / 2 = (2 - 1) / 2 = +0.5
+5. Node 23: Height = 2, Balance Factor = (L - R) / 2 = (left_child_height - right_child_height) / 2 = (2 - 1) / 2 = +0.5
+
+After adding the new node 23 to the tree, we can see that all nodes have a balance factor of +0.5. This means that the tree has become slightly unbalanced.
+
+However, there is no imbalance case created in this scenario because the average of the height of the left and right subtree for each node is greater than 1. According to AVL Tree properties, a valid insertion should create an "unbalanced" tree where the average height of the left and right subtrees of any non-leaf node differs by more than one.
+
+Considering that the new tree is still somewhat balanced but not perfectly so, it might be considered as creating an "imbalanced case", though not strictly speaking.
+Time elapsed: 66.6655 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the context provided, I can infer that B+ Trees are generally considered more suitable for indexing large datasets compared to AVL Trees.
+
+Although the specific reasons aren't explicitly stated in the context, it's known from various sources (not included in this context) that B+ Trees have several advantages over AVL Trees:
+
+1. **Storage and Disk Space**: B+ Trees store data on disk in a way that allows for more efficient use of storage space. This is particularly important when dealing with large datasets, as it reduces the number of pages needed to store the tree's structure and leaves enough space for actual data values.
+
+2. **Insertion Efficiency**: When inserting new keys into an AVL Tree or a B+ Tree, in the context of indexing data for database management systems, the tree needs to be rearranged frequently. However, B+ Trees have a mechanism where they can store multiple records on disk before updating their structure (when needed), which reduces the number of writes and, therefore, improves performance.
+
+3. **Search Efficiency**: Both AVL Trees and B+ Trees are self-balancing binary search trees, but B+ Trees handle lookups in a way that is more efficient for large datasets due to their structure, where all leaf nodes contain the keys and there's only one path from any node to its leaf nodes, making it easier and faster to find data.
+
+4. **Scalability**: Given their ability to handle large amounts of data across multiple disks efficiently (thanks to disk-based storage strategy) and because they do not need to be self-balanced on each insertion like AVL Trees do, B+ Trees are generally more scalable than AVL Trees for indexing very large datasets.
+
+Therefore, while the specific details about why B+ Trees might be better suited than AVL trees in this context aren't provided, these general points indicate that B+ Trees are often preferred over AVL Trees when dealing with large datasets because of their efficient storage and retrieval methods, scalability, and reduced need for frequent balancing.
+Time elapsed: 48.8499 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+Based on my knowledge, I can provide an answer to your query.
+
+Disk-based indexing is a technique used in database systems to improve query performance by creating data structures that facilitate efficient retrieval of data from storage devices, such as hard drives or solid-state drives.
+
+When you insert data into a table, a disk-based index is created. This index contains information about the location of the data on disk, allowing the database system to quickly locate specific records when querying the data.
+
+The importance of disk-based indexing for database systems cannot be overstated. It enables faster query execution times by:
+
+1. Reducing the number of disk I/O operations: By using an index, the database can quickly identify the location of relevant data on disk, reducing the need to read entire disks.
+2. Improving search efficiency: Indexes allow the database to search for specific records in a more efficient manner, resulting in faster query execution times.
+
+Overall, disk-based indexing is a fundamental technique used in many modern databases to optimize performance and improve overall system efficiency.
+
+(Note: I didn't find any information on "02 - Foundations.pdf" or "03 - Moving Beyond the Relational Model.pdf" that specifically addresses disk-based indexing. If you have more context or clarification, please let me know.)
+Time elapsed: 32.8403 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+I don't know. The provided context seems to be related to moving beyond the relational model and notes from another source (Roland_Notes.pdf), but it does not mention anything about transactions in the context of a relational database system. If you provide more relevant context or information, I'll do my best to help.
+Time elapsed: 12.2122 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+Based on the provided context, I don't have specific information about ACID compliant transactions. However, based on general knowledge:
+
+ACID compliant transactions consist of four main components:
+
+1. Atomicity
+2. Consistency
+3. Isolation
+4. Durability
+
+These components ensure that database transactions are processed reliably and securely.
+Time elapsed: 12.0467 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on the context provided, I believe the answer is that the CAP principle (Consistency, Availability, Partition Tolerance) is often misunderstood when applied to a single-node MongoDB instance. In a single-node instance, consistency and availability are inherently guaranteed because there is only one node, which means that there can be no partitioning issues.
+
+In fact, the CAP theorem states that it's impossible for a distributed database system to guarantee all three aspects simultaneously. However, in a single-node instance, these constraints become trivially satisfied, making the CAP principle somewhat irrelevant or redundant.
+
+This is because a single node can still provide consistency and availability, but without the need for partition tolerance, as there are no multiple nodes that could fail or be partitioned from each other.
+Time elapsed: 21.5639 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Horizontal scaling, also known as scaling out, involves adding more servers to a system to increase its capacity and handle increased traffic or demand. This approach is particularly useful for applications that benefit from distributed processing power.
+
+Vertical scaling, on the other hand, refers to increasing the power of individual servers within an existing infrastructure by upgrading hardware resources, such as CPU, memory, or storage. This method allows you to improve performance without adding more machines to handle increased load.
+
+In horizontal scaling, new servers are added to distribute the workload evenly across them. This approach can provide better scalability for applications that require a lot of processing power and can benefit from parallel processing capabilities.
+
+Vertical scaling, however, is typically used when individual server components become bottlenecks or when specific resources need to be upgraded to support high-performance operations.
+
+While both approaches are useful in their own right, they differ in how the scale-up is achieved. This distinction enables a system architect to make informed decisions on how and when scaling should occur based on the specific requirements of their application.
+Time elapsed: 26.9348 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the context, I'd say: A key-value store can be used as a feature store by storing and retrieving features in a scalable and efficient manner. Features can be stored as key-value pairs, where the key is the feature name and the value is the corresponding feature data (e.g., a numerical value or a binary flag). This allows for fast lookups, updates, and querying of features, making it suitable for applications that require frequent access to features.
+
+This approach leverages the simplicity and performance of key-value stores, which are often designed for high-performance and low-latency operations. By using a key-value store as a feature store, organizations can quickly implement new features, track changes, and provide real-time data to their applications, all while minimizing storage overhead and improving scalability.
+Time elapsed: 22.893 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The context provided does not mention the release date of Redis.
+Time elapsed: 6.5577 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+Based on the provided context, I can provide an answer to your query.
+
+The INC and INCR commands in Redis are both used for atomic increment operations, but they differ in their behavior when used with integer and string data types respectively.
+
+INC increments a value by 1, and it works with integer data types only. If you try to use INC on a non-integer value (like a string), Redis will return an error.
+
+INCR, on the other hand, increments a counter stored as an integer in the Redis database. It's essentially an alias for the INCREMENT command, but it provides better performance by avoiding the need to convert a string to an integer and then back again.
+
+However, there is no INCR command in Redis. The correct syntax for incrementing a value is INC (for integers) or INCRBY (for strings).
+Time elapsed: 22.9174 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+Based on the context, I don't know how to answer your query about the benefits of BSON over JSON in MongoDB, as the provided documents seem to discuss Document DBs and MongoDB in general, but do not specifically mention BSON or its relationship with JSON. If you provide more relevant context or information, I'll be happy to help!
+Time elapsed: 12.1193 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the context, I don't have direct access to the "movies" data set. However, I can try to make an educated guess.
+
+Assuming the "movies" data set has similar structure and fields as the Document DBs and Mongo.pdf document (with similarities 0.71, 0.70, and 0.65), I'll attempt to write a MongoDB query that returns the titles of all movies released between 2010 and 2015 from the suspense genre.
+
+Here's my attempt:
+
+```javascript
+db.movies.find({
+  releaseYear: { $gte: 2010, $lte: 2015 },
+  genre: "suspense"
+}, {
+  title: 1
+})
+```
+
+This query uses the `$gte` (greater than or equal to) and `$lte` (less than or equal to) operators to filter movies released between 2010 and 2015. The `genre` field is also filtered using the "suspense" value. Finally, the `title` field is selected using the `{ title: 1 }` object.
+
+Please note that this query is based on my interpretation of the context, and it may not exactly match the actual MongoDB query in the document DBs and Mongo.pdf document (with similarities 0.71, 0.70, and 0.65).
+Time elapsed: 35.8821 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+Based on the context, I can tell that this is related to MongoDB.
+
+The `$nin` operator in MongoDB is used to select documents where a field does not contain a specific value. It returns all documents for which the specified value is not present in the array.
+
+For example:
+
+```bash
+db.collection.find({ name: { $nin: ["John", "Alice"] } })
+```
+
+Would return all documents where the `name` field does not equal either "John" or "Alice".
+Time elapsed: 15.2408 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [04:49<00:00, 18.07s/it]
+Time elapsed: 289.1356 seconds
+Peak memory usage: 31.80 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on the context, I don't have specific information about lists with contiguous memory allocation versus linked structures. However, I can provide general information about these data structures.
+
+In computer science, there are two common approaches to implementing lists:
+
+1. **Contiguous Memory Allocation**: In this approach, elements of a list are stored in contiguous blocks of memory, which means they are allocated one after another without any gaps. This allows for efficient use of memory and fast iteration over the list.
+2. **Linked Structures**: In this approach, each element of a list is a separate object that contains its own value and a reference (or "link") to the next element in the list. This means that each element is not stored contiguously with other elements.
+
+The key differences between these two approaches are:
+
+*   **Memory usage**: Contiguous memory allocation is more memory-efficient because it minimizes the overhead of pointers or references. Linked structures, on the other hand, require more memory to store the links between elements.
+*   **Insertion and deletion**: When inserting or deleting an element in a contiguous list, only the adjacent elements need to be updated. In contrast, linked lists may require updating multiple elements to maintain the links between them.
+
+In summary, while I don't have specific information from your context about this query, the general principles of list implementation highlight key differences between using contiguous memory allocation and linked structures for lists.
+Time elapsed: 34.9207 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Based on the provided context, I don't have information about when linked lists are faster than contiguously-allocated lists. The text appears to be related to PDF content with similarities, but it doesn't provide any relevant information on data structures or their performance characteristics.
+
+I don't know how to answer your query based on the provided context.
+Time elapsed: 10.9268 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+To determine the imbalance case created by adding 23, we need to first insert 23 into the AVL tree.
+
+Here's the updated tree:
+
+     30
+    /  \
+   25   35
+  / \   
+ 20 23
+
+
+Now, let's analyze the imbalance. The imbalance occurs when the balance factor of a node exceeds 1 or is less than -1.
+
+
+The root node (30) has a height of 2 and a left child with a value of 25. Since 25 is greater than 30/2 = 15, it is to the right of its parent. So, the balance factor here is 0.
+
+
+However, looking at the left child of the root node, which contains the values 20 and 23, we can see that the height of this subtree (2) exceeds the height of the left child of the root (1). The root node itself has a value of 30, so it's too heavy. Therefore, there is an imbalance here.
+
+
+Thus, the imbalance case created by adding 23 to the AVL tree is when the values of nodes are arranged in such a way that their heights exceed those of other nodes, making one side heavier than the other.
+Time elapsed: 36.354 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the provided context, I couldn't find any information about B+ trees and AVL trees being compared directly in terms of their suitability for indexing large datasets.
+
+However, from what I can gather, AVL trees are self-balancing binary search trees, which provide efficient insertion, deletion, and search operations. On the other hand, B+ trees are a type of multi-level index that is commonly used in databases to manage large datasets.
+
+While both data structures have their own strengths and weaknesses, the context doesn't explicitly state why a B+ tree might be better than an AVL tree for indexing a large dataset. 
+
+That being said, I can provide some general information on this topic. B+ trees are often preferred over AVL trees when indexing large datasets because they offer several advantages:
+
+1. **Efficient disk access**: B+ trees store data in a way that allows for efficient disk access, which is critical when dealing with large datasets. The tree's structure enables the use of a separate storage layer for non-key data (e.g., index entries), reducing the amount of data that needs to be read from disk.
+2. **Better locality**: B+ trees are designed to minimize page splits and reorganization, which can occur in AVL trees when rotations are performed. This leads to improved locality, as frequently accessed data is more likely to be stored on the same disk page or nearby pages.
+3. **Simplified maintenance**: B+ trees require less bookkeeping and maintenance compared to AVL trees, which makes them easier to implement and maintain.
+
+In summary, while I don't have a direct answer from the provided context, it's generally true that B+ trees offer advantages over AVL trees when indexing large datasets due to their efficient disk access, improved locality, and simplified maintenance.
+Time elapsed: 43.9818 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+I don't know. The provided context appears to be related to PDF files containing technical documents, but it doesn't mention anything about disk-based indexing or its importance in database systems.
+Time elapsed: 8.7869 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+In the context of a relational database system, a transaction refers to a sequence of operations that are performed as a single, atomic unit. This means that either all the operations in the transaction are completed successfully, or none of them are, maintaining the consistency and integrity of the data. Transactions ensure that the database remains in a consistent state even if individual operations fail or are interrupted.
+Time elapsed: 13.417 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+ACID compliance is not mentioned in the provided context, so I'm afraid I don't know how to answer your query about its components.
+Time elapsed: 7.8848 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+Based on the context provided, it appears that the documents are related to databases and data modeling.
+
+The CAP principle (Consistency, Availability, Partition tolerance) is a well-known concept in distributed database systems. It states that it is impossible for a distributed data store to have all three guarantees simultaneously.
+
+When applied to a single-node MongoDB instance, the CAP principle does not make sense because a single node cannot be partitioned or suffer from network partitions. In this case, all three guarantees (Consistency, Availability, and Partition tolerance) are inherently satisfied by design.
+
+In other words, a single-node MongoDB instance is not subject to the trade-offs that come with distributed systems, where you have to choose between consistency and availability (or partition tolerance). Since a single node can handle all queries and requests without any issues related to partitions or network failures, the CAP principle does not apply in this scenario.
+Time elapsed: 24.2717 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Horizontal scaling involves adding more nodes to a cluster, which increases the overall processing capacity of the system. This approach allows for increased scalability and fault tolerance, as new nodes can take over tasks if one fails.
+
+On the other hand, vertical scaling (also known as scaling up) involves increasing the power or resources of individual nodes within a cluster. This approach improves performance by allowing more powerful nodes to process larger amounts of data or handle higher workloads.
+
+While both approaches aim to increase scalability and availability, they differ in how they achieve it: horizontally by adding more nodes, vertically by upgrading individual nodes.
+Time elapsed: 17.4633 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the context, I'd be happy to help! A key-value store can be used as a feature store because it allows for fast and efficient storage of features in a simple key-value format.
+
+In this approach, features are stored as key-value pairs, where the key represents the feature identifier and the value represents the corresponding feature data. This allows for easy retrieval and storage of features, making it suitable for applications that require frequent updates or additions to their feature sets.
+
+Additionally, the simplicity and flexibility of key-value stores make them well-suited for this use case, as they can handle large amounts of data and provide fast query performance.
+
+Please let me know if I'm correct!
+Time elapsed: 20.3982 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The provided context does not mention the release date of Redis. It only mentions PDF files with similarities to each other, but no information is given about Redis itself.
+Time elapsed: 8.2977 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+Based on the context, I don't have specific information about the exact differences between the INC and INCR commands in Redis from the provided PDFs. However, I can tell you that both commands are used to increment a key.
+
+The INC command increments the value of a key by a specified amount. For example: `INCR key`
+
+On the other hand, the INCRBY command increments the value of a key by a specified amount. For example: `INCRBY key increment`
+
+If you want more detailed information about these commands or their usage, I would recommend checking out other resources or documentation for Redis.
+
+Would you like me to search for more information on this topic?
+Time elapsed: 19.0021 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+I don't know. 
+
+The provided context appears to be related to document databases and MongoDB, but it doesn't mention BSON or its comparison to JSON. The documents mentioned are from "Document DBs and Mongo.pdf" and "Roland_Notes.pdf", but there is no information about the benefits of BSON over JSON in MongoDB.
+Time elapsed: 11.9796 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+I don't know. The provided context does not mention a "movies" dataset, so I cannot write a MongoDB query based on it. The context seems to be related to Document DBs and Mongo.pdf, but there is no information about a movies dataset in that context. If you provide more context or clarify what the "movies" dataset refers to, I'd be happy to help you with your query.
+Time elapsed: 14.6748 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+The $nin operator in MongoDB is used to find documents that do not match any of the specified values. It returns all documents where the specified field is NOT in the array provided.
+
+For example, if you have a collection with documents like this:
+
+```json
+{
+  "_id" : ObjectId(...),
+  "name" : "John",
+  "hobbies" : ["reading", "coding"]
+}
+```
+
+And you want to find all documents where the hobby is not "reading", you would use the $nin operator like this:
+
+```bash
+db.collection.find({ hobbies: { $nin: ["reading"] } })
+```
+
+This will return all documents in the collection except those with a hobby of "reading".
+Time elapsed: 20.3132 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+100%|██████████| 16/16 [04:51<00:00, 18.25s/it]
+Time elapsed: 291.9606 seconds
+Peak memory usage: 31.80 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+Based on my training data, I don't have any information directly related to the query in the provided context. The context appears to be about PDF files with varying similarities.
+
+However, I can provide a general answer based on common computer science knowledge.
+
+In computer science, there are two main types of lists: contiguous lists and linked lists.
+
+1. Contiguous list: In this type of list, memory is allocated contiguously, meaning that all elements are stored in adjacent memory locations. This results in faster access times because the CPU can directly access any element without having to traverse through other elements.
+2. Linked list: In a linked list, each element points to the next element, resulting in non-contiguous memory allocation. This requires more memory and slower access times compared to contiguous lists.
+
+The key difference between these two types of lists is how they allocate memory and how fast you can access any element in the list. Contiguous lists are generally faster but may require more memory, while linked lists use less memory but are slower.
+
+I hope this answer helps!
+Time elapsed: 27.8038 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+Linked lists are generally faster than contiguously-allocated lists when the data is frequently inserted or deleted at arbitrary positions, rather than at the end of the list. This is because in a contiguous allocation, the entire block of memory must be reallocated when an insertion or deletion occurs, which can be expensive.
+
+In contrast, linked lists allow for O(1) time complexity for insertions and deletions at any position in the list, making them more efficient for data structures that require frequent insertions or deletions.
+
+However, if the data is mostly static and inserted/deleted only at the end of the list, contiguous allocation may be faster due to reduced overhead from managing pointers.
+Time elapsed: 18.6124 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	
+Based on the provided context, I can analyze the given AVL tree and determine the imbalance case created by adding 23.
+
+The current AVL tree is:
+
+          30
+         /  \
+        25   35
+       /     \
+      20      (after inserting 23)
+
+To determine the imbalance case, we need to check if any node has more than one child. In this case, it's already balanced because each node only has one child.
+
+However, after adding 23 as the last node:
+
+          30
+         /  \
+        25   35
+       /     \   
+      20      23
+
+In this updated tree, we can see that both nodes (25 and 35) have children. This means that a left-left or right-right imbalance is created.
+
+Specifically, the node with value 25 has no child, but the node with value 30 has two children (25 and 35). The same applies to the node with value 35.
+Time elapsed: 30.5192 seconds
+---------------------------
+Query: Why is a B+ Tree a better than an AVL tree when indexing a large dataset?
+Based on the provided context, I don't have enough information to provide a definitive answer about why a B+ Tree is better than an AVL tree for indexing a large dataset.
+
+However, I can suggest that B+ Trees are generally more suitable for indexing large datasets due to their ability to store multiple keys in each internal node, allowing for faster search and insertion operations. This is mentioned on page 0 of the "B-trees.pdf" document with a similarity score of 0.56.
+
+In contrast, AVL Trees are self-balancing binary search trees that ensure the height of the tree remains relatively small by rotating nodes when the balance factor becomes too large. While AVL Trees provide good performance for smaller datasets or specific use cases, they may not be as efficient as B+ Trees for very large datasets due to their balancing mechanism.
+
+It's worth noting that the provided context from other sources (ICS 46 Spring 2022 and Roland_Notes.pdf) does not provide enough information to support a comparison between B+ Trees and AVL Trees.
+Time elapsed: 28.0719 seconds
+---------------------------
+Query: What is disk-based indexing and why is it important for database systems?
+I don't know. The provided context does not mention anything about disk-based indexing or its importance in database systems. It appears to be related to PDF files with similarities, but it doesn't provide relevant information on the query.
+Time elapsed: 10.0203 seconds
+---------------------------
+Query: In the context of a relational database system, what is a transaction? 
+A transaction in the context of a relational database system is a sequence of operations performed on one or more databases that must be either all committed or all rolled back to maintain data consistency and integrity. This means that if any part of the transaction fails, the entire transaction is rolled back to its initial state, ensuring that the database remains in a consistent state.
+
+This concept is crucial for maintaining ACID compliance, which ensures atomicity, consistency, isolation, and durability in database transactions.
+Time elapsed: 15.5235 seconds
+---------------------------
+Query: Succinctly describe the four components of ACID compliant transactions. 
+Based on the context, I don't have specific information about ACID compliant transactions. However, from general knowledge, I can tell you that ACID stands for Atomicity, Consistency, Isolation, and Durability.
+
+The four components of ACID compliant transactions are:
+
+1. Atomicity: Ensures that the transaction is treated as a single, indivisible unit.
+2. Consistency: Guarantees that the database remains in a consistent state after the transaction is completed.
+3. Isolation: Prevents concurrent transactions from interfering with each other.
+4. Durability: Ensures that once a transaction is committed, its effects are permanent and survive even in the event of a failure.
+
+If you have any further context or clarification regarding ACID compliant transactions, I'd be happy to try and provide more specific information.
+Time elapsed: 22.8227 seconds
+---------------------------
+Query: Why does the CAP principle not make sense when applied to a single-node MongoDB instance? 
+I don't know. The context provided seems to be related to database models, but it doesn't mention the CAP principle or its application to a single-node MongoDB instance specifically. Without more information or context about the CAP principle and how it relates to MongoDB instances, I'm unable to provide an accurate answer.
+Time elapsed: 11.9862 seconds
+---------------------------
+Query: Describe the differences between horizontal and vertical scaling. 
+Based on the context provided, I can attempt to answer the query accurately.
+
+Horizontal scaling refers to the process of adding more nodes or machines to a distributed system in order to increase its overall processing power and capacity. This allows the system to handle increased traffic or workload without modifying the existing architecture. In other words, you're essentially scaling out by adding more of the same components.
+
+On the other hand, vertical scaling refers to the process of increasing the resources (e.g., CPU power, memory) of individual nodes within a distributed system. This involves upgrading or adding new hardware to each node, allowing it to handle more data and processing tasks. In essence, you're essentially scaling up by making individual components more powerful.
+
+While both horizontal and vertical scaling can increase capacity, they serve different purposes and have distinct implications for system design, maintenance, and cost.
+Time elapsed: 23.4701 seconds
+---------------------------
+Query: Briefly describe how a key/value store can be used as a feature store. 
+Based on the provided context, I don't have enough information to accurately answer your query about using a key-value store as a feature store. The context seems to be related to NoSQL databases and their similarities with various PDF pages.
+
+However, I can provide a general answer:
+
+A key-value store can be used as a feature store by leveraging its simple, fast, and scalable data model to store and retrieve feature data. Features are essentially pieces of data that describe the behavior or characteristics of an application or system. A key-value store's ability to quickly look up and update values based on their associated keys makes it well-suited for storing features.
+
+In a feature store implementation using a key-value store, you would:
+
+1. Store feature metadata (e.g., name, description, version) as the value associated with a unique feature key.
+2. Store feature data (e.g., user behavior, application performance metrics) as the value associated with a unique feature key.
+3. Use the key-value store's fast lookup and update capabilities to retrieve and update features as needed.
+
+Keep in mind that while a key-value store can be used as a feature store, it may not offer the same level of structure or querying capabilities as a dedicated feature store product or solution.
+Time elapsed: 33.1401 seconds
+---------------------------
+Query: When was Redis originally released? 
+I don't know. The provided context doesn't contain information about the release date of Redis. It seems to be related to PDF files and similarities between them, but it doesn't provide any information on the history or original release date of Redis.
+Time elapsed: 9.4965 seconds
+---------------------------
+Query: In Redis, what is the difference between the INC and INCR commands?
+Based on the provided context, I can tell that the query is related to Redis. However, I don't have direct access to specific documentation or information about the INC and INCR commands.
+
+But, based on general knowledge, I can provide an answer:
+
+The INC command in Redis increments a specified key by a given amount (default 1). The INCR command also increments a value, but it's used for counters that need atomic operations. It's similar to the INC command, but it ensures that if multiple clients want to increment the same counter at the same time, only one of them will succeed.
+
+In summary, both commands increase the value, but INCR is designed for use cases where you need an atomic operation, while INC is more general-purpose.
+
+Please note that this answer is based on general knowledge and might not be entirely accurate without direct access to the documentation.
+Time elapsed: 23.6631 seconds
+---------------------------
+Query: What are the benefits of BSON over JSON in MongoDB?
+I don't know.
+
+The provided context seems to be related to Document Databases and MongoDB, but it doesn't mention anything about BSON or its comparison to JSON. The text mentions similarities between certain PDFs, but not any specific information about BSON's benefits over JSON in MongoDB.
+Time elapsed: 11.1458 seconds
+---------------------------
+Query: Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? 
+Based on the context provided, I'm assuming you're referring to a MongoDB database.
+
+Here's a MongoDB query that should accomplish what you're looking for:
+
+```javascript
+db.movies.find({
+  $and: [
+    { releaseYear: { $gte: 2010 } },
+    { releaseYear: { $lte: 2015 } },
+    { genre: 'suspense' }
+  ]
+})
+```
+
+This query will return all documents (`movies`) where the `releaseYear` falls within the range of 2010 to 2015 and the `genre` is `'suspense'`.
+
+Note: The `$and` operator combines multiple conditions with logical AND.
+Time elapsed: 20.8429 seconds
+---------------------------
+Query: What does the $nin operator mean in a Mongo query?
+The $nin operator in MongoDB is used to select documents where a field does not contain one or more specified values. In other words, it returns all documents that do NOT match any of the specified values.
+
+For example, if you have a collection called `users` with a field `names`, and you want to find all users whose names do not contain 'John', you would use the $nin operator like this:
+
+```javascript
+db.users.find({ names: { $nin: ['John'] } });
+```
+
+This would return all documents in the `users` collection where the `names` field is not equal to 'John'.
+Time elapsed: 18.7136 seconds
+---------------------------
+Results saved to roland_qdrant_test_results.csv
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Clearing existing Qdrant store...
+Qdrant collection deleted successfully.
+Qdrant store cleared and collection recreated.
+Setting up Qdrant collection...
+Existing Qdrant collection deleted.
+Qdrant collection created successfully.
+Running Qdrant Pipeline Test...
+Processing PDFs...
+  0%|          | 0/16 [00:03<?, ?it/s]

@@ -6,18 +6,15 @@ Here's a breakdown of the differences between contiguous and linked lists based 
 ------------------------
 Linked lists are fast for random insertions and contiguous lists are fast for random access.
 ------------------------
-The imbalance case created with inserting 23 is an LR imbalance. The tree becomes:
-
-		 30
-	    / \
-	   25  35
-	  /  \
-	23   30
-	 /
-	20
-
+The imbalance case created with inserting 23 is an LL imbalance. The node with 30 has a right child (35) and a left child (25). Inserting 23 creates a situation where the right subtree of 30 becomes heavier than the left subtree.
 ------------------------
-I don't know.
+Based on the provided context, a B-tree is a better choice for indexing a large dataset due to its design that exploits locality and minimizes disk access. Here’s a breakdown of why, drawing from the information:
+
+*   **Locality of Reference:** B-trees are designed to put multiple elements into each tree node. This maximizes the chance that when you access a node, the entire node (and therefore many related data items) will be loaded into the cache. This is crucial for disk-based storage, where accessing a disk location takes approximately 5ms.
+*   **Reduced Disk I/O:** Because of the high branching factor (much larger than 2), B-trees require far fewer disk reads to navigate to the data compared to a tree like an AVL tree. This significantly improves performance when dealing with large datasets stored on disk.
+*   **Constant Time Operations:** The context mentions that B-tree lookups are straightforward and run in O(lg n) time, which is efficient.
+
+The context contrasts this with AVL trees, which are designed for balance but don't inherently optimize for locality or minimize disk I/O. AVL trees require restructuring after every operation, which adds overhead.
 ------------------------
 Based on the provided context, disk-based indexing is the mechanism to support faster searching by `specialVal` than a linear scan. Data cannot be stored on disk sorted by both `id` and `specialVal` at the same time, necessitating a linear scan.
 ------------------------
@@ -27,9 +24,9 @@ The four components of ACID compliant transactions are: Atomicity, Consistency, 
 ------------------------
 The CAP Theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, or tolerance to failure. When applied to a single-node MongoDB instance, the CAP Theorem doesn't make sense because a single node inherently provides all three guarantees: consistency, availability, and partition tolerance.
 ------------------------
-Conventional wisdom suggests scaling vertically – increasing the power of a single system – until demands for high availability necessitate scaling out with distributed computing models. However, modern systems are making horizontal scaling less problematic.
+Conventional wisdom suggests scaling vertically – increasing the power of a single system – until demands for high availability necessitate scaling out with distributed computing models. Horizontal scaling, on the other hand, involves distributing data and processing across multiple computers, appearing as one system to the user.
 ------------------------
-Based on the provided context, key-value stores are well-suited for a feature store due to their simplicity and speed. They lend themselves to simple CRUD (Create, Read, Update, Delete) operations and API creation, which are fundamental to feature retrieval. The context highlights their focus on speed and scalability, making them suitable for serving features efficiently.
+Based on the provided context, key-value stores are well-suited for a feature store due to their simplicity and speed. They lend themselves to simple CRUD (Create, Read, Update, Delete) operations and API creation, which are fundamental to a feature store’s functionality. The context highlights their focus on speed and scalability, making them suitable for storing and retrieving features efficiently.
 ------------------------
 I don't know.
 ------------------------

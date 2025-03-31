@@ -1,26 +1,30 @@
 Here’s the difference between lists using contiguous memory allocation and those using linked structures:
 
-*   **Contiguous Memory Allocation:** In this approach, the list elements are stored in a single, continuous block of memory. Each element occupies a specific amount of space, and the list is defined by the starting address and the number of elements. This is efficient for accessing elements sequentially because the memory location of any element can be calculated directly from the list’s base address and its index. However, inserting or deleting elements in the middle of the list can be slow because it requires shifting subsequent elements to maintain the contiguous block.
+*   **Contiguous Memory Lists:** In this approach, the elements of the list are stored in a single, continuous block of memory. Each element occupies a specific amount of space, and the list is essentially a sequence of these blocks.
+    *   **Advantages:** Fast access to elements (using an index), simple implementation.
+    *   **Disadvantages:** Can be inefficient if the list grows beyond the initially allocated block (requiring reallocation and copying), fixed size (unless dynamic resizing is implemented, which can be slow).
 
-*   **Linked Structures:** In this approach, the list elements (nodes) are not stored contiguously. Each node contains the data and a pointer (or link) to the next node in the sequence. The list is defined by the first node’s address. Inserting or deleting elements is efficient because it only involves updating the pointers of the surrounding nodes, without needing to shift elements. However, accessing a specific element requires traversing the list from the head node, which can be slower than accessing an element in a contiguous list, especially for large lists.
+*   **Linked Lists:** In a linked list, elements (called nodes) are not stored contiguously in memory. Each node contains the data and a pointer (or link) to the next node in the sequence.
+    *   **Advantages:** Dynamic size – can grow or shrink as needed, efficient insertion and deletion (especially in the middle of the list), memory is allocated and deallocated individually.
+    *   **Disadvantages:** Slower access to elements (requires traversing the list from the beginning), more complex implementation.
 
-In essence, contiguous lists are good for fast sequential access but poor for insertions/deletions in the middle, while linked lists are good for insertions/deletions but slower for accessing elements by index.
+In essence, contiguous lists are like a row of numbered boxes, while linked lists are like a chain of beads, where each bead points to the next.
 ------------------------
 Linked lists are faster than contiguously-allocated lists when accessing elements by index. In a contiguous list, accessing an element requires traversing from the beginning until the desired index is reached. This sequential access can be slow, especially for large lists and elements near the end. Linked lists, on the other hand, allow direct access to any element by following the pointers from the head to the desired node, making them faster for random access.
 ------------------------
 The insertion of 23 creates a right imbalance. Here's the breakdown:
 
-1.  **Insert 23:** 23 is inserted as a new node.
-2.  **Tree Structure:**
-    *   30
+1.  **Insert 23:** 23 becomes the left child of 25.
+2.  **Resulting Tree:**
+    30
+       \
+        25
        / \
-      25  35
-     /    \
-    20     23
+      20  23
+       \
+        35
 
-3.  **Imbalance:** The node 25 now has a single child (23) and a right child (35). This violates the AVL tree property of balanced heights.
-
-Therefore, the imbalance case created is a **right-right** imbalance.
+The imbalance is a right-right case.
 ------------------------
 B+ Trees are generally a better choice than AVL trees for indexing large datasets due to their design which is optimized for efficient range queries and large volumes of data. AVL trees are self-balancing, which makes them good for maintaining balance and fast single-key lookups, but they don't handle large datasets and range queries as efficiently as B+ Trees. B+ Trees use a multi-level structure that allows for efficient sequential access, which is crucial for large datasets.
 ------------------------
@@ -29,10 +33,10 @@ Disk-based indexing is a technique used in database systems to speed up data ret
 Here’s why it’s important:
 
 *   **Faster Queries:** When a query uses a indexed column, the database system can quickly locate the relevant rows in the table using the index, rather than scanning the entire table. This dramatically reduces query execution time.
-*   **Improved Performance:** By avoiding full table scans, disk-based indexing significantly improves the overall performance of database systems, especially for large tables.
-*   **Efficient Data Retrieval:** Indexes are crucial for operations like searching, sorting, and filtering data.
+*   **Improved Performance:** By avoiding full table scans, disk-based indexing significantly improves the overall performance of the database system, especially for large tables.
+*   **Efficient Data Retrieval:** It allows the database to quickly retrieve specific data based on indexed columns, which is crucial for applications that require fast data access.
 
-Essentially, disk-based indexing acts like an index in a book, allowing the database to quickly jump to the relevant pages (data rows) instead of reading the entire book.
+Essentially, it’s a crucial optimization strategy for database systems to handle large datasets efficiently.
 ------------------------
 In a relational database system, a transaction is a logical unit of work that consists of one or more SQL operations. It’s treated as a single, indivisible unit. Transactions ensure data integrity by guaranteeing that either all operations within the transaction complete successfully, or none of them do. This is often referred to as the “all or nothing” principle. Transactions use techniques like atomicity, consistency, isolation, and durability (ACID properties) to maintain data integrity.
 ------------------------
@@ -57,7 +61,7 @@ Here’s a table summarizing the key differences:
 | **Resource Change**| Adds more machines | Upgrades a single machine |
 | **Cost**          | Can be more cost-effective for large workloads | Can become expensive quickly |
 | **Complexity**    | Generally more complex to manage | Simpler to manage |
-| **Failure Impact**| Failure of one server has less impact | Failure of the server has a greater impact |
+| **Failure Impact**| Failure of one server has less impact | Failure of the server has a significant impact |
 ------------------------
 A key/value store can be used as a feature store by storing individual features as key-value pairs. Each key represents a unique feature, and the value can be the feature's data (e.g., a numerical value, string, or boolean). This provides a simple and fast way to retrieve features on-demand for model training and inference.
 ------------------------
@@ -69,16 +73,16 @@ In Redis, both `INC` and `INCR` commands increment a given numeric value, but th
 
 *   **`INCR`**: This command increments a numeric value (like an integer or a floating-point number) by 1. It’s specifically designed for numeric values.
 
-In essence, `INCR` is the correct command to use when you’re working with numeric data in Redis, while `INC` is more general and can be used with strings as well.
+In essence, `INCR` is the correct command to use when you’re working with a numeric value in Redis, while `INC` is more general and can be used with strings as well.
 ------------------------
 BSON offers several benefits over JSON when used with MongoDB:
 
 *   **Binary Format:** BSON is a binary JSON-like data format. This makes it more compact and efficient to transmit and store compared to JSON’s text-based format.
-*   **Data Type Support:** BSON supports a wider range of data types natively, including dates, binary data, and 64-bit integers, which are not directly supported in JSON. MongoDB utilizes these native types for improved data storage and querying.
-*   **Efficiency:** Due to its binary format and native data types, BSON is generally faster to parse and process than JSON, leading to improved query performance in MongoDB.
+*   **Data Type Support:** BSON supports a wider range of data types natively, including dates, binary data, and 64-bit integers, which are not directly supported in JSON. MongoDB leverages these native types for indexing and querying.
+*   **Efficiency:** Due to its binary format and native data types, BSON generally leads to faster data processing and storage within MongoDB.
 *   **Schema Flexibility:** While JSON is often used with a strict schema, BSON in MongoDB is more flexible, allowing for dynamic schema changes.
 
-Essentially, BSON is optimized for MongoDB’s needs, providing better performance and data handling capabilities compared to JSON.
+Essentially, BSON is optimized for MongoDB’s internal operations, providing better performance and functionality compared to JSON.
 ------------------------
 ```javascript
 db.movies.find({
@@ -90,8 +94,8 @@ db.movies.find({
 })
 ```
 ------------------------
-The `$nin` operator in a MongoDB query means "not in." It filters documents based on a field that does not contain any of the values specified in the array. 
+The `$nin` operator in a MongoDB query means "not in". It filters documents based on a field that does not contain any of the values specified in the array. 
 
-For example, if you have a field called `colors` and you want to find all documents where the color is not "red" or "blue", you would use:
+For example, if you have a field called `colors` and you want to find documents where the color is not "red" or "blue", you would use:
 
 `{ "colors": { $nin: ["red", "blue"] } }`

@@ -1,0 +1,43 @@
+Here's a breakdown of the differences, based on the provided context:
+
+*   **Contiguously Allocated Lists:** In this approach, all ‘n’ records are stored as a single block of memory. This is efficient for random access because you can directly calculate the memory location of any record.
+
+*   **Linked Lists:** Linked lists use a different strategy. Each record needs ‘x’ bytes of memory plus additional space to store one or two memory addresses. These addresses link the records together in a chain. This means that accessing a specific record requires traversing the chain of links, which is slower than contiguous allocation, especially for random access.
+------------------------
+Linked lists are faster for inserting anywhere in the list, but are slower for random access.
+------------------------
+The imbalance case created with inserting 23 is LR. The first link is to the left (from 30 to 25) and the second is to the right (from 25 to 35).
+------------------------
+I don't know.
+------------------------
+Based on the provided context, disk-based indexing is the mechanism to support faster searching by `specialVal` than a linear scan. Data cannot be stored on disk sorted by both `id` and `specialVal` at the same time, necessitating a linear scan.
+------------------------
+A transaction is a sequence of one or more of the CRUD operations performed as a single, logical unit of work. Either the entire sequence succeeds (COMMIT) – or the entire sequence fails (ROLLBACK or ABORT). It helps ensure data integrity, error recovery, concurrency control, and reliable data storage.
+------------------------
+The four components of ACID compliant transactions are:
+
+1.  **Atomicity:** A transaction is treated as a single, indivisible unit; it either fully executes or none of it is executed.
+2.  **Consistency:** A transaction takes a database from one consistent state to another consistent state, ensuring all data meets integrity constraints.
+3.  **Durability:** Once a transaction is committed, its changes are permanent, even in the event of a system failure.
+4.  **Isolation:** Transactions are isolated from each other to prevent interference and ensure data integrity. (This component is implied by the other three).
+------------------------
+The CAP Theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, or tolerance to failure. When applied to a single-node MongoDB instance, the CAP Theorem doesn't make sense because a single node inherently provides all three guarantees: consistency, availability, and partition tolerance.
+------------------------
+Conventional wisdom suggests scaling vertically – increasing the power of a single system – until high availability demands scaling out with distributed computing models. Horizontal scaling, in contrast, involves using a collection of independent computers to appear as one system to the user.
+------------------------
+Based on the provided context, key-value stores are well-suited for a feature store due to their simplicity and speed. They lend themselves to simple CRUD (Create, Read, Update, Delete) operations and API creation, which are fundamental to feature retrieval. The context highlights their focus on speed and scalability, making them suitable for serving features efficiently.
+------------------------
+I don't know.
+------------------------
+I don't know.
+------------------------
+BSON is a binary-encoded serialization of JSON-like documents. It supports extended types not part of basic JSON (e.g. Date, BinaryData), keeps space overhead to a minimum, is traversable, and efficient in encoding and decoding.
+------------------------
+```javascript
+db.movies.find({
+  year: { $gte: 2010, $lte: 2015 },
+  genres: "Suspense"
+})
+```
+------------------------
+The $nin operator is like SELECT * FROM movies WHERE rated in ( `` PG '' , `` PG-13 '' ) db.movies.find ( { rated : { $ in : [ `` PG '' , `` PG-13 '' ] } } ))

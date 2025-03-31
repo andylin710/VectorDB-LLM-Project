@@ -1,0 +1,51 @@
+Here’s a breakdown of the differences between contiguous and linked lists based on the provided context:
+
+*   **Contiguously Allocated Lists:** In this type of list, all the records are stored in a single, continuous block of memory. This means that all ‘n * x’ bytes (where ‘x’ is the size of each record and ‘n’ is the number of records) are allocated together.
+
+*   **Linked Lists:** Linked lists store records individually, with each record containing ‘x’ bytes of data plus additional space for one or two memory addresses. These addresses link the records together in a chain. This means each record is stored separately and connected to the next through memory addresses.
+------------------------
+Linked lists are faster for random insertions.
+------------------------
+The context describes that the imbalance is detected by comparing the heights of the left and right subtrees of each node. In the given tree, inserting 23 would create an imbalance. The tree becomes:
+
+		 30
+	    / \
+	   25  35
+	  /    
+ 20   23
+
+The left subtree of 30 (25, 20, 23) has a height of 3, while the right subtree (35) has a height of 1. The difference is 2, creating an imbalance.
+------------------------
+I don't know.
+------------------------
+Based on the provided context, disk-based indexing is the method of storing data on disk sorted by both column id and specialVal simultaneously. However, this would require duplicating the data, which is space inefficient. The context highlights that a linear scan is the only option for searching by a specific specialVal, emphasizing the need for an external data structure to improve searching speed compared to a linear scan.
+------------------------
+A transaction is a sequence of one or more of the CRUD operations performed as a single, logical unit of work. Either the entire sequence succeeds (COMMIT) – OR the entire sequence fails (ROLLBACK or ABORT). It takes a database from one consistent state to another consistent state (where all data meets integrity constraints).
+------------------------
+The four components of ACID compliant transactions are:
+
+1.  **Atomicity:** A transaction is treated as a single, indivisible unit; it either fully executes or none of it is executed.
+2.  **Consistency:** A transaction takes a database from one consistent state to another consistent state, ensuring all data meets integrity constraints.
+3.  **Durability:** Once a transaction is committed, its changes are permanent, even in the event of a system failure.
+4.  **Isolation:** Transactions are isolated from each other to prevent interference and ensure data integrity. (This component is implied by the other three).
+------------------------
+The CAP Theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, or tolerance to failure. When applied to a single-node MongoDB instance, the CAP Theorem doesn't make sense because a single node inherently provides all three guarantees: consistency, availability, and partition tolerance.
+------------------------
+Conventional wisdom suggests scaling vertically (up) – increasing the power of a single system – until demands for high availability necessitate scaling out with distributed computing models. Horizontal scaling, in contrast, involves distributing data and processing across multiple independent computers, appearing as one system to the user.
+------------------------
+Based on the provided context, key-value stores are well-suited for a feature store due to their simplicity and speed. They lend themselves to simple CRUD (Create, Read, Update, Delete) operations and API creation, which are fundamental to feature retrieval. The context highlights their focus on speed and scalability, making them suitable for serving features efficiently.
+------------------------
+I don't know.
+------------------------
+I don't know
+------------------------
+BSON is a binary encoded serialization of JSON-like documents, which allows you to work with types not allowed in regular JSON (e.g. date, binary data) and keeps space overhead to a minimum. It is also easily traversed, which is vitally important for document DBs.
+------------------------
+```javascript
+db.movies.find({
+  year: { $gte: 2010, $lte: 2015 },
+  genres: "Suspense"
+})
+```
+------------------------
+The $nin operator is like SELECT * FROM movies WHERE rated in ( `` PG '' , `` PG-13 '' ) db.movies.find ( { rated : { $ in : [ `` PG '' , `` PG-13 '' ] } } ))

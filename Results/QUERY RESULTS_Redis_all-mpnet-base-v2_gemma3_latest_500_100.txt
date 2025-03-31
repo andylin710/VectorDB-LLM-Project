@@ -1,29 +1,52 @@
-The context discusses data structures and retrieval, mentioning NoSQL databases like document databases (Mongo), graph databases (Neo4j), and key-value stores. It doesn’t directly explain the difference between contiguous memory allocation and linked structures. Therefore, I don’t know.
+Here's a breakdown of the differences between contiguous and linked lists based on the provided context:
+
+*   **Contiguously Allocated Lists:** In this type of list, all the records are stored in a single, continuous block of memory. This means all the data for ‘n’ records requires ‘n * x’ bytes, where ‘x’ is the size of each record.
+
+*   **Linked Lists:** Linked lists use linked structures. Each record needs ‘x’ bytes plus additional space for one or two memory addresses. Individual records are linked together using memory addresses, creating a chain. In a linked list, each node points to the next element in the list (except the last one, which points to nil/null).
+------------------------
+Linked lists are fast for random insertions and contiguous lists are fast for random access.
+------------------------
+The imbalance case created with inserting 23 is a right-right case. The tree becomes:
+
+		 30
+	    / \
+	   25  35
+	  /
+ 23	
+
+The right subtree of 35 (which is 23) is unbalanced.
+------------------------
+Based on the provided context, a B-tree is a better choice than an AVL tree for indexing a large dataset primarily due to its design focusing on locality and efficient disk access. Here’s a breakdown of why, as highlighted in the documents:
+
+*   **Locality of Reference:** B-trees are designed to put multiple elements into each tree node, maximizing cache hits. This is crucial when storing data on disk, where accessing a disk location takes a significant amount of time (5ms). By ensuring that a given disk read is as effective as possible, B-trees minimize the number of disk accesses needed to navigate the data.
+*   **Constant Time Operations:** The context states that B-trees guarantee an asymptotic performance of O(lg n), where n is the size of the collection, and the real win is in the constant factors. This means that the time taken to perform operations like lookups and insertions is relatively consistent, regardless of the size of the dataset.
+*   **AVL Trees and Balancing:** In contrast, AVL trees require restructuring (rotations) after every insertion or removal to maintain balance. While lookups in a balanced AVL tree are also O(log n), the constant factors involved in these balancing operations can be higher than those of a B-tree.
+
+Essentially, B-trees are optimized for the specific scenario of storing large datasets, particularly on disk, where minimizing disk I/O is paramount.
+------------------------
+Based on the provided context, disk-based indexing is the mechanism to support faster searching by `specialVal` than a linear scan. Data cannot be stored on disk sorted by both `id` and `specialVal` at the same time, and therefore indexing is needed to achieve faster searching.
+------------------------
+A transaction is a sequence of one or more of the CRUD operations performed as a single, logical unit of work. Either the entire sequence succeeds (COMMIT), or the entire sequence fails (ROLLBACK or ABORT). It helps ensure data integrity, error recovery, concurrency control, and simplified error handling.
+------------------------
+The four components of ACID compliant transactions are: Atomicity, Consistency, Durability, and Isolation.
+------------------------
+The CAP Theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, or tolerance to failure. When applied to a single-node MongoDB instance, the CAP Theorem doesn't make sense because a single node inherently provides all three guarantees: consistency, availability, and partition tolerance.
+------------------------
+Vertical scaling refers to increasing the power of a single system (scaling up), while horizontal scaling involves adding more independent computers to appear as one system (scaling out). Key-value stores are typically concerned with horizontal scaling, where you simply add more nodes.
+------------------------
+Based on the provided context, key-value stores are well-suited for a feature store due to their simplicity and speed. They lend themselves to simple CRUD (Create, Read, Update, Delete) operations and API creation, which are fundamental to feature retrieval. The context highlights their focus on speed and scalability, making them suitable for serving features efficiently.
 ------------------------
 I don't know.
 ------------------------
-I don't know
-------------------------
 I don't know.
 ------------------------
-I don't know.
+BSON is a binary-encoded serialization of JSON-like documents, which allows you to work with types not allowed in regular JSON (e.g. date, binary data). It keeps space overhead to a minimum and is easily traversed, which is vitally important to a document DB.
 ------------------------
-I don't know.
+```javascript
+db.movies.find({
+  year: { $gte: 2010, $lte: 2015 },
+  genres: "Suspense"
+})
+```
 ------------------------
-I don't know.
-------------------------
-I don't know.
-------------------------
-I don't know
-------------------------
-Based on the provided context, the document mentions key/value stores as part of various data models, including storing and retrieving data. However, it doesn't elaborate on how they can be used as a feature store.
-------------------------
-I don't know.
-------------------------
-I don't know
-------------------------
-I don't know.
-------------------------
-I don't know
-------------------------
-I don't know
+The $nin operator is like SELECT * FROM movies WHERE rated in ( `` PG '' , `` PG-13 '' ) db.movies.find ( { rated : { $ in : [ `` PG '' , `` PG-13 '' ] } } ))

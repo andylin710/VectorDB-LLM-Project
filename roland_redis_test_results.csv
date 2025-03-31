@@ -1133,3 +1133,969 @@ compute_type,memory_size,embedding_model,llm_model,index_elapsed,index_memory,qu
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,83.538,8.72,What are the benefits of BSON over JSON in MongoDB?,25.3879,500,100
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,83.538,8.72,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,36.1117,500,100
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,83.538,8.72,What does the $nin operator mean in a Mongo query?,17.6676,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,58.596,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,When are linked lists faster than contiguously-allocated lists? ,28.5312,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",62.1725,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,53.8094,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,What is disk-based indexing and why is it important for database systems?,36.5403,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,"In the context of a relational database system, what is a transaction? ",34.716,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,Succinctly describe the four components of ACID compliant transactions. ,41.69,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,32.2255,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,Describe the differences between horizontal and vertical scaling. ,38.9607,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,Briefly describe how a key/value store can be used as a feature store. ,34.4736,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,When was Redis originally released? ,9.9721,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,"In Redis, what is the difference between the INC and INCR commands?",35.9211,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,What are the benefits of BSON over JSON in MongoDB?,39.8293,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,41.3472,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,431.8393,38.78,What does the $nin operator mean in a Mongo query?,19.8174,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,52.3009,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,When are linked lists faster than contiguously-allocated lists? ,21.9215,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",114.5723,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,44.5003,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,What is disk-based indexing and why is it important for database systems?,40.1675,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,"In the context of a relational database system, what is a transaction? ",31.6394,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,Succinctly describe the four components of ACID compliant transactions. ,43.2695,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,27.9125,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,Describe the differences between horizontal and vertical scaling. ,50.4623,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,Briefly describe how a key/value store can be used as a feature store. ,27.6702,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,When was Redis originally released? ,12.5249,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,"In Redis, what is the difference between the INC and INCR commands?",34.9253,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,What are the benefits of BSON over JSON in MongoDB?,34.4461,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,31.8722,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,355.811,30.55,What does the $nin operator mean in a Mongo query?,23.4452,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,48.2538,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,When are linked lists faster than contiguously-allocated lists? ,39.8589,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",67.0824,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,53.6284,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,What is disk-based indexing and why is it important for database systems?,39.1702,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,"In the context of a relational database system, what is a transaction? ",44.2335,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,Succinctly describe the four components of ACID compliant transactions. ,43.4626,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,35.545,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,Describe the differences between horizontal and vertical scaling. ,53.9398,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,Briefly describe how a key/value store can be used as a feature store. ,38.7493,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,When was Redis originally released? ,12.7227,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,"In Redis, what is the difference between the INC and INCR commands?",41.928,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,What are the benefits of BSON over JSON in MongoDB?,50.5221,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,35.3973,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,385.9466,32.45,What does the $nin operator mean in a Mongo query?,22.4542,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,47.598,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,When are linked lists faster than contiguously-allocated lists? ,22.2533,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",118.6388,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,105.5555,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,What is disk-based indexing and why is it important for database systems?,44.1236,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,"In the context of a relational database system, what is a transaction? ",43.4475,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,Succinctly describe the four components of ACID compliant transactions. ,40.8757,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,43.6236,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,Describe the differences between horizontal and vertical scaling. ,27.6876,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,Briefly describe how a key/value store can be used as a feature store. ,47.6389,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,When was Redis originally released? ,43.4448,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,"In Redis, what is the difference between the INC and INCR commands?",84.0056,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,What are the benefits of BSON over JSON in MongoDB?,42.5241,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,37.5033,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,303.387,29.68,What does the $nin operator mean in a Mongo query?,20.4283,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,36.4141,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,When are linked lists faster than contiguously-allocated lists? ,16.1989,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",137.0671,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,134.2938,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,What is disk-based indexing and why is it important for database systems?,36.1696,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,"In the context of a relational database system, what is a transaction? ",43.5194,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,Succinctly describe the four components of ACID compliant transactions. ,31.6475,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,32.1691,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,Describe the differences between horizontal and vertical scaling. ,35.5948,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,Briefly describe how a key/value store can be used as a feature store. ,37.7941,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,When was Redis originally released? ,43.4146,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,"In Redis, what is the difference between the INC and INCR commands?",87.439,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,What are the benefits of BSON over JSON in MongoDB?,49.2639,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,45.683,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,315.8673,30.12,What does the $nin operator mean in a Mongo query?,23.751,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,61.4487,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,When are linked lists faster than contiguously-allocated lists? ,20.3968,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",108.5882,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,117.5486,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,What is disk-based indexing and why is it important for database systems?,46.1879,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,"In the context of a relational database system, what is a transaction? ",43.6226,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,Succinctly describe the four components of ACID compliant transactions. ,41.1501,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,40.594,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,Describe the differences between horizontal and vertical scaling. ,36.4224,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,Briefly describe how a key/value store can be used as a feature store. ,36.8127,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,When was Redis originally released? ,43.6548,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,"In Redis, what is the difference between the INC and INCR commands?",85.0467,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,What are the benefits of BSON over JSON in MongoDB?,47.9499,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,49.983,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,308.871,29.81,What does the $nin operator mean in a Mongo query?,25.038,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,45.5799,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,When are linked lists faster than contiguously-allocated lists? ,18.9734,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",153.1293,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,122.8707,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,What is disk-based indexing and why is it important for database systems?,41.5628,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,"In the context of a relational database system, what is a transaction? ",44.5302,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,Succinctly describe the four components of ACID compliant transactions. ,39.078,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,41.6396,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,Describe the differences between horizontal and vertical scaling. ,34.5854,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,Briefly describe how a key/value store can be used as a feature store. ,54.7028,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,When was Redis originally released? ,63.379,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,"In Redis, what is the difference between the INC and INCR commands?",107.9176,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,What are the benefits of BSON over JSON in MongoDB?,54.9733,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,39.0697,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,292.8195,30.53,What does the $nin operator mean in a Mongo query?,20.559,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,41.7902,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,When are linked lists faster than contiguously-allocated lists? ,16.6279,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",147.7387,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,104.2929,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,What is disk-based indexing and why is it important for database systems?,38.0853,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,"In the context of a relational database system, what is a transaction? ",43.9768,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,Succinctly describe the four components of ACID compliant transactions. ,45.151,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,31.9291,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,Describe the differences between horizontal and vertical scaling. ,36.8067,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,Briefly describe how a key/value store can be used as a feature store. ,43.8794,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,When was Redis originally released? ,53.4491,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,"In Redis, what is the difference between the INC and INCR commands?",115.4925,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,What are the benefits of BSON over JSON in MongoDB?,46.1726,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,35.7647,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,294.4676,29.29,What does the $nin operator mean in a Mongo query?,22.6917,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,34.5333,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,When are linked lists faster than contiguously-allocated lists? ,15.535,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",151.2651,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,108.9456,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,What is disk-based indexing and why is it important for database systems?,50.2874,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,"In the context of a relational database system, what is a transaction? ",44.0817,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,Succinctly describe the four components of ACID compliant transactions. ,36.7862,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,39.3764,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,Describe the differences between horizontal and vertical scaling. ,35.0151,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,Briefly describe how a key/value store can be used as a feature store. ,42.1881,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,When was Redis originally released? ,56.2488,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,"In Redis, what is the difference between the INC and INCR commands?",134.2032,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,What are the benefits of BSON over JSON in MongoDB?,45.5419,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,37.2744,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,283.9985,29.62,What does the $nin operator mean in a Mongo query?,28.1215,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,42.626,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,When are linked lists faster than contiguously-allocated lists? ,32.8339,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",14.0035,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,30.3115,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,What is disk-based indexing and why is it important for database systems?,53.8118,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,"In the context of a relational database system, what is a transaction? ",27.9459,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,Succinctly describe the four components of ACID compliant transactions. ,13.8976,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,23.3317,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,Describe the differences between horizontal and vertical scaling. ,33.2843,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,Briefly describe how a key/value store can be used as a feature store. ,25.3612,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,When was Redis originally released? ,4.3892,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,"In Redis, what is the difference between the INC and INCR commands?",17.4224,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,What are the benefits of BSON over JSON in MongoDB?,24.0143,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,7.3809,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,226.3055,28.27,What does the $nin operator mean in a Mongo query?,12.9741,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,46.6156,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,When are linked lists faster than contiguously-allocated lists? ,33.3691,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",26.7868,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,35.0623,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,What is disk-based indexing and why is it important for database systems?,29.5588,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,"In the context of a relational database system, what is a transaction? ",37.4651,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,Succinctly describe the four components of ACID compliant transactions. ,13.3816,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,24.5356,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,Describe the differences between horizontal and vertical scaling. ,51.5128,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,Briefly describe how a key/value store can be used as a feature store. ,26.8394,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,When was Redis originally released? ,4.1151,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,"In Redis, what is the difference between the INC and INCR commands?",14.5201,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,What are the benefits of BSON over JSON in MongoDB?,34.2295,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,5.7609,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,234.9167,29.25,What does the $nin operator mean in a Mongo query?,14.155,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,46.525,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,When are linked lists faster than contiguously-allocated lists? ,39.2787,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",27.1031,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,33.4289,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,What is disk-based indexing and why is it important for database systems?,32.259,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,"In the context of a relational database system, what is a transaction? ",31.3795,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,Succinctly describe the four components of ACID compliant transactions. ,15.5002,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,24.4437,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,Describe the differences between horizontal and vertical scaling. ,33.9213,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,Briefly describe how a key/value store can be used as a feature store. ,36.5209,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,When was Redis originally released? ,3.2731,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,"In Redis, what is the difference between the INC and INCR commands?",23.4705,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,What are the benefits of BSON over JSON in MongoDB?,22.5758,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,6.3523,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,269.6861,28.51,What does the $nin operator mean in a Mongo query?,15.7709,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,46.8554,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,When are linked lists faster than contiguously-allocated lists? ,29.3857,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",34.4576,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,32.9446,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,What is disk-based indexing and why is it important for database systems?,35.4597,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,"In the context of a relational database system, what is a transaction? ",23.0962,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,Succinctly describe the four components of ACID compliant transactions. ,14.6932,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,24.5674,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,Describe the differences between horizontal and vertical scaling. ,27.5385,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,Briefly describe how a key/value store can be used as a feature store. ,30.5877,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,When was Redis originally released? ,5.0104,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,"In Redis, what is the difference between the INC and INCR commands?",14.9383,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,What are the benefits of BSON over JSON in MongoDB?,37.5052,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,6.7706,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,194.0335,28.05,What does the $nin operator mean in a Mongo query?,15.783,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,54.1165,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,When are linked lists faster than contiguously-allocated lists? ,22.8246,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",16.1039,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,32.9346,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,What is disk-based indexing and why is it important for database systems?,24.4647,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,"In the context of a relational database system, what is a transaction? ",33.878,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,Succinctly describe the four components of ACID compliant transactions. ,17.9231,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,28.3276,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,Describe the differences between horizontal and vertical scaling. ,34.9558,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,Briefly describe how a key/value store can be used as a feature store. ,25.9927,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,When was Redis originally released? ,3.5652,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,"In Redis, what is the difference between the INC and INCR commands?",22.7504,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,What are the benefits of BSON over JSON in MongoDB?,38.9314,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,11.1635,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,196.3439,28.83,What does the $nin operator mean in a Mongo query?,13.0956,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,46.742,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,When are linked lists faster than contiguously-allocated lists? ,35.0869,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",47.3743,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,44.5128,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,What is disk-based indexing and why is it important for database systems?,34.6097,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,"In the context of a relational database system, what is a transaction? ",26.7904,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,Succinctly describe the four components of ACID compliant transactions. ,24.8588,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,32.8497,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,Describe the differences between horizontal and vertical scaling. ,34.7316,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,Briefly describe how a key/value store can be used as a feature store. ,12.0032,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,When was Redis originally released? ,2.8891,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,"In Redis, what is the difference between the INC and INCR commands?",22.8912,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,What are the benefits of BSON over JSON in MongoDB?,40.8546,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,6.8115,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,198.229,27.48,What does the $nin operator mean in a Mongo query?,11.5155,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,35.3472,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,When are linked lists faster than contiguously-allocated lists? ,42.2942,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",53.8531,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,42.1569,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,What is disk-based indexing and why is it important for database systems?,46.667,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,"In the context of a relational database system, what is a transaction? ",31.682,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,Succinctly describe the four components of ACID compliant transactions. ,17.9773,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,21.5041,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,Describe the differences between horizontal and vertical scaling. ,33.4277,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,Briefly describe how a key/value store can be used as a feature store. ,25.8955,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,When was Redis originally released? ,8.3093,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,"In Redis, what is the difference between the INC and INCR commands?",13.5282,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,What are the benefits of BSON over JSON in MongoDB?,26.8893,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,6.3148,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.533,27.34,What does the $nin operator mean in a Mongo query?,15.8779,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,43.5335,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,When are linked lists faster than contiguously-allocated lists? ,26.0249,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",32.1898,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,26.1475,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,What is disk-based indexing and why is it important for database systems?,33.0003,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,"In the context of a relational database system, what is a transaction? ",30.782,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,Succinctly describe the four components of ACID compliant transactions. ,15.8938,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,21.581,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,Describe the differences between horizontal and vertical scaling. ,47.7577,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,Briefly describe how a key/value store can be used as a feature store. ,31.776,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,When was Redis originally released? ,3.96,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,"In Redis, what is the difference between the INC and INCR commands?",17.509,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,What are the benefits of BSON over JSON in MongoDB?,35.3141,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,7.485,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.9913,28.22,What does the $nin operator mean in a Mongo query?,12.0987,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,45.9506,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,When are linked lists faster than contiguously-allocated lists? ,30.1225,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",10.8545,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,47.1376,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,What is disk-based indexing and why is it important for database systems?,32.7343,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,"In the context of a relational database system, what is a transaction? ",30.5791,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,Succinctly describe the four components of ACID compliant transactions. ,15.7423,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,27.1235,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,Describe the differences between horizontal and vertical scaling. ,33.3634,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,Briefly describe how a key/value store can be used as a feature store. ,28.0492,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,When was Redis originally released? ,3.5392,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,"In Redis, what is the difference between the INC and INCR commands?",19.6169,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,What are the benefits of BSON over JSON in MongoDB?,43.0018,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,6.4886,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,llama3.2:latest,191.4884,28.19,What does the $nin operator mean in a Mongo query?,15.6366,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,83.6103,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,When are linked lists faster than contiguously-allocated lists? ,17.061,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",76.8637,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,59.1048,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,What is disk-based indexing and why is it important for database systems?,56.0397,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,"In the context of a relational database system, what is a transaction? ",39.9939,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,Succinctly describe the four components of ACID compliant transactions. ,33.8293,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,49.2208,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,Describe the differences between horizontal and vertical scaling. ,38.7415,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,Briefly describe how a key/value store can be used as a feature store. ,40.7177,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,When was Redis originally released? ,19.9202,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,"In Redis, what is the difference between the INC and INCR commands?",27.1593,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,What are the benefits of BSON over JSON in MongoDB?,32.7463,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,63.2051,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1989.1544,35.11,What does the $nin operator mean in a Mongo query?,34.1763,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,148.7648,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,When are linked lists faster than contiguously-allocated lists? ,18.3838,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",69.0951,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,57.379,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,What is disk-based indexing and why is it important for database systems?,58.9988,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,"In the context of a relational database system, what is a transaction? ",41.126,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,Succinctly describe the four components of ACID compliant transactions. ,33.5167,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,54.2536,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,Describe the differences between horizontal and vertical scaling. ,41.7494,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,Briefly describe how a key/value store can be used as a feature store. ,52.1942,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,When was Redis originally released? ,21.6558,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,"In Redis, what is the difference between the INC and INCR commands?",35.378,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,What are the benefits of BSON over JSON in MongoDB?,38.9524,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,45.0809,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1981.3712,34.75,What does the $nin operator mean in a Mongo query?,27.0288,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,71.2981,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,When are linked lists faster than contiguously-allocated lists? ,25.789,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",73.368,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,54.4408,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,What is disk-based indexing and why is it important for database systems?,70.9046,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,"In the context of a relational database system, what is a transaction? ",53.124,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,Succinctly describe the four components of ACID compliant transactions. ,31.4129,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,53.2459,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,Describe the differences between horizontal and vertical scaling. ,41.1288,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,Briefly describe how a key/value store can be used as a feature store. ,40.8408,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,When was Redis originally released? ,24.2318,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,"In Redis, what is the difference between the INC and INCR commands?",39.8994,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,What are the benefits of BSON over JSON in MongoDB?,54.7877,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,43.0878,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,2262.5759,34.79,What does the $nin operator mean in a Mongo query?,32.3549,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,50.3025,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,When are linked lists faster than contiguously-allocated lists? ,25.2904,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",126.3299,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,104.2866,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,What is disk-based indexing and why is it important for database systems?,46.3472,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,"In the context of a relational database system, what is a transaction? ",27.6626,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,Succinctly describe the four components of ACID compliant transactions. ,32.4947,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,55.0161,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,Describe the differences between horizontal and vertical scaling. ,48.6069,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,Briefly describe how a key/value store can be used as a feature store. ,49.5418,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,When was Redis originally released? ,21.8597,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,"In Redis, what is the difference between the INC and INCR commands?",33.9117,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,What are the benefits of BSON over JSON in MongoDB?,33.751,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,57.722,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1608.6931,34.72,What does the $nin operator mean in a Mongo query?,32.3535,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,108.5605,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,When are linked lists faster than contiguously-allocated lists? ,22.3596,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",30.7899,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,110.3952,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,What is disk-based indexing and why is it important for database systems?,46.075,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,"In the context of a relational database system, what is a transaction? ",27.2504,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,Succinctly describe the four components of ACID compliant transactions. ,34.4983,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,45.3935,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,Describe the differences between horizontal and vertical scaling. ,47.1186,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,Briefly describe how a key/value store can be used as a feature store. ,42.343,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,When was Redis originally released? ,20.2708,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,"In Redis, what is the difference between the INC and INCR commands?",42.4768,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,What are the benefits of BSON over JSON in MongoDB?,38.2618,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,43.9575,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1512.173,34.76,What does the $nin operator mean in a Mongo query?,31.5912,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,61.145,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,When are linked lists faster than contiguously-allocated lists? ,27.4988,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",138.0697,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,83.8215,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,What is disk-based indexing and why is it important for database systems?,42.8144,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,"In the context of a relational database system, what is a transaction? ",27.7448,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,Succinctly describe the four components of ACID compliant transactions. ,30.9492,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,42.5708,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,Describe the differences between horizontal and vertical scaling. ,48.8311,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,Briefly describe how a key/value store can be used as a feature store. ,42.0741,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,When was Redis originally released? ,23.5651,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,"In Redis, what is the difference between the INC and INCR commands?",40.9096,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,What are the benefits of BSON over JSON in MongoDB?,36.7183,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,46.8928,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1750.9876,34.77,What does the $nin operator mean in a Mongo query?,29.9696,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,83.2876,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,When are linked lists faster than contiguously-allocated lists? ,25.1183,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",167.6336,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,138.3022,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,What is disk-based indexing and why is it important for database systems?,52.2759,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,"In the context of a relational database system, what is a transaction? ",26.6118,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,Succinctly describe the four components of ACID compliant transactions. ,32.8695,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,46.6507,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,Describe the differences between horizontal and vertical scaling. ,34.4044,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,Briefly describe how a key/value store can be used as a feature store. ,50.2287,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,When was Redis originally released? ,24.1949,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,"In Redis, what is the difference between the INC and INCR commands?",38.5036,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,What are the benefits of BSON over JSON in MongoDB?,34.9351,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,42.6059,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1473.2441,34.73,What does the $nin operator mean in a Mongo query?,39.7362,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,99.3262,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,When are linked lists faster than contiguously-allocated lists? ,27.2177,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",153.3707,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,145.4183,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,What is disk-based indexing and why is it important for database systems?,47.5185,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,"In the context of a relational database system, what is a transaction? ",26.5756,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,Succinctly describe the four components of ACID compliant transactions. ,32.7315,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,49.2164,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,Describe the differences between horizontal and vertical scaling. ,54.0451,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,Briefly describe how a key/value store can be used as a feature store. ,43.9192,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,When was Redis originally released? ,24.5421,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,"In Redis, what is the difference between the INC and INCR commands?",45.9544,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,What are the benefits of BSON over JSON in MongoDB?,39.8988,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,55.7849,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1590.4232,34.73,What does the $nin operator mean in a Mongo query?,34.1955,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,67.7539,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,When are linked lists faster than contiguously-allocated lists? ,26.5178,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",146.365,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,141.5217,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,What is disk-based indexing and why is it important for database systems?,53.1437,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,"In the context of a relational database system, what is a transaction? ",27.3494,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,Succinctly describe the four components of ACID compliant transactions. ,31.3671,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,41.8868,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,Describe the differences between horizontal and vertical scaling. ,39.2256,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,Briefly describe how a key/value store can be used as a feature store. ,39.9499,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,When was Redis originally released? ,22.3146,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,"In Redis, what is the difference between the INC and INCR commands?",31.722,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,What are the benefits of BSON over JSON in MongoDB?,39.2039,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,42.1034,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,llama3.2:latest,1558.4794,34.74,What does the $nin operator mean in a Mongo query?,29.5146,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,59.2019,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,When are linked lists faster than contiguously-allocated lists? ,22.6495,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",58.0729,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,62.1714,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,What is disk-based indexing and why is it important for database systems?,34.1408,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,"In the context of a relational database system, what is a transaction? ",37.7389,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,Succinctly describe the four components of ACID compliant transactions. ,45.5058,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,27.2117,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,Describe the differences between horizontal and vertical scaling. ,30.5678,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,Briefly describe how a key/value store can be used as a feature store. ,29.576,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,When was Redis originally released? ,10.7355,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,"In Redis, what is the difference between the INC and INCR commands?",32.2319,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,What are the benefits of BSON over JSON in MongoDB?,39.0617,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,36.4803,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,350.5235,29.52,What does the $nin operator mean in a Mongo query?,19.715,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,57.1295,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,When are linked lists faster than contiguously-allocated lists? ,22.6676,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",73.0832,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,49.1358,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,What is disk-based indexing and why is it important for database systems?,35.9795,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,"In the context of a relational database system, what is a transaction? ",37.5571,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,Succinctly describe the four components of ACID compliant transactions. ,47.3481,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,28.4315,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,Describe the differences between horizontal and vertical scaling. ,36.6303,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,Briefly describe how a key/value store can be used as a feature store. ,30.1112,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,When was Redis originally released? ,10.9377,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,"In Redis, what is the difference between the INC and INCR commands?",39.5426,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,What are the benefits of BSON over JSON in MongoDB?,41.3826,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,36.9152,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,367.0681,30.4,What does the $nin operator mean in a Mongo query?,20.158,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,56.2932,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,When are linked lists faster than contiguously-allocated lists? ,36.4716,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",57.6726,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,52.526,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,What is disk-based indexing and why is it important for database systems?,34.3797,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,"In the context of a relational database system, what is a transaction? ",49.0572,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,Succinctly describe the four components of ACID compliant transactions. ,44.5714,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,27.5658,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,Describe the differences between horizontal and vertical scaling. ,28.6407,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,Briefly describe how a key/value store can be used as a feature store. ,29.8345,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,When was Redis originally released? ,11.4975,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,"In Redis, what is the difference between the INC and INCR commands?",45.7622,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,What are the benefits of BSON over JSON in MongoDB?,49.1669,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,37.1194,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,424.7933,31.94,What does the $nin operator mean in a Mongo query?,19.8812,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,50.1032,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,When are linked lists faster than contiguously-allocated lists? ,16.9553,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",156.7191,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,172.0718,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,What is disk-based indexing and why is it important for database systems?,47.4583,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,"In the context of a relational database system, what is a transaction? ",52.3206,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,Succinctly describe the four components of ACID compliant transactions. ,24.7228,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,35.0167,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,Describe the differences between horizontal and vertical scaling. ,31.7004,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,Briefly describe how a key/value store can be used as a feature store. ,40.9735,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,When was Redis originally released? ,69.5081,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,"In Redis, what is the difference between the INC and INCR commands?",142.8211,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,What are the benefits of BSON over JSON in MongoDB?,74.3042,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,52.4315,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,301.9731,30.29,What does the $nin operator mean in a Mongo query?,28.0426,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,71.1063,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,When are linked lists faster than contiguously-allocated lists? ,24.9909,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",195.0585,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,165.3174,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,What is disk-based indexing and why is it important for database systems?,44.6625,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,"In the context of a relational database system, what is a transaction? ",62.7012,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,Succinctly describe the four components of ACID compliant transactions. ,33.7797,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,33.0768,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,Describe the differences between horizontal and vertical scaling. ,32.234,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,Briefly describe how a key/value store can be used as a feature store. ,40.3244,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,When was Redis originally released? ,63.334,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,"In Redis, what is the difference between the INC and INCR commands?",118.1004,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,What are the benefits of BSON over JSON in MongoDB?,60.6393,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,46.0705,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,318.4908,30.7,What does the $nin operator mean in a Mongo query?,26.4505,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,68.255,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,When are linked lists faster than contiguously-allocated lists? ,22.1519,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",139.0914,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,171.7833,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,What is disk-based indexing and why is it important for database systems?,38.3808,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,"In the context of a relational database system, what is a transaction? ",55.7614,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,Succinctly describe the four components of ACID compliant transactions. ,29.9299,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,31.5801,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,Describe the differences between horizontal and vertical scaling. ,34.2829,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,Briefly describe how a key/value store can be used as a feature store. ,35.309,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,When was Redis originally released? ,63.298,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,"In Redis, what is the difference between the INC and INCR commands?",114.7132,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,What are the benefits of BSON over JSON in MongoDB?,62.2678,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,45.6714,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,439.7745,30.31,What does the $nin operator mean in a Mongo query?,26.1637,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,67.0785,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,When are linked lists faster than contiguously-allocated lists? ,18.1897,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",200.0602,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,199.6659,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,What is disk-based indexing and why is it important for database systems?,41.5921,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,"In the context of a relational database system, what is a transaction? ",66.5222,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,Succinctly describe the four components of ACID compliant transactions. ,33.5749,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,39.5333,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,Describe the differences between horizontal and vertical scaling. ,32.1731,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,Briefly describe how a key/value store can be used as a feature store. ,36.6443,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,When was Redis originally released? ,86.972,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,"In Redis, what is the difference between the INC and INCR commands?",158.0295,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,What are the benefits of BSON over JSON in MongoDB?,56.1172,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,44.0395,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,405.6892,29.57,What does the $nin operator mean in a Mongo query?,24.1085,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,79.5377,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,When are linked lists faster than contiguously-allocated lists? ,19.0185,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",190.3789,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,211.3056,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,What is disk-based indexing and why is it important for database systems?,45.2243,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,"In the context of a relational database system, what is a transaction? ",72.5165,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,Succinctly describe the four components of ACID compliant transactions. ,39.2976,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,38.9751,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,Describe the differences between horizontal and vertical scaling. ,32.9576,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,Briefly describe how a key/value store can be used as a feature store. ,38.7247,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,When was Redis originally released? ,84.0056,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,"In Redis, what is the difference between the INC and INCR commands?",170.1916,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,What are the benefits of BSON over JSON in MongoDB?,64.3201,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,48.6608,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,433.4547,29.77,What does the $nin operator mean in a Mongo query?,24.7673,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,69.8265,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,When are linked lists faster than contiguously-allocated lists? ,20.8535,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",200.3164,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,211.9544,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,What is disk-based indexing and why is it important for database systems?,43.2983,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,"In the context of a relational database system, what is a transaction? ",75.054,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,Succinctly describe the four components of ACID compliant transactions. ,36.0597,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,41.3309,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,Describe the differences between horizontal and vertical scaling. ,32.8505,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,Briefly describe how a key/value store can be used as a feature store. ,44.1334,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,When was Redis originally released? ,83.2033,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,"In Redis, what is the difference between the INC and INCR commands?",173.459,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,What are the benefits of BSON over JSON in MongoDB?,65.9075,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,59.0718,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,gemma3:latest,430.7764,29.78,What does the $nin operator mean in a Mongo query?,29.9855,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,68.934,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,When are linked lists faster than contiguously-allocated lists? ,16.2959,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",21.3524,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,19.6076,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,What is disk-based indexing and why is it important for database systems?,39.2809,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,"In the context of a relational database system, what is a transaction? ",20.2609,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,Succinctly describe the four components of ACID compliant transactions. ,28.4401,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,15.3906,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,Describe the differences between horizontal and vertical scaling. ,40.0998,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,Briefly describe how a key/value store can be used as a feature store. ,17.2326,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,When was Redis originally released? ,3.4045,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,"In Redis, what is the difference between the INC and INCR commands?",34.8971,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,What are the benefits of BSON over JSON in MongoDB?,46.9765,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,14.607,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,315.4777,28.54,What does the $nin operator mean in a Mongo query?,18.5556,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,62.1805,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,When are linked lists faster than contiguously-allocated lists? ,21.0039,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",29.8713,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,21.0903,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,What is disk-based indexing and why is it important for database systems?,41.8712,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,"In the context of a relational database system, what is a transaction? ",16.7022,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,Succinctly describe the four components of ACID compliant transactions. ,30.4102,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,15.0196,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,Describe the differences between horizontal and vertical scaling. ,35.6039,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,Briefly describe how a key/value store can be used as a feature store. ,14.3553,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,When was Redis originally released? ,3.5343,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,"In Redis, what is the difference between the INC and INCR commands?",29.7341,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,What are the benefits of BSON over JSON in MongoDB?,37.0933,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,14.9003,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,335.7824,27.94,What does the $nin operator mean in a Mongo query?,18.4743,200,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,62.3238,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,When are linked lists faster than contiguously-allocated lists? ,19.2838,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",27.5658,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,20.7342,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,What is disk-based indexing and why is it important for database systems?,40.2016,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,"In the context of a relational database system, what is a transaction? ",15.2087,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,Succinctly describe the four components of ACID compliant transactions. ,31.795,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,15.6964,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,Describe the differences between horizontal and vertical scaling. ,32.5523,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,Briefly describe how a key/value store can be used as a feature store. ,15.7371,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,When was Redis originally released? ,3.9516,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,"In Redis, what is the difference between the INC and INCR commands?",30.7165,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,What are the benefits of BSON over JSON in MongoDB?,39.1134,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,12.837,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,376.8017,29.38,What does the $nin operator mean in a Mongo query?,18.1307,200,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,55.2406,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,When are linked lists faster than contiguously-allocated lists? ,19.3868,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",23.1988,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,21.6765,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,What is disk-based indexing and why is it important for database systems?,37.6359,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,"In the context of a relational database system, what is a transaction? ",15.5677,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,Succinctly describe the four components of ACID compliant transactions. ,28.363,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,13.6234,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,Describe the differences between horizontal and vertical scaling. ,32.4186,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,Briefly describe how a key/value store can be used as a feature store. ,18.481,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,When was Redis originally released? ,2.849,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,"In Redis, what is the difference between the INC and INCR commands?",26.2212,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,What are the benefits of BSON over JSON in MongoDB?,35.5761,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,13.319,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,276.8727,28.3,What does the $nin operator mean in a Mongo query?,18.869,500,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,58.6526,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,When are linked lists faster than contiguously-allocated lists? ,18.7742,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",27.7224,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,19.4825,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,What is disk-based indexing and why is it important for database systems?,37.4239,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,"In the context of a relational database system, what is a transaction? ",15.9343,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,Succinctly describe the four components of ACID compliant transactions. ,27.9668,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,14.0117,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,Describe the differences between horizontal and vertical scaling. ,34.0804,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,Briefly describe how a key/value store can be used as a feature store. ,17.3726,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,When was Redis originally released? ,5.0044,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,"In Redis, what is the difference between the INC and INCR commands?",33.1942,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,What are the benefits of BSON over JSON in MongoDB?,38.3129,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,14.2328,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,285.6957,25.35,What does the $nin operator mean in a Mongo query?,19.8162,500,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,47.7832,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,When are linked lists faster than contiguously-allocated lists? ,17.374,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",25.1591,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,20.0748,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,What is disk-based indexing and why is it important for database systems?,39.6002,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,"In the context of a relational database system, what is a transaction? ",24.4663,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,Succinctly describe the four components of ACID compliant transactions. ,29.5293,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,17.0796,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,Describe the differences between horizontal and vertical scaling. ,46.2063,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,Briefly describe how a key/value store can be used as a feature store. ,17.6309,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,When was Redis originally released? ,4.1174,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,"In Redis, what is the difference between the INC and INCR commands?",29.8334,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,What are the benefits of BSON over JSON in MongoDB?,30.1318,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,11.8598,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,255.0183,28.05,What does the $nin operator mean in a Mongo query?,17.6648,500,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,58.9824,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,When are linked lists faster than contiguously-allocated lists? ,19.2414,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",28.5194,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,20.4436,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,What is disk-based indexing and why is it important for database systems?,43.2494,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,"In the context of a relational database system, what is a transaction? ",17.4957,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,Succinctly describe the four components of ACID compliant transactions. ,29.2854,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,15.7481,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,Describe the differences between horizontal and vertical scaling. ,33.3107,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,Briefly describe how a key/value store can be used as a feature store. ,15.3308,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,When was Redis originally released? ,3.7955,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,"In Redis, what is the difference between the INC and INCR commands?",30.6197,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,What are the benefits of BSON over JSON in MongoDB?,38.4005,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,13.5987,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,192.5018,27.92,What does the $nin operator mean in a Mongo query?,18.0134,1000,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,52.1585,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,When are linked lists faster than contiguously-allocated lists? ,18.2952,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",28.8714,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,19.531,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,What is disk-based indexing and why is it important for database systems?,37.5554,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,"In the context of a relational database system, what is a transaction? ",16.5411,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,Succinctly describe the four components of ACID compliant transactions. ,32.1568,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,15.2831,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,Describe the differences between horizontal and vertical scaling. ,34.9953,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,Briefly describe how a key/value store can be used as a feature store. ,16.5139,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,When was Redis originally released? ,3.0481,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,"In Redis, what is the difference between the INC and INCR commands?",29.5178,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,What are the benefits of BSON over JSON in MongoDB?,37.788,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,13.8189,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,190.8364,28.5,What does the $nin operator mean in a Mongo query?,20.825,1000,50
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,51.4442,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,When are linked lists faster than contiguously-allocated lists? ,16.9469,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",28.2798,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,19.193,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,What is disk-based indexing and why is it important for database systems?,40.787,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,"In the context of a relational database system, what is a transaction? ",16.0493,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,Succinctly describe the four components of ACID compliant transactions. ,30.7667,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,14.5381,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,Describe the differences between horizontal and vertical scaling. ,35.1017,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,Briefly describe how a key/value store can be used as a feature store. ,15.4313,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,When was Redis originally released? ,3.3951,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,"In Redis, what is the difference between the INC and INCR commands?",37.5357,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,What are the benefits of BSON over JSON in MongoDB?,29.8188,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,15.0045,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-MiniLM-L6-v2,gemma3:latest,180.8755,24.69,What does the $nin operator mean in a Mongo query?,13.4946,1000,100
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,134.1838,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,When are linked lists faster than contiguously-allocated lists? ,33.1459,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+     20	",95.1884,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,Why is a B+ Tree a better than an AVL tree when indexing a large dataset?,81.0457,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,What is disk-based indexing and why is it important for database systems?,64.3854,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,"In the context of a relational database system, what is a transaction? ",53.2193,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,Succinctly describe the four components of ACID compliant transactions. ,36.9,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,Why does the CAP principle not make sense when applied to a single-node MongoDB instance? ,64.2192,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,Describe the differences between horizontal and vertical scaling. ,49.6146,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,Briefly describe how a key/value store can be used as a feature store. ,36.3787,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,When was Redis originally released? ,33.7831,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,"In Redis, what is the difference between the INC and INCR commands?",56.3692,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,What are the benefits of BSON over JSON in MongoDB?,47.4258,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,Write a Mongo query based on the movies data set that returns the titles of all movies released between 2010 and 2015 from the suspense genre? ,63.5459,200,0
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,nomic-ai/nomic-embed-text-v1,gemma3:latest,2472.0854,34.76,What does the $nin operator mean in a Mongo query?,35.0804,200,0
