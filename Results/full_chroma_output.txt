@@ -1,0 +1,1199 @@
+c:\Users\kibbl\anaconda3\envs\captcha\Lib\site-packages\torch\utils\_pytree.py:185: FutureWarning: optree is installed but the version is too old to support PyTorch Dynamo in C++ pytree. C++ pytree support is disabled. Please consider upgrading optree using `python3 -m pip install --upgrade 'optree>=0.13.0'`.
+  warnings.warn(
+c:\Users\kibbl\anaconda3\envs\captcha\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+WARNING:tensorflow:From C:\Users\kibbl\AppData\Roaming\Python\Python312\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\kibbl\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\kibbl\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt_tab to
+[nltk_data]     C:\Users\kibbl\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+100%|██████████| 16/16 [00:58<00:00,  3.64s/it]
+Time elapsed for indexing: 58.197 seconds
+Peak memory usage during indexing: 3.66 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on my knowledge, I can provide an answer.
+
+The main difference between a list where memory is contiguously allocated (contiguous allocation) and a list where linked structures are used (linked lists) is:
+
+**Contiguous Allocation**
+
+* Memory is allocated contiguously in the program's address space.
+* Elements of the list are stored one after another in adjacent locations in memory.
+* Accessing an element typically requires calculating its memory address using the base address and offset.
+
+Advantages:
+- Faster access times for sequential operations (e.g., iteration, searching).
+- Generally more efficient in terms of memory usage.
+
+Disadvantages:
+- Insertions or deletions can be slower because all elements after the affected position must be shifted.
+- May lead to fragmentation if there are frequent insertions and deletions.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:03<00:00,  4.00s/it]
+Time elapsed for indexing: 63.99 seconds
+Peak memory usage during indexing: 0.41 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, I can infer that the lists in question are related to data structures.
+
+In general, a contiguous allocation method uses continuous blocks of memory to store elements, whereas a linked structure method stores each element separately with pointers or references to other elements.
+
+The main difference between these two methods is:
+
+*   **Memory Allocation**: In contiguous allocation, memory is allocated contiguously, meaning all elements are stored in adjacent memory locations. This can be efficient for static data and allows for fast access times since it only requires addressing the starting address of the list.
+*   **Access Time**: Contiguous allocation has faster access times since elements are accessed directly by their index value. This makes operations like insertion or deletion at arbitrary positions more complex because each element must shift to fill the gap.
+
+On the other hand, linked structures allocate memory individually for each item in the list and link these items together to form a sequence. Each node contains information about itself (like data) and references to the next node.
+
+*   **Memory Usage**: Linked structures require more memory compared to contiguous allocation because every element has its own block of memory.
+*   **Insertion/Deletion Operations**: In linked lists, insertion or deletion at any arbitrary position is relatively simpler and faster since it only requires updating pointers. This is a significant advantage over contiguous allocation methods.
+
+In general, the choice between these two structures for implementing a list depends on what kind of operations you will frequently be performing (e.g., random access vs. sequential access).
+Time elapsed for query: 37.5214 seconds
+---------------------------
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:18<00:00,  4.90s/it]
+Time elapsed for indexing: 78.3823 seconds
+Peak memory usage during indexing: 0.41 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I don't have enough information to accurately answer your question about lists and their allocation methods.
+
+However, I can provide some general information. In computer science, there are two common ways to implement lists: contiguous allocation and linked structure (also known as linked list).
+
+**Contiguous Allocation**: In this approach, memory is allocated contiguously in blocks of fixed size. When a new element is added to the list, it simply appends it to the end of the block, which can lead to fragmentation if elements are frequently inserted or deleted.
+
+**Linked Structure (Linked List)**: In contrast, linked structures use separate memory locations for each element, where each element points to the next one. When a new element is added, it's allocated a separate memory location and its pointer is updated to point to the next element in the list. This approach avoids fragmentation and allows for efficient insertion and deletion of elements.
+
+The context you provided mentions page 4 of "02 - Foundations.pdf" with a similarity of 0.44, which might not be relevant to this question, and there's no information about linked structures being used in that file.
+Time elapsed for query: 30.8451 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context, it appears that you're discussing data structures and their performance characteristics.
+
+Generally speaking, linked lists are faster than contiguously-allocated lists in terms of memory allocation and deallocation when:
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:55<00:00,  3.45s/it]
+Time elapsed for indexing: 55.1322 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I believe the answer to your question can be inferred from the information provided.
+
+According to what's mentioned in the context, page 3 of "02 - Foundations.pdf" has a similarity of 0.69 with the current query (list). Page 4 has a similarity of 0.44, indicating some difference or new concepts introduced.
+
+Unfortunately, without the content of pages 3 and 4 explicitly stated in this interaction, I can only assume that page 3 discusses list data structures where memory is contiguously allocated. A contiguous allocation implies that all elements in the list are stored in adjacent memory locations, which can lead to more efficient access patterns but may also have limitations when it comes to inserting or deleting elements.
+
+On the other hand, linked structures imply storing each element separately and linking them through a common pointer, allowing for insertions and deletions without having to shift all subsequent elements. While this offers flexibility in terms of list operations, it does come at a cost due to increased memory usage per element.
+
+Without explicit content on these topics from the provided context, I don't know if there's any direct comparison or contrast mentioned regarding linked lists with contiguous allocation.
+Time elapsed for query: 30.6518 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context, it appears that the answer can be inferred from the similarities between pages of a PDF document.
+
+The most similar page to the query ("When are linked lists faster than contiguously-allocated lists?") is From 02 - Foundations.pdf (page 3) with a similarity of 0.89.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:52<00:00,  3.29s/it]
+Time elapsed for indexing: 52.6362 seconds
+Peak memory usage during indexing: 0.41 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I'm familiar with the concept of lists in programming.
+
+A list where memory is contiguously allocated is typically implemented using an array. In this implementation, all elements of the list are stored in consecutive memory locations. This approach can provide fast access times for random elements and good performance for operations like indexing and iteration.
+
+On the other hand, a list where linked structures are used is often implemented as a dynamically-sized collection of nodes or objects, each of which points to the next element in the sequence. In this implementation, each element in the list knows the location of the previous and next elements in the sequence, but not its own memory address.
+
+The key differences between these two implementations are:
+
+1. **Memory allocation**: Contiguous allocation uses a fixed amount of contiguous memory, while linked structures use individual nodes that can be allocated separately.
+2. **Access times**: Arrays typically have faster access times for random elements due to the contiguity of memory allocation.
+3. **Dynamic size**: Linked lists can grow or shrink dynamically as elements are added or removed, whereas arrays require a fixed initial size.
+
+I hope this answers your question accurately!
+Time elapsed for query: 28.8108 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:57<00:00,  3.58s/it]
+Time elapsed for indexing: 57.2535 seconds
+Peak memory usage during indexing: 0.40 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I can infer that the query is related to computer science, specifically data structures.
+
+A list with contiguous memory allocation refers to a type of data structure where all elements of the list are stored in adjacent memory locations. This means that each element is linked to its next neighbor through a pointer or index, and no additional memory is used for pointers or other overhead.
+
+On the other hand, a list with linked structures uses separate memory blocks for each element, where each element contains a pointer (or reference) to the next element in the list. This approach requires more memory than contiguous allocation because each element has an extra block of memory just for the pointer.
+
+The main difference between these two approaches is:
+
+1. Memory usage: Contiguous allocation uses less memory because it doesn't require pointers or overhead structures, while linked structures use more memory to store the additional blocks for pointers.
+2. Insertion and deletion efficiency: Linked structures are generally faster for insertion and deletion operations because you only need to update the pointers of adjacent elements, whereas contiguous allocation requires shifting all subsequent elements when inserting or deleting an element from a specific position.
+
+In summary, contiguous memory allocation is often used for small lists where memory usage is not a concern, while linked structures are commonly employed in larger datasets where efficient insertion and deletion operations are crucial.
+Time elapsed for query: 34.5546 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:53<00:00,  3.34s/it]
+Time elapsed for indexing: 53.5183 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I can infer that the query is related to data structures.
+
+A list with contiguous memory allocation means that all elements of the list are stored in consecutive locations in memory. This approach is often used for arrays or vectors, where each element is a fixed-size value (e.g., integers) and the memory location is allocated accordingly.
+
+On the other hand, a list using linked structures typically employs pointers to store its elements. Each element in this type of list contains not only the actual data but also a reference (i.e., a pointer) to the next element in the sequence. This approach allows for more flexibility, as it's easier to add or remove elements from the middle of the list without having to shift all subsequent elements.
+
+The key differences between these two approaches are:
+
+1. **Memory Usage:** Contiguous allocation typically requires less memory because it only allocates a large block of space and then divides that into smaller units (elements) as needed, whereas linked structures require more memory since each node needs a separate pointer to point to the next one.
+2. **Insertion/Deletion Efficiency:** Linked lists are generally better suited for insertion or deletion operations at arbitrary positions because only one element's pointer needs updating, whereas in contiguous allocation, shifting all elements after the change occurs requires additional time and space if an operation happens somewhere other than the beginning or end of the list.
+3. **Cache Performance:** Contiguous memory might offer better cache locality since memory is directly adjacent to it, potentially improving performance by reducing disk I/O when accessing parts of data that are stored contiguously in RAM.
+
+While linked lists provide the flexibility needed for some situations and can be very effective in specific contexts (like implementing stacks or queues), arrays or contiguous allocation often yield faster execution times due to better cache locality.
+Time elapsed for query: 45.7458 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:55<00:00,  3.48s/it]
+Time elapsed for indexing: 55.6448 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I can provide an answer.
+
+A list where memory is contiguously allocated (also known as a contiguous list or array) and a list where linked structures are used are two different data structures with distinct characteristics.
+
+**Contiguous List:**
+
+In a contiguous list, each element shares the same block of memory. This means that when you modify an element, you're also modifying adjacent elements. The entire list is allocated as a single block of memory, which can be beneficial for performance when accessing elements in sequence.
+
+**Linked List:**
+
+A linked list, on the other hand, uses linked structures (i.e., pointers) to store each element. Each element points to the next element in the list, rather than sharing contiguous memory blocks. This allows for more flexibility and ease of insertion/deletion of elements at arbitrary positions.
+
+The main differences between these two data structures are:
+
+1. **Memory allocation:** Contiguous lists allocate a single block of memory, while linked lists use separate memory blocks for each individual element.
+2. **Access patterns:** Contiguous lists have faster access times when accessing elements in sequence (i.e., linear iteration), while linked lists have faster access times when inserting/deleting elements at arbitrary positions (i.e., random access).
+3. **Memory usage:** Linked lists generally use more memory than contiguous lists, as each element requires its own separate block of memory.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:55<00:00,  3.48s/it]
+Time elapsed for indexing: 55.7178 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I don't have specific information about lists in programming. The text appears to be related to computer science or programming, but it doesn't cover this topic directly.
+
+However, I can provide a general answer based on common knowledge in programming:
+
+In computer science, there are two main approaches to implement lists: contiguous memory allocation and linked structures.
+
+**Contiguous Memory Allocation:**
+When memory is allocated contiguously for a list, all the elements of the list are stored in adjacent memory locations. This approach allows for efficient access and manipulation of elements within the list, as the computer can directly access any element without needing to traverse through other elements.
+
+**Linked Structures:**
+In contrast, when linked structures are used to implement a list, each element (or node) points to the next element in the sequence. This approach requires more memory, as each element needs to store the address of the next element. However, it allows for dynamic insertion or deletion of elements at any position within the list without having to shift all the other elements.
+
+The main differences between these two approaches are:
+
+* Memory efficiency: Contiguous memory allocation is generally more memory-efficient than linked structures.
+* Flexibility: Linked structures provide more flexibility in terms of inserting or deleting elements, as they don't require shifting all elements when adding or removing an element.
+* Access speed: Contiguous memory allocation can be faster for accessing elements, as the computer doesn't need to traverse through other elements.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:18<00:00,  1.18s/it]
+Time elapsed for indexing: 18.9625 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on general computer science knowledge, I can provide an answer.
+
+The main difference between a list with contiguous memory allocation and a list using linked structures (also known as a dynamic array or singly-linked list) lies in how the elements are stored and accessed.
+
+**Contiguous Memory Allocation**
+
+In this approach, all elements of the list are allocated at contiguous locations in memory. This means that each element shares the same starting address, and the next element is simply offset from the previous one by the size of the previous element's data type (e.g., integer, float, etc.). When you access an element, you only need to calculate its offset from the beginning of the list.
+
+**Linked Structures**
+
+In a linked structure approach, each element is allocated separately in memory. Each node points to the next node in the sequence using a pointer or reference. This means that there are gaps between elements, and accessing an element requires traversing the pointers until you reach it. Linked structures can be useful for dynamic growth, insertion, or deletion of elements without having to reallocate the entire list.
+
+Key differences:
+
+* **Memory usage**: Contiguous allocation uses less memory because all elements share the same starting address, while linked structures allocate separate space for each element.
+* **Insertion/deletion**: Linked structures make it easier to insert or delete elements in the middle of the list without affecting adjacent elements. Contiguous allocation requires shifting all affected elements when inserting or deleting a new element.
+* **Memory fragmentation**: Linked structures can lead to memory fragmentation, where free spaces between allocated blocks are broken up and scattered throughout the memory, making them harder to utilize.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:19<00:00,  1.22s/it]
+Time elapsed for indexing: 19.546 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+In a contiguous allocation, the elements of the list are stored in consecutive blocks of memory, which can lead to more efficient access times since they are physically close together.
+
+On the other hand, when linked structures are used, each element is stored separately and only contains a reference (or "link") to the next element. This means that accessing an element requires traversing this link chain, potentially leading to slower access times due to additional overhead of searching for and following the links.
+
+The choice between contiguous allocation and linked structures depends on factors such as memory constraints, expected growth rate of elements, and desired performance characteristics.
+Time elapsed for query: 17.9421 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context provided, I couldn't find a specific answer to your question about when linked lists are faster than contiguously-allocated lists.
+
+However, I can tell you that according to the text from the 05 - NoSQL Intro + KV DBs.pdf (page 29), linked lists have a higher similarity score (0.72) with the concept of "NoSQL Intro + KV DBs" compared to contiguously-allocated lists.
+
+Unfortunately, without more information about the specific topic or context related to linked lists and contiguous allocation, I couldn't provide a direct answer to your question.
+
+But if you can provide more context or clarify your question, I'll do my best to help!
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:23<00:00,  1.45s/it]
+Time elapsed for indexing: 23.2625 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+In a contiguous allocation list, elements are stored in consecutive memory locations, allowing for efficient random access. This means that each element can be accessed directly using its index, without having to traverse the list.
+
+On the other hand, in a linked structure list, each element is stored separately and contains a reference (or "link") to the next element in the list. To access an element, you need to start at the first element and follow the links until you reach the desired element, which can be slower than contiguous allocation.
+
+The key difference between the two is that contiguous allocation provides direct access to elements through their index, while linked structures require traversing the list to access any given element. This difference in memory layout affects both storage space and time complexity for operations like insertion, deletion, or search.
+Time elapsed for query: 22.2161 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the provided context, I don't have any information about linked lists or contiguous-allocated lists being compared in terms of speed. The context appears to be related to text comparison and similarity analysis, but it does not provide any relevant information about data structures like linked lists.
+
+Therefore, my answer is: I don't know.
+Time elapsed for query: 10.8715 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:15<00:00,  1.06it/s]
+Time elapsed for indexing: 15.1247 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I don't have specific information about lists from PDF documents. However, I can provide general information about lists with contiguous memory allocation and linked structures.
+
+In computer science, there are two common types of data structures that represent lists:
+
+1. **Contiguous Memory Allocation**: In this method, all elements of a list are stored contiguously in memory. This means that the entire list is allocated as a single block of memory, and each element is offset from the previous one by a fixed amount (e.g., 4 bytes for a pointer). Examples of contiguous memory allocation include arrays in C/C++.
+
+2. **Linked Structures**: In this method, each element of a list is stored separately in memory, with a "link" or "pointer" to the next element in the list. This means that there are gaps between elements, and each element can be accessed independently by its address. Linked lists are commonly used in programming languages like Java, Python, and JavaScript.
+
+The main differences between these two approaches are:
+
+*   **Memory Efficiency**: Contiguous memory allocation is generally more memory-efficient than linked structures because it minimizes the overhead of pointers.
+*   **Random Access**: Linked structures allow for faster insertion and deletion of elements at arbitrary positions, as only the affected node(s) need to be updated. However, random access (accessing an element by its index) can be slower in linked lists compared to contiguous memory allocation, because it may require traversing the list from the beginning.
+*   **Implementation Complexity**: Linked structures are often more complex to implement and manage than contiguous memory allocation, as they require additional bookkeeping data (e.g., node pointers).
+
+Without specific information about the context of your query, I hope this general information helps.
+Time elapsed for query: 44.4342 seconds
+---------------------------
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:16<00:00,  1.00s/it]
+Time elapsed for indexing: 16.0263 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, I don't know the specific information about lists where memory is contiguously allocated versus those that use linked structures.
+
+However, I can tell you that in general, contiguous memory allocation refers to storing data in adjacent locations of memory, whereas linked structure allocation refers to using pointers or references to store data, which can be located anywhere in memory.
+Time elapsed for query: 13.2205 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context provided, I was unable to find information about when linked lists are faster than contiguously-allocated lists. However, I can tell you that there isn't enough context here to provide an accurate answer.
+Time elapsed for query: 8.6351 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:16<00:00,  1.01s/it]
+Time elapsed for indexing: 16.1076 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+A computer science question!
+
+The main difference between a list where memory is contiguously allocated (also known as an array or contiguous allocation) and a list where linked structures are used is:
+
+**Memory Layout**
+
+In an array-based list, the elements are stored in contiguous blocks of memory, which means that each element is located next to the previous one. This can lead to more efficient cache usage and faster access times.
+
+On the other hand, in a linked list (where linked structures like nodes or pointers are used), each element points to the next element in the sequence. This means that there is no contiguous allocation of memory; instead, each node (or entry) is stored separately, with only references to its neighbors.
+
+**Performance Implications**
+
+The choice between array-based and linked list implementations can affect performance:
+
+* Contiguous allocation: Faster access times for random elements, as the CPU can exploit cache locality. However, adding or removing elements at arbitrary positions can be slower.
+* Linked lists: Slower access times for random elements, but faster insertion or deletion of elements at specific positions.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:15<00:00,  1.06it/s]
+Time elapsed for indexing: 15.1221 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I don't have specific information about lists in programming from the provided PDFs. However, I can provide a general answer.
+
+In computer science, a contiguous list refers to a data structure where elements are stored contiguously in memory, meaning that each element is allocated next to the previous one in the same block of memory. This means that accessing any element in the list requires a fixed number of memory accesses (equal to the index).
+
+On the other hand, linked lists use a different approach. In a linked list, elements are not stored contiguously in memory; instead, each element is allocated separately and contains a reference (or "link") to the next element in the sequence. This means that accessing any element in the list requires traversing through these links.
+
+The main differences between contiguous lists and linked lists are:
+
+* Memory usage: Contiguous lists typically require less memory than linked lists because elements can be stored together.
+* Space efficiency: Linked lists can be more space-efficient for large datasets, but they require more memory accesses to access elements.
+* Insertion and deletion: Linked lists make it easier to insert or delete elements at any position in the list without shifting all other elements.
+
+It's worth noting that both data structures have their own trade-offs and use cases. Contiguous lists are often faster for random access, while linked lists excel at sequential access and can be more memory-efficient for large datasets.
+
+If you're looking for more specific information or implementation details, I recommend consulting additional resources or documentation on programming languages (e.g., Python, C++, Java).
+Time elapsed for query: 40.319 seconds
+---------------------------
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:15<00:00,  1.07it/s]
+Time elapsed for indexing: 15.0083 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, I don't have specific information about the exact content of the PDFs or their relevance to the query.
+
+However, I can provide a general answer. In computer science, there are two common ways to implement lists in memory: contiguous allocation and linked structures.
+
+**Contiguous Allocation:**
+In this approach, memory is allocated contiguously for the entire list. This means that all elements of the list are stored in adjacent memory locations, which can lead to efficient access times since they are sequentially stored in memory. Contiguous allocation is often used in arrays or dynamic arrays.
+
+**Linked Structures:**
+In contrast, linked structures involve storing each element separately and linking them together with pointers (or references) that point to the next element in the sequence. This approach allows for more flexibility in inserting, deleting, or modifying elements at arbitrary positions in the list.
+
+The key differences between these two approaches are:
+
+1. **Memory allocation**: Contiguous allocation uses a single block of memory for the entire list, while linked structures allocate separate memory blocks for each individual element.
+2. **Access time**: Access times are generally faster with contiguous allocation since elements can be accessed sequentially in memory. Linked structures may have slower access times since accessing an element requires traversing the links to find it.
+3. **Insertion and deletion**: Contiguous allocation can make it difficult or expensive to insert or delete elements at arbitrary positions, while linked structures provide flexibility for these operations.
+
+I hope this general explanation meets your query! If you need more specific information, please let me know if I'm close or not relevant.
+...
+---------------------
+
+llama3.2:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:14<00:00,  1.07it/s]
+Time elapsed for indexing: 14.9441 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I don't have specific information about lists in programming languages. However, I can provide a general answer that might be relevant.
+
+In computer science, there are two main types of data structures that can be used to implement lists: contiguous allocation and linked structures.
+
+**Contiguous Allocation:**
+When memory is contiguously allocated for a list, it means that all the elements in the list are stored in adjacent memory locations. This approach is often used in arrays or vectors, where each element is a contiguous block of memory.
+
+In contrast to linked structures, when memory is contiguously allocated, the elements in the list share the same memory address space. This can lead to faster access times and improved performance, as the CPU can perform operations on adjacent memory locations more efficiently.
+
+**Linked Structures:**
+When linked structures are used to implement a list, each element (or "node") points to the next element in the sequence. This approach is often used in dynamic arrays or linked lists, where elements are added or removed dynamically.
+
+In contrast to contiguous allocation, when linked structures are used, each element has its own memory address space. While this can be beneficial for dynamic data structures, it can also lead to slower access times and increased memory usage, as the CPU needs to traverse the list of pointers to access any given element.
+
+In summary, the main difference between a list with contiguous allocation and one with linked structures is how the elements are stored in memory. Contiguous allocation uses adjacent memory locations, while linked structures use separate memory addresses for each element.
+
+Please note that this answer is based on general knowledge and might not be specific to the programming language or context mentioned in the provided text snippet. If you have any further questions or clarification regarding this topic, feel free to ask!
+...
+---------------------
+---------------------
+
+llama3.2:latest nomic-ai/nomic-embed-text-v1
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+c:\Users\kibbl\anaconda3\envs\captcha\Lib\site-packages\huggingface_hub\file_download.py:142: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\kibbl\.cache\huggingface\hub\models--nomic-ai--nomic-embed-text-v1. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Test failed, exception: Loading nomic-ai/nomic-embed-text-v1 requires you to execute the configuration file in that repo on your local machine. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest nomic-ai/nomic-embed-text-v1
+Test failed, exception: Loading nomic-ai/nomic-embed-text-v1 requires you to execute the configuration file in that repo on your local machine. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest nomic-ai/nomic-embed-text-v1
+Test failed, exception: Loading nomic-ai/nomic-embed-text-v1 requires you to execute the configuration file in that repo on your local machine. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+
+---------------------
+---------------------
+---------------------
+
+llama3.2:latest nomic-ai/nomic-embed-text-v1
+Test failed, exception: Loading nomic-ai/nomic-embed-text-v1 requires you to execute the configuration file in that repo on your local machine. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+
+---------------------
+---------------------
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:03<00:00,  3.96s/it]
+Time elapsed for indexing: 63.3228 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+In a contiguous allocation list, memory is allocated as a single block of continuous space, where each element is stored in adjacent locations. This means that when an element is inserted or removed from the middle of the list, it requires shifting all subsequent elements to make room.
+
+On the other hand, a linked structure list uses separate storage blocks for each element, with each element's memory location pointing to the next element. When an element is inserted or removed from the middle of the list, only the pointers need to be updated, without affecting the actual memory allocation.
+
+This results in a key difference:
+
+*   Contiguous allocation: Slower insertion and deletion operations (O(n)), as elements must be shifted to accommodate new data.
+*   Linked structure allocation: Faster insertion and deletion operations (O(1) on average), since only pointers need to be updated.
+Time elapsed for query: 23.6202 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the provided context, I don't know the specific information about when linked lists are faster than contiguously-allocated lists. The context appears to be related to document similarities rather than data structures and their performance characteristics. If you have any additional context or information, I'd be happy to try and help further!
+Time elapsed for query: 10.8964 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:14<00:00,  4.67s/it]
+Time elapsed for indexing: 74.7601 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, I don't have enough information to accurately answer your query about lists with contiguous allocation versus linked structures. The context appears to be related to text analysis or document comparison, which doesn't seem to be relevant to the question about list implementation.
+
+If you could provide more context or clarify what you're asking, I'd be happy to try and assist you further!
+Time elapsed for query: 13.2777 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context provided, I don't have information about when linked lists are faster than contiguously-allocated lists. The context appears to be related to text analysis and document similarity, rather than data structures or performance comparisons between linked lists and contiguous allocation.
+Time elapsed for query: 9.1378 seconds
+---------------------------
+Query: Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
+
+		  30
+	     /  \
+	    25   35
+	   /
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:26<00:00,  5.43s/it]
+Time elapsed for indexing: 86.8292 seconds
+Peak memory usage during indexing: 0.40 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+In a contiguous memory allocation, the elements of a list are stored in adjacent memory locations, which can lead to:
+
+* Efficient random access, as elements can be accessed directly using their index.
+* Fast copying or moving large parts of the list, as the entire block of allocated memory can be copied at once.
+
+On the other hand, linked structures (also known as dynamically allocated or node-based lists) use each element as a separate object, with a reference to the next element in the sequence. This leads to:
+
+* Inefficient random access, as elements need to be searched and retrieved sequentially.
+* Slower copying or moving large parts of the list, as each element needs to be individually retrieved and reassigned.
+
+In general, contiguous memory allocation is faster for small to medium-sized lists, while linked structures are more suitable for dynamic or sparse data structures where elements are frequently added or removed.
+Time elapsed for query: 24.2833 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the provided context, I don't have specific information about when linked lists are faster than contiguously-allocated lists. The context seems to be related to document similarities rather than data structures and their performance characteristics.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:00<00:00,  3.77s/it]
+Time elapsed for indexing: 60.3548 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, it seems that the query relates to computer science or programming concepts.
+
+A list where memory is contiguously allocated means that all elements in the list share the same block of memory. This can lead to efficient access and modification of elements in the list, as adjacent elements are stored in consecutive locations.
+
+On the other hand, a list where linked structures are used means that each element (or node) contains a reference (or pointer) to the next element in the sequence. Each element is allocated separate memory locations. This approach can be beneficial for dynamic lists or when the order of elements matters, as nodes can be inserted or deleted without shifting adjacent nodes.
+
+The main difference between these two approaches is:
+
+- Contiguous allocation: Faster access and modification times because elements are stored in consecutive memory locations.
+- Linked structures: More flexible, but potentially slower access and modification times due to the need to follow pointers.
+Time elapsed for query: 25.0519 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context provided, I found that according to the information from "02 - Foundations.pdf" (page 4), linked lists are faster than contiguously-allocated lists when memory is not allocated contiguously.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:00<00:00,  3.79s/it]
+Time elapsed for indexing: 60.7098 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I don't know. The provided text snippets seem to be related to a PDF document discussing computer science concepts, but they don't appear to cover the specific topic of lists with contiguous memory allocation versus linked structures.
+
+However, I can provide a general answer based on my knowledge of computer science:
+
+In computer science, there are two common ways to implement dynamic arrays or lists: contiguous memory allocation and linked structures.
+
+**Contiguous Memory Allocation**
+
+In this approach, the list is stored in a single block of memory. Each element in the list is allocated contiguously from the start of the block, which means that all elements share the same starting address. This allows for efficient caching and can lead to faster access times.
+
+However, contiguous allocation can be problematic when elements are frequently inserted or deleted at arbitrary positions in the list. When an element is removed, the entire block of memory must be shifted to accommodate the new position of adjacent elements. This can result in slow performance and may even lead to fragmentation issues if many blocks are allocated and deallocated.
+
+**Linked Structures**
+
+In contrast, linked structures use a separate data structure for each element in the list. Each element is pointed to by a "link" that points to the next element in the list. This allows elements to be inserted or deleted at any position in the list without having to shift entire blocks of memory.
+
+However, linked structures can lead to slower access times due to the overhead of searching for and following links between elements. Additionally, linked lists may consume more memory since each element requires an additional pointer (or "link") to point to the next element.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [01:02<00:00,  3.93s/it]
+Time elapsed for indexing: 62.9284 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on my knowledge, I can answer your question.
+
+In computer science, there are two common ways to implement lists or arrays in programming languages:
+
+1. **Contiguous Memory Allocation**: In this approach, all elements of the list are stored in contiguous blocks of memory. This means that each element is stored next to its neighboring elements, and the list is stored in a single block of memory.
+2. **Linked Structures (Dynamically Allocated)**: In this approach, each element of the list is a separate object or "node" with its own memory allocation. Each node points to the next node in the sequence using pointers. This means that each element has its own individual memory space.
+
+The main differences between these two approaches are:
+
+*   **Memory Usage**: Contiguous Memory Allocation requires less memory because all elements are stored together, whereas Linked Structures use more memory because each element has its own separate block of memory.
+*   **Insertion and Deletion**: In a contiguous list, inserting or deleting an element can be more complicated because it may require shifting the entire list. In contrast, linked lists allow for easy insertion and deletion without affecting other elements.
+*   **Space Complexity**: Linked Structures have higher space complexity than Contiguous Memory Allocation because each node requires additional memory to store its pointer.
+
+Here is a code example in Python to illustrate this:
+
+**Contiguous Memory Allocation**
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:55<00:00,  3.50s/it]
+Time elapsed for indexing: 55.9592 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I can answer that there is no information about lists in the provided PDFs, as they appear to be related to NoSQL databases.
+
+However, from my general knowledge, I can provide an answer:
+
+A list where memory is contiguously allocated (contiguous allocation) and a list where linked structures are used (linked allocation) differ in how their elements are stored in memory.
+
+In contiguous allocation, all the elements of the list are stored contiguously in memory, meaning they are one after another. This allows for efficient access to elements using indices or pointers.
+
+On the other hand, linked allocation stores each element separately and provides a link (i.e., a pointer) from one element to the next. This means that each element is not necessarily located adjacent to others in memory.
+
+The choice between contiguous and linked allocation depends on various factors, such as the type of data stored, the expected access patterns, and the available memory constraints.
+
+I don't know if this answer aligns with the specific context of the provided PDFs.
+Time elapsed for query: 28.175 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:56<00:00,  3.52s/it]
+Time elapsed for indexing: 56.3711 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, it appears to be related to Computer Science or Data Structures.
+
+In general, when we talk about lists in computer science, there are two common approaches:
+
+1. **Contiguous Memory Allocation**: In this approach, all elements of a list are stored in contiguous memory locations. This means that each element is directly adjacent to the next one, forming a continuous block of memory.
+
+2. **Linked Structures (or Linked Lists)**: In contrast, linked structures allocate individual elements separately and store references to the next element in a separate field, called the "next" or "link". Each element is not stored contiguously with the others; instead, they are scattered throughout memory.
+
+Now, regarding the difference between these two approaches:
+
+**Advantages of Contiguous Memory Allocation:**
+
+- Faster access times since all elements can be accessed directly using a simple offset calculation.
+- Less overhead due to fewer pointers needed for each element (since there's no need for "next" references).
+
+**Disadvantages of Contiguous Memory Allocation:**
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-mpnet-base-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:56<00:00,  3.52s/it]
+Time elapsed for indexing: 56.2703 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I can make an educated guess about the answer.
+
+In general, when it comes to data structures like lists, there are two common approaches:
+
+1. **Contiguous Memory Allocation**: In this approach, all elements of the list are stored in adjacent memory locations. This means that the memory is allocated contiguously, and each element points directly to the next one using a contiguous offset.
+2. **Linked Structures**: In this approach, each element of the list contains a "head" pointer that points to the next element in the sequence. However, there can be gaps between elements, as the list can store arbitrary data values alongside the pointers.
+
+The key differences between these two approaches are:
+
+* **Memory Efficiency**: Linked structures typically require more memory than contiguous allocation because each node (or element) needs additional space for the pointer to the next node.
+* **Insertion and Deletion**: Contiguous allocation makes insertion and deletion more complex because you need to shift all elements after the insertion point or before the deletion point. In contrast, linked structures can insert or delete nodes at any position without affecting other nodes.
+* **Search**: Linked structures often have faster search times because each node points directly to its next neighbor, making it easier to traverse the list sequentially.
+
+Overall, the choice between contiguous allocation and linked structures depends on the specific use case and performance requirements.
+Time elapsed for query: 35.5686 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:18<00:00,  1.15s/it]
+Time elapsed for indexing: 18.349 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, I don't have specific information about the query. The context appears to be related to PDF documents and their similarities, but it doesn't provide any relevant information about lists.
+
+However, I can provide a general answer based on my knowledge. 
+
+The main difference between a list where memory is contiguously allocated and one that uses linked structures lies in how elements are stored and accessed.
+
+A contiguous allocation method stores all the elements of a list together in continuous blocks of memory. This means that accessing an element requires adding or subtracting its index from the base address, which can be faster but also more complicated when inserting or deleting elements. 
+
+On the other hand, a linked structure (also known as a linked list) consists of a series of "nodes" where each node contains data and a reference to the next node in the sequence. In this case, accessing an element requires traversing through the nodes from the starting point until you reach that element, which can be slower but also more flexible when inserting or deleting elements.
+
+In summary, contiguous allocation is typically faster for reading but less efficient for inserting/deleting elements, while linked structures are slower to access elements but more adaptable to changes.
+Time elapsed for query: 31.6821 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context, it appears that the documents are academic papers or notes related to computer science and data structures.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:19<00:00,  1.24s/it]
+Time elapsed for indexing: 19.8038 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on general knowledge, I can provide an answer.
+
+The main differences between a list where memory is contiguously allocated (also known as contiguous allocation) and a list where linked structures are used are:
+
+**Contiguous Allocation:**
+
+* Memory is allocated in a single block of contiguous space.
+* Each element is stored in consecutive locations in the array.
+* The elements are directly accessible by their index.
+
+**Linked Structures:**
+
+* Each element (or node) has a separate memory allocation that contains references to other nodes.
+* Elements are not stored in contiguous locations; instead, each one points to the next node in the sequence.
+* Accessing an element requires traversing the linked list from its starting point.
+
+In terms of performance, contiguous allocation is generally faster because it allows for more efficient memory access and reduces the overhead of pointer operations. On the other hand, linked structures can be useful when memory is limited or when elements need to be dynamically added or removed, as they allow for flexible insertion and deletion of nodes without affecting adjacent elements.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:23<00:00,  1.44s/it]
+Time elapsed for indexing: 23.1046 seconds
+Peak memory usage during indexing: 0.39 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I don't know how to answer your query as it relates directly to the content of the PDFs you've mentioned.
+
+However, I can tell you about the difference between lists with contiguous memory allocation and linked lists. 
+
+In a list where memory is contiguously allocated, all elements are stored in adjacent memory locations. This approach has faster access times because the CPU can calculate the address of any element by adding an offset to the base address of the first element.
+
+On the other hand, in a linked list, each element points to the next element using pointers (which are essentially addresses). Linked lists have slower access times than contiguous allocation, but they offer flexibility and dynamic resizing.
+Time elapsed for query: 20.1969 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+
+RAG Response:
+Based on the context, I can provide an answer.
+
+Linked lists and contiguously-allocated lists have different memory allocation strategies. Contiguous allocation allocates a large block of memory at once, whereas linked lists allocate memory as needed for each element.
+
+In general, linked lists are faster than contiguously-allocated lists when:
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:15<00:00,  1.00it/s]
+Time elapsed for indexing: 15.9366 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I believe you're referring to the differences between contiguous storage allocation and linked data structure in computer science.
+
+In contiguous storage allocation, memory is allocated for a data structure in a single, continuous block. When an element needs to be added or removed from the list, the entire block must be shifted to accommodate the change, which can lead to fragmentation (reducing free space) and slow performance.
+
+On the other hand, linked structures use individual nodes that are stored separately in memory, each containing a reference (i.e., "link") to the next node. When an element needs to be added or removed from the list, only the affected nodes need to be updated, which is much faster.
+
+Here's a summary of the main differences:
+
+* Contiguous storage allocation:
+	+ Memory is allocated in a single block
+	+ Nodes are stored contiguously
+	+ Insertion and deletion operations require shifting entire blocks
+* Linked structures:
+	+ Each node is stored separately
+	+ Nodes are linked together
+	+ Insertion and deletion operations only require updating affected nodes
+Time elapsed for query: 29.9594 seconds
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:16<00:00,  1.01s/it]
+Time elapsed for indexing: 16.163 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on my knowledge, I can answer that.
+
+The main difference between a list where memory is contiguously allocated (also known as contiguous allocation) and a list where linked structures are used (also known as linked lists or dynamic arrays) lies in how the elements of the list are stored and accessed:
+
+**Contiguous Allocation:**
+
+* Memory is allocated as a single, large block
+* Each element is stored sequentially in memory, with no gaps between them
+* Accessing an element typically involves calculating its index (position in the list)
+* This can lead to faster access times for elements that are far apart, but slower access times for elements close together
+
+**Linked Structures:**
+
+* Memory is allocated as a series of smaller blocks or nodes
+* Each element is stored at the end of a node, with a pointer (or link) to the next node in the sequence
+* Accessing an element typically involves traversing the linked list from the beginning until the desired node is reached
+* This can lead to slower access times overall, but allows for more efficient insertion or deletion of elements at any point in the list
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:16<00:00,  1.02s/it]
+Time elapsed for indexing: 16.3444 seconds
+Peak memory usage during indexing: 0.38 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I don't have specific information about lists with contiguous memory allocation or linked structures being used in programming. However, I can provide a general answer.
+
+In computer science, there are two common data structures used to represent lists: arrays and linked lists.
+
+**Arrays (Contiguous Memory Allocation):**
+
+In an array, the elements are stored in contiguous blocks of memory, meaning that each element is located next to the previous one. This allows for efficient access and manipulation of elements using their indices.
+
+**Linked Lists (Non-Contiguous Memory Allocation):**
+
+In a linked list, each element is not stored next to the previous one; instead, each element points to the next element in the list through a "link." This means that memory allocation is non-contiguous, and each node may be located at a different address.
+
+The main differences between these two data structures are:
+
+1. **Memory Efficiency:** Linked lists can be more memory-efficient than arrays for large datasets, as they only allocate memory for each element that needs to be stored.
+2. **Insertion/Deletion:** Linked lists allow for efficient insertion and deletion of elements at any position in the list without affecting other elements, whereas arrays require shifting all elements after an insertion/deletion operation.
+3. **Access Time:** Arrays provide faster access times since elements are stored contiguously in memory, while linked lists can be slower due to the overhead of traversing links between nodes.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:15<00:00,  1.03it/s]
+Time elapsed for indexing: 15.5859 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the provided context, I can try to answer your question.
+
+From what I've gathered from the similar PDF documents, I don't have specific information about lists with contiguous memory allocation or linked structures in this context. However, I can provide general information.
+
+In computer science, a list where memory is contiguously allocated typically refers to an array or a contiguous block of memory that stores a sequence of elements. This type of list has the advantage of having efficient memory access patterns, as adjacent elements are stored in nearby memory locations.
+
+On the other hand, a list where linked structures are used typically refers to a dynamic array or a data structure where each element points to the next element, rather than being stored contiguously in memory. This type of list can be more flexible and efficient in terms of memory usage, as it doesn't require a fixed amount of contiguous memory.
+
+One key difference between these two types of lists is how they manage memory:
+
+* Contiguous allocation: Memory is allocated in large blocks, and each element is stored in a contiguous block of memory.
+* Linked structures: Each element points to the next element, allowing for more flexibility in terms of memory usage, but potentially slower access times.
+
+However, I couldn't find direct information about these concepts from the provided context. If you could provide more specific information or clarify which PDF document contains relevant information, I'll do my best to help.
+Time elapsed for query: 36.482 seconds
+---------------------------
+Query: When are linked lists faster than contiguously-allocated lists? 
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:14<00:00,  1.11it/s]
+Time elapsed for indexing: 14.4036 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context provided, I don't know the specific information about lists with contiguous memory allocation versus linked structures.
+
+However, in general programming concepts, there is a fundamental difference between these two approaches:
+
+**Contiguous Memory Allocation**
+
+In this approach, elements of a list are stored contiguously in memory, meaning they are allocated one after another in a single block. This can lead to faster access times for sequential elements in the list since they don't need to be searched or traversed individually.
+
+**Linked Structures (Dynamic Memory Allocation)**
+
+In contrast, linked structures use dynamic memory allocation where each element of the list is allocated separately and points to the next element in the sequence. Each element acts as a separate "node" that contains the data and a pointer (link) to the next node.
+
+The main differences between these two approaches are:
+
+*   **Memory Usage**: Linked structures typically require more memory because each element needs its own block of memory.
+*   **Insertion/Deletion Performance**: Inserting or deleting an element in the middle of a list with linked structures is slower than inserting/deleting an element at the end of a contiguous allocation, since you need to update pointers.
+*   **Memory Fragmentation**: Linked structures can lead to memory fragmentation due to wasted space between elements, but modern systems often employ techniques like garbage collection and heap compaction to mitigate this issue.
+...
+---------------------
+
+gemma3:latest sentence-transformers/all-MiniLM-L6-v2
+Processing PDFs and indexing embeddings...
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%|██████████| 16/16 [00:14<00:00,  1.07it/s]
+Time elapsed for indexing: 14.9394 seconds
+Peak memory usage during indexing: 0.37 MiB
+
+---Done processing PDFs---
+
+Query: What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?
+
+RAG Response:
+Based on the context, I can provide an answer related to memory allocation for lists.
+
+In computer science, there are two main ways to store elements in a data structure like a list:
+
+1. **Contiguous Memory Allocation**: In this approach, all elements of the list are stored in consecutive memory locations. This means that each element is adjacent to the next one in memory, and there are no gaps or overhead due to pointers.
+
+Example: Imagine an array where each element is allocated at the address `0x1000`, `0x2000`, `0x3000`, etc.
+
+2. **Linked Structures**: In this approach, each element of the list is stored separately in memory, and there are pointers (or links) that connect each element to the next one in the sequence. This means that there can be gaps or overhead due to these pointers.
+
+Example: Imagine a linked list where each node contains an element and a pointer to the next node (`next` pointer).
+
+The main differences between these two approaches are:
+
+* **Memory Efficiency**: Contiguous memory allocation is generally more memory-efficient, as it eliminates the overhead of pointers. However, it requires a contiguous block of memory, which might not always be available.
+* **Insertion and Deletion**: Linked structures can make insertion and deletion operations more efficient, as they only require updating the pointers between nodes. In contrast, contiguous allocation might require shifting elements to make room for new ones.
+...
+---------------------
+
+gemma3:latest nomic-ai/nomic-embed-text-v1
+Test failed, exception: Loading nomic-ai/nomic-embed-text-v1 requires you to execute the configuration file in that repo on your local machine. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...

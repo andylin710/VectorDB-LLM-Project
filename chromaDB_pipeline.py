@@ -25,7 +25,7 @@ nltk.download('punkt_tab')
 # === Constants and Configuration ===
 VECTOR_DIM = 768
 COLLECTION_NAME = "slides" 
-DATA_DIR = "Slides/"  # Directory containing your PDFs
+DATA_DIR = "All_Slides/"  # Directory containing your PDFs
 LLM_MODEL = 'llama3.2:latest'
 EMBEDDING_MODEL = 'sentence-transformers/all-mpnet-base-v2'
 
@@ -265,7 +265,7 @@ def run_test(queries, embedding_model_name, llm_model, chunk_size=300, overlap=5
 
 # === Main Entry Point ===
 
-if __name__ == "__main__":
-    # Define your test queries here
-    test_queries = ['What is an AVL Tree?']
-    run_test(test_queries, EMBEDDING_MODEL, LLM_MODEL)
+# if __name__ == "__main__":
+    # # Define your test queries here
+    # test_queries = ['What is an AVL Tree?']
+    # run_test(test_queries, EMBEDDING_MODEL, LLM_MODEL)

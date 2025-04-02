@@ -1,4 +1,5 @@
-compute_type,memory_size,embedding_model,llm_model,index_elapsed,index_memory,query,query_time_elapsed,chunk_size,overlap11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,280.5186,34.97,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,39.3778,200,0
+compute_type,memory_size,embedding_model,llm_model,index_elapsed,index_memory,query,query_time_elapsed,chunk_size,overlap
+11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,280.5186,34.97,What is the difference between a list where memory is contiguously allocated and a list where linked structures are used?,39.3778,200,0
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,280.5186,34.97,When are linked lists faster than contiguously-allocated lists? ,6.7361,200,0
 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz,16,sentence-transformers/all-mpnet-base-v2,llama3.2:latest,280.5186,34.97,"Add 23 to the AVL Tree below.  What imbalance case is created with inserting 23?
 
